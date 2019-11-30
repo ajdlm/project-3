@@ -332,7 +332,7 @@ class Header extends React.Component {
 
                                                                         :
 
-                                                                        <Link className="cart-link" to="/ShopingCart" onClick={() => this.ShowCart()} >
+                                                                        <Link className="cart-link" to="/ShoppingCart" onClick={() => this.ShowCart()} >
                                                                             <span className="cart-icon"><i className="glyph-icon pgsicon-ecommerce-empty-shopping-cart" /></span>
                                                                             <span className="cart-count count">  {this.ReadCartItems() == null ? 0 : this.ReadCartItems().length}  </span>
                                                                         </Link>
@@ -368,7 +368,7 @@ class Header extends React.Component {
                                                                                     </div>
                                                                                     <p className="ciyashop-mini-cart__total total"><strong>Subtotal:</strong> <span className="woocs_special_price_code"><span className="ciyashop-Price-amount amount"><span className="ciyashop-Price-currencySymbol">$</span> {this.ReadCartItems().reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0)}</span></span></p>
                                                                                     <p className="ciyashop-mini-cart__buttons buttons">
-                                                                                        <Link onClick={() => this.HideCart()} to="/ShopingCart" className="button wc-forward">View cart</Link>
+                                                                                        <Link onClick={() => this.HideCart()} to="/ShoppingCart" className="button wc-forward">View cart</Link>
                                                                                         <Link onClick={() => this.HideCart()}  to="/CheckOut" className="button checkout wc-forward">Checkout</Link>
                                                                                     </p>
                                                                                 </div>

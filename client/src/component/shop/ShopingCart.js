@@ -7,7 +7,7 @@ import { Row, Col, Container, Table } from 'reactstrap';
 import Popup from "reactjs-popup";
 
 
-class ShopingCart extends Component {
+class ShoppingCart extends Component {
 
     constructor(props) {
         super(props);
@@ -366,4 +366,4 @@ class ShopingCart extends Component {
         )
     }
 }
-export default ShopingCart;
+export default ShoppingCart;

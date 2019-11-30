@@ -223,7 +223,7 @@ const productslider = {
                                        <Link onClick={()=>this.AddToCart(product.id,product.name,product.pictures[0],qty,product.salePrice,"In Stock")}  className="button single_add_to_cart_button" rel="nofollow">Add to
                                         cart</Link>
                                  :
-                                       <Link  to="/ShopingCart"  className="button single_add_to_cart_button" rel="nofollow">View Cart</Link>
+                                       <Link  to="/ShoppingCart"  className="button single_add_to_cart_button" rel="nofollow">View Cart</Link>
                                  }
                         <div className="clearfix" />
                     </form>
