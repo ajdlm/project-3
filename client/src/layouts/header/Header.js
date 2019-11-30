@@ -2,7 +2,7 @@
  *  Header Main
  */
 import React, { Fragment } from 'react';
-import { Link,Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import navLinks from '../../NavLinks.js';
 import logo from '../../assets/images/logo.svg';
 import { Row, Col, Container } from 'reactstrap';
@@ -32,7 +32,7 @@ class Header extends React.Component {
             classset:'',
             getproduct:AllProduct
         }
-        var removeFromCart, removeFromWishList;
+        // var removeFromCart, removeFromWishList;
         this.toggle = this.toggle.bind(this);
         this.toggleNavbar = this.toggleNavbar.bind(this);
         this.ShowCart = this.ShowCart.bind(this);
@@ -73,11 +73,11 @@ class Header extends React.Component {
         return JSON.parse(localStorage.getItem("LocalWishListItems"));
     }
 
-    toggle() {
-        this.setState(prevState => ({
-            modal: !prevState.modal
-        }));
-    }
+    // toggle() {
+    //     this.setState(prevState => ({
+    //         modal: !prevState.modal
+    //     }));
+    // }
 
       componentDidMount() {
         window.addEventListener('scroll', this.handleScroll); 
@@ -99,7 +99,7 @@ class Header extends React.Component {
       }
 
       ShowCart() {
-          if(this.state.CartHide == true)
+          if(this.state.CartHide === true)
           {
             var elm = document.getElementById("DivCartContent");
             if(elm != null)
@@ -126,7 +126,7 @@ class Header extends React.Component {
             }
         }
     onClickClassAdd(pages){
-        if(this.state.classset != pages)
+        if(this.state.classset !== pages)
         {
                 this.setState({
                     ...this.state,
@@ -135,7 +135,7 @@ class Header extends React.Component {
         }
         else
         {
-            if(Object.keys(this.state.classset).length == 0){
+            if(Object.keys(this.state.classset).length === 0){
                 this.setState({
                     ...this.state,
                     classset:pages
@@ -172,7 +172,7 @@ class Header extends React.Component {
         let pathnames = document.location.href;
         let pathArray = pathnames.split('/');
         let pageName = '/'+pathArray[pathArray.length -1];
-        if (this.state.timeout == true) {
+        if (this.state.timeout === true) {
             setTimeout(function () {
                 this.setState({ timeout: false });
             }.bind(this), 2000);  // wait 5 seconds, then reset to false
@@ -180,7 +180,7 @@ class Header extends React.Component {
         return (
 
             <header className="site-header header-style-menu-center" id="site-header">
-                {this.state.timeout == false ?
+                {this.state.timeout === false ?
                     <div>
                         <div className="topbar topbar-bg-color-default topbar-desktop-on topbar-mobile-off">
                             <div className="container-fluid">
@@ -219,7 +219,7 @@ class Header extends React.Component {
                                                     <li className="topbar_item topbar_item_type-social_profiles">
                                                         <div className="topbar-social_profiles-wrapper">
                                                             <ul className="topbar-social_profiles">
-                                                                <li className="topbar-social_profile">
+                                                                {/* <li className="topbar-social_profile">
                                                                     <a href={'https://www.facebook.com'} target="_blank" >
                                                                         <i className="fa fa-facebook" />
                                                                     </a>
@@ -243,7 +243,7 @@ class Header extends React.Component {
                                                                     <a href={'https://in.pinterest.com/'} target="_blank">
                                                                         <i className="fa fa-pinterest" />
                                                                     </a>
-                                                                </li>
+                                                                </li> */}
                                                             </ul>
                                                         </div>
                                                     </li>

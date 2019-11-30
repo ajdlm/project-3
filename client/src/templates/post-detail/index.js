@@ -7,8 +7,8 @@ import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
-import { Row, Col,Container } from 'reactstrap';
-import { ToastContainer,toast  } from 'react-toastify';
+import { Row  } from 'reactstrap';
+import { toast  } from 'react-toastify';
 
 const settings = {
     dots: false,

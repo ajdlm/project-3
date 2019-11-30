@@ -3,40 +3,40 @@ export default [
 {
     "profile":
         {
-            "firstname":"Alice",
-            "lastname":"Williams",
-            "gender":"Male",
-            "dob":"2019-07-03",
-            "phoneno":"1266322345",
-            "email":"support@ciyashop.com",
-            "address":"1635 Franklin Street Montgomery, Near Sherwood Mall. AL 36104",
-            "companyname" : "Ciya Shop",
-            "address":"4402 Worthington Drive",
-            "streetno":"Richardson",
-            "state":"Near Sherwood Mall",
-            "zipcode":"361046",
-            "country":"US",
-            "phone":"5685486123"
+            "firstname":"",
+            "lastname":"",
+            "gender":"",
+            "dob":"",
+            "phoneno":"",
+            "email":"",
+            "address":"",
+            "companyname" : "",
+            // "address":"",
+            "streetno":"",
+            "state":"",
+            "zipcode":"",
+            "country":"",
+            "phone":""
         }
     ,
     "billingaddress":
         {
-            "billingname":"Ciyashop",
-            "address":"4402 Worthington Drive",
-            "streetno":"Richardson",
-            "state":"Near Sherwood Mall",
-            "zipcode":"361046",
+            "billingname":"",
+            "address":"",
+            "streetno":"",
+            "state":"",
+            "zipcode":"",
             "country":"USA"
         }
     ,
     "shippingaddress":
         {   
-            "shippingname":"Ciyashop",
-            "address":"4402 Worthington Drive",
-            "streetno":"Richardson",
-            "state":"Near Sherwood Mall",
-            "zipcode":"361046",
-            "country":"UK"
+            "shippingname":"",
+            "address":"",
+            "streetno":"",
+            "state":"",
+            "zipcode":"",
+            "country":""
         }
     ,
     "carddetail":

@@ -2,7 +2,7 @@
  *  Settings
  */
 import React, { Component } from 'react';
-import { Row, Col,Container,FormGroup,Form,Input,Button } from 'reactstrap';
+import { Row, Col,Container} from 'reactstrap';
 import Adminsitebar from './Adminsitebar';
 import AdminProfileDetail from '../../widgets/AdminProfileDetail';
 
@@ -71,7 +71,7 @@ class Settings extends Component {
                     </div>
                 </Col>
                 <Col lg={12}>
-                  <a className="btn btn-primary mt-4" href="#">Delete account</a>
+                  <a className="btn btn-primary mt-4" href="#index">Delete account</a>
                 </Col>
                 </Row>
                 </div>

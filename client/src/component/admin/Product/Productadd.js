@@ -2,7 +2,7 @@
  *  Admin Site Product Add
  */
 import React, { Component } from 'react';
-import { Row, Col,Container, FormGroup, Label, Input } from 'reactstrap';
+import { Row,Container, FormGroup, Label, Input } from 'reactstrap';
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 import ImageUploader from 'react-images-upload';
@@ -63,7 +63,7 @@ class Productadd extends Component{
         }
 
         Uploadimage(picture) {
-            if(picture == '')
+            if(picture === '')
             {
                 this.setState({
                     ...this.state,
