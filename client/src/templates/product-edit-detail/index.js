@@ -64,9 +64,9 @@ class ProductEditDetail extends Component {
         const { photoIndex, isOpen } = this.state;
         const {product} = this.props;
         const images=[];
-        {product.pictures.map((pic)=>
-            images.push(require(`../../assets/images/${pic}`))
-        )}
+        // {product.pictures.map((pic)=>
+        //     images.push(require(`../../assets/images/${pic}`))
+        // )}
         return (
             <section>
                 <div className="product-content-top single-product single-product-edit">
@@ -78,7 +78,7 @@ class ProductEditDetail extends Component {
                                     <div className="ciyashop-product-gallery ciyashop-product-gallery--with-images slick-carousel">
                                     <Slider {...settings} className="ciyashop-product-gallery__wrapper popup-gallery">
                                         <div className="ciyashop-product-gallery__image">
-                                                <img src={require(`../../assets/images/${product.pictures[0]}`)}  className="img-fluid" />
+                                                {/* <img src={require(`../../assets/images/${product.pictures[0]}`)}  className="img-fluid" /> */}
                                         </div>
                                     </Slider>
                                     <div className="ciyashop-product-gallery_buttons_wrapper">
@@ -94,9 +94,9 @@ class ProductEditDetail extends Component {
                                             {product.pictures.map((pictureimage,index) =>
                                                 <div key={index}>
                                                     <div className="ciyashop-product-thumbnail__image">
-                                                        <a href="javascript:void(0)">
+                                                        {/* <a href="javascript:void(0)">
                                                             <img src={require(`../../assets/images/${pictureimage}`)}  className="img-fluid" />
-                                                        </a>
+                                                        </a> */}
                                                         <div className="d-flex justify-content-center image-content align-items-center">
                                                             <ImageUploader
                                                                 buttonText=""

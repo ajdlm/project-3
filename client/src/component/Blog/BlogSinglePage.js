@@ -84,7 +84,7 @@ class BlogSinglePage extends Component {
                                                 <Link  className="share-button" data-title="Share it on">
                                                     <i className="fa fa-share-alt"></i>
                                                 </Link>
-                                                <ul className="single-share-box mk-box-to-trigger">
+                                                {/* <ul className="single-share-box mk-box-to-trigger">
                                                     <li>
                                                         <a target="_blank" href="https://www.facebook.com" className="share-link facebook-share">
                                                             <i className="fa fa-facebook"></i>
@@ -110,7 +110,7 @@ class BlogSinglePage extends Component {
                                                             <i className="fa fa-pinterest"></i>
                                                         </a>
                                                     </li>
-                                                </ul>
+                                                </ul> */}
                                             </div>
                                         </footer>
                                     </article>

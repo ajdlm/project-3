@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col,Container,FormGroup,Form,Input,Button } from 'reactstrap';
+import { Row, Col,Container } from 'reactstrap';
 import Adminsitebar from './Adminsitebar';
 import AdminProfileDetail from '../../widgets/AdminProfileDetail';
 import Common1 from '../../api/common';

@@ -4,7 +4,7 @@
  */
 import React , {Component} from 'react';
 import Slider from "react-slick";
-import { Row, Col, Container } from 'reactstrap';
+// import { Row, Col, Container } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import { ToastContainer,toast  } from 'react-toastify';
 

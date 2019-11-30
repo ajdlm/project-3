@@ -2,8 +2,8 @@
  *  Maintenance Page
  */
 import React, { Component } from 'react';
-import pyamentimg from '../../assets/images/payments.png';
-import { Link } from 'react-router-dom';
+// import pyamentimg from '../../assets/images/payments.png';
+// import { Link } from 'react-router-dom';
 import { Row, Col,Container } from 'reactstrap';
 import maintenanceimg from '../../assets/images/maintenance.png';
 

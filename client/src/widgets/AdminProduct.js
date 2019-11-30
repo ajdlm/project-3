@@ -3,9 +3,9 @@
  * Admin List Product Display
  **/
 import React , {Component} from 'react';
-import { Row, Col, Container,Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
+import {  Col,Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 import {Link} from 'react-router-dom';
-import { ToastContainer,toast  } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 
 
 class AdminproductList extends Component {

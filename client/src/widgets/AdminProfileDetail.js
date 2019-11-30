@@ -2,8 +2,8 @@
  * Admin Profile Detail
  */
 import React , {Component} from 'react';
-import { Row, Col, Container } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Row, Col} from 'reactstrap';
+// import { Link } from 'react-router-dom';
 import adminprofile from '../assets/images/testimonials/img-02.jpg';
 import Common from '../api/common';
 class AdminProfileDetail extends Component{

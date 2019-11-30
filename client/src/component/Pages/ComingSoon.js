@@ -2,8 +2,8 @@
  *  CommingSoon Page
  */
 import React, { Component } from 'react';
-import pyamentimg from '../../assets/images/payments.png';
-import { Link } from 'react-router-dom';
+// import pyamentimg from '../../assets/images/payments.png';
+// import { Link } from 'react-router-dom';
 import { Row, Col,Container } from 'reactstrap';
 import CommingSoonCounter from '../../widgets/CommingSoonCounter';
 import CommingSoonimg from '../../assets/images/comingsoon.png';
@@ -11,9 +11,9 @@ import CommingSoonimg from '../../assets/images/comingsoon.png';
 
 class ComingSoon extends Component {
 
-    constructor(props){
-        super(props)
-    }
+    // constructor(props){
+    //     super(props)
+    // }
 
      componentDidMount() {
         window.scrollTo(0, 0)
@@ -39,10 +39,10 @@ class ComingSoon extends Component {
                             </div>
                             <div className="coming-soon-social">
                                 <ul>
-                                    <li><a href="#"> <i className="fa fa-facebook"></i> </a></li>
+                                    {/* <li><a href="#"> <i className="fa fa-facebook"></i> </a></li>
                                     <li><a href="#"> <i className="fa fa-linkedin"></i> </a></li>
                                     <li><a href="#"> <i className="fa fa-google"></i> </a></li>
-                                    <li><a href="#"> <i className="fa fa-instagram"></i> </a></li>
+                                    <li><a href="#"> <i className="fa fa-instagram"></i> </a></li> */}
                                 </ul>
                             </div>
                             </Col>
