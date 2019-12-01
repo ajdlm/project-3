@@ -81,7 +81,6 @@ class ShoppingCart extends Component {
         var UpdatedCart = JSON.parse(localStorage.getItem("LocalCartItems"));
 
         if (UpdatedCart[Index].Qty !== 1) {
-
             UpdatedCart[Index].Qty = parseInt(UpdatedCart[Index].Qty - 1);
             localStorage.removeItem("LocalCartItems");
             localStorage.setItem("LocalCartItems", JSON.stringify(UpdatedCart));

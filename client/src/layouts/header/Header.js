@@ -368,6 +368,7 @@ class Header extends React.Component {
 
                                                                                         </ul>
                                                                                     </div>
+
                                                                                     <p className="moderncover-mini-cart__total total"><strong>Subtotal:</strong> <span className="woocs_special_price_code"><span className="moderncover-Price-amount amount"><span className="moderncover-Price-currencySymbol">$</span> {this.ReadCartItems().reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0)}</span></span></p>
                                                                                     <p className="moderncover-mini-cart__buttons buttons">
                                                                                         <Link onClick={() => this.HideCart()} to="/ShoppingCart" className="button wc-forward">View cart</Link>

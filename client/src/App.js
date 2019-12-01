@@ -11,7 +11,7 @@ import HomePage3 from './component/home3';
 
 import './App.css';
 import './Vendor.js';
- 
+
 import { IntlProvider } from 'react-intl';
 import ShopPage from './component/shop';
 import ProductDetail from './component/shop/product-detail';
