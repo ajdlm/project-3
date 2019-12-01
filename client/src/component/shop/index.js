@@ -7,7 +7,7 @@ import SideFilter from '../../widgets/shopfilter/SideFilter';
 import SocialFilter from '../../widgets/shopfilter/SocialInfo';
 import ShopBanner from '../../widgets/shopfilter/ShopBanner';
 import { Link } from 'react-router-dom';
-import { Row, Col,Container,Form,Nav } from 'reactstrap';
+import { Row, Col,Container } from 'reactstrap';
 import AllProduct from '../../api/product';
 import ProductList from '../../widgets/ProductList';
 import {getFilterProductsdata} from '../../services';
@@ -106,7 +106,7 @@ class ShopPage extends Component {
                             </div>
                         </Col>
                         <Col md={6}  className="text-right">
-                            <ul className="ciyashop_breadcrumbs page-breadcrumb breadcrumbs">
+                            <ul className="moderncover_breadcrumbs page-breadcrumb breadcrumbs">
                             <li className="home">
                                 <span>
                                 <Link className="bread-link bread-home" to="/">Home</Link>
@@ -148,7 +148,7 @@ class ShopPage extends Component {
                                         hasMore={this.state.hasMoreProduct}
                                         loader={<div className="lazyload-img"></div>}
                                     >
-                                        <Row className="products products-loop grid ciyashop-products-shortcode pgs-product-list">
+                                        <Row className="products products-loop grid moderncover-products-shortcode pgs-product-list">
                                             {products.slice(0,this.state.limit).map((product, index) =>
                                                         <ProductList product={product} key={index} layoutstyle={layoutstyle} />
                                                 )
@@ -156,9 +156,9 @@ class ShopPage extends Component {
                                         </Row>
                                     </InfiniteScroll>
                                 :
-                                      <Row className="products products-loop grid ciyashop-products-shortcode">
+                                      <Row className="products products-loop grid moderncover-products-shortcode">
                                         <div className="col-sm-12 text-center  mt-5" >
-                                            <img src={require(`../../assets/images/empty-search.jpg`)} className="img-fluid mb-4" />
+                                            {/* <img src={require(`../../assets/images/empty-search.jpg`)} className="img-fluid mb-4" /> */}
                                             <h3>Sorry! No products were found matching your selection!    </h3>
                                             <p>Please try to other words.</p>
                                              <Link to="/shop" className="btn btn-solid">Continue Shopping</Link>

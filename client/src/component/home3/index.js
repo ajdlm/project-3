@@ -110,22 +110,22 @@ class HomePage3 extends Component {
                                                 </div>
                                                 <Row>
                                                     <Col lg={6}>
-                                                    <div className="ciyashop_banner_wrapper">
-                                                        <div className="ciyashop_banner ciyashop_banner-style-deal-2 ciyashop_banner-effect-none">
-                                                            {/* <img className="ciyashop_banner-image img-fluid inline" alt="Banner" src={require(`../../assets/images/categories/modern/deal-1.png`)}  /> */}
-                                                        <div className="ciyashop_banner-content ciyashop_banner-content-hcenter ciyashop_banner-content-vbottom">
-                                                            <div className="ciyashop_banner-content-wrapper">
-                                                            <div className="ciyashop_banner-content-inner-wrapper">
-                                                                <div className="ciyashop_banner-text-wrap ciyashop_banner-text-wrap-1 hidden-lg hidden-md hidden-sm hidden-xs">
-                                                                <div className="ciyashop_banner-text"> Deal of The Day</div>
+                                                    <div className="moderncover_banner_wrapper">
+                                                        <div className="moderncover_banner moderncover_banner-style-deal-2 moderncover_banner-effect-none">
+                                                            {/* <img className="moderncover_banner-image img-fluid inline" alt="Banner" src={require(`../../assets/images/categories/modern/deal-1.png`)}  /> */}
+                                                        <div className="moderncover_banner-content moderncover_banner-content-hcenter moderncover_banner-content-vbottom">
+                                                            <div className="moderncover_banner-content-wrapper">
+                                                            <div className="moderncover_banner-content-inner-wrapper">
+                                                                <div className="moderncover_banner-text-wrap moderncover_banner-text-wrap-1 hidden-lg hidden-md hidden-sm hidden-xs">
+                                                                <div className="moderncover_banner-text"> Deal of The Day</div>
                                                                 </div>
                                                                 <div className="deal-counter-wrapper counter-size-sm counter-style-style-6">
                                                                 <div className="deal-counter">
                                                                      <CountDownTimer time={'152350'}></CountDownTimer>
                                                                 </div>
                                                                 </div>
-                                                                <div className="ciyashop_banner-btn-wrap ciyashop_banner-btn-style-link ciyashop_banner-btn-shape-square">
-                                                                <Link to="/shop" className="ciyashop_banner-btn inline_hover">Shop now</Link></div>
+                                                                <div className="moderncover_banner-btn-wrap moderncover_banner-btn-style-link moderncover_banner-btn-shape-square">
+                                                                <Link to="/shop" className="moderncover_banner-btn inline_hover">Shop now</Link></div>
                                                             </div>
                                                             </div>
                                                         </div>
@@ -133,7 +133,7 @@ class HomePage3 extends Component {
                                                     </div>
                                                     </Col>
                                                     <Col lg={6}>
-                                                        <div className="products products-loop grid ciyashop-products-shortcode row">
+                                                        <div className="products products-loop grid moderncover-products-shortcode row">
                                                             <ProductSlider settings={saleslider} />
                                                         </div>
                                                     </Col>

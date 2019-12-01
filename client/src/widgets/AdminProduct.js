@@ -12,7 +12,7 @@ class AdminproductList extends Component {
     constructor(props){
         super(props);
         this.toggle1 = this.toggle1.bind(this);
-        var AddToCart,AddToWishList
+        // var AddToCart,AddToWishList
 
         this.state = {
             open: false,
@@ -46,14 +46,16 @@ class AdminproductList extends Component {
                             <Link to="#">
                                 {product.pictures[0] ?
                                     <div className="product-thumbnail-main">
-                                        <img src={require(`../assets/images/${product.pictures[0]}`)} className="img-fluid" />
+                                        {/* <img src={require(`../assets/images/${product.pictures[0]}`)} */}
+                                         className="img-fluid" />
                                     </div>
                                 :
                                     null
                                 }
                                 {product.pictures[1]  ?
                                     <div className="product-thumbnail-swap">
-                                            <img src={require(`../assets/images/${product.pictures[1]}`)} className="img-fluid" />
+                                            {/* <img src={require(`../assets/images/${product.pictures[1]}`)} */}
+                                             className="img-fluid" />
                                     </div>
                                     :
                                     null
@@ -69,7 +71,7 @@ class AdminproductList extends Component {
                         </div>
                         <div className="product-info">
                             {product.tags ?
-                                   <span className="ciyashop-product-category">
+                                   <span className="moderncover-product-category">
                                     {product.tags.map((tag,index) =>
                                             <span>{tag}{index === product.tags.length-1 ?'':','}
                                             </span>

@@ -37,7 +37,7 @@ class AdminProduct extends Component {
                  totalRecords:this.state.cp_productList.length,
                  IsDeleteProcess:true,
             })
-            this.state.currentProduct = curr_products;
+            // this.state.currentProduct = curr_products;
             this.forceUpdate();
             this.render();
 
@@ -61,7 +61,7 @@ class AdminProduct extends Component {
                 }
 
             })
-           var curr_products = null;
+              curr_products = null;
             if(serachdata.length > 12)
             {
                 curr_products= serachdata.slice(0,12);
@@ -78,7 +78,7 @@ class AdminProduct extends Component {
                  totalRecords:searchproduct.length,
                  IsDeleteProcess:false
             })
-            this.state.currentProduct = curr_products;
+            // this.state.currentProduct = curr_products;
             this.forceUpdate();
             this.render();
         }
@@ -138,16 +138,17 @@ class AdminProduct extends Component {
 
                                 <div className="mb-0 mb-md-4">
                                     {this.state.currentProduct.length > 0 ?
-                                        <Row className="products products-loop grid ciyashop-products-shortcode pgs-product-list">
+                                        <Row className="products products-loop grid moderncover-products-shortcode pgs-product-list">
                                                 {this.state.currentProduct.map((product, index) =>
                                                             <AdminproductList product={product} key={index} deleteproduct={()=>this.onDeleteProduct(product)} />
                                                     )
                                                 }
                                             </Row>
                                         :
-                                            <Row className="products products-loop grid ciyashop-products-shortcode">
+                                            <Row className="products products-loop grid moderncover-products-shortcode">
                                                 <div className="col-sm-12 text-center  mt-4 mt-md-5" >
-                                                    <img src={require(`../../assets/images/empty-search.jpg`)} className="img-fluid mb-4" />
+                                                    {/* <img src={require(`../../assets/images/empty-search.jpg`)} */}
+                                                     className="img-fluid mb-4" />
                                                     <h3>Sorry! No products were found matching your selection!    </h3>
                                                     <p>Please try to other words.</p>
                                                 </div>

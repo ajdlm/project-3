@@ -2,9 +2,9 @@
  * Brand Logo Slider
  */
 import React , {Component} from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Slider from "react-slick";
-import { Row, Col, Container } from 'reactstrap';
+import { Col} from 'reactstrap';
 
 const settings = {
     dots: false,
@@ -41,7 +41,7 @@ class BrandLogoSlider extends Component {
    render() {
     return (
             <Col sm={12}>
-                <div className="ciyashop_clients ciyashop_clients-list-type-slider">
+                <div className="moderncover_clients moderncover_clients-list-type-slider">
                    <Slider {...settings} className="slider-arrow-hover">
                            <div className="item">
                                <img className="img-fluid mx-auto" src={require(`../assets/images/categories/new-fashion/brand-1.png`)}  alt="clients-logo" />

@@ -26,12 +26,12 @@ class Maintenance extends Component {
                                             <img className="mb-2 mt-3" src={maintenanceimg} title="maintenance" alt="maintenance" />
                                             <p className="mt-4 mt-md-5">We apologize for the inconvenience, we” re doing out best to get things back to working order for you.</p>
                                             <div className="coming-soon-social">
-                                                <ul>
+                                                {/* <ul>
                                                     <li><a href="#"> <i className="fa fa-facebook"></i> </a></li>
                                                     <li><a href="#"> <i className="fa fa-linkedin"></i> </a></li>
                                                     <li><a href="#"> <i className="fa fa-google"></i> </a></li>
                                                     <li><a href="#"> <i className="fa fa-instagram"></i> </a></li>
-                                                </ul>
+                                                </ul> */}
                                             </div>
                                         </div>
                                     </Col>

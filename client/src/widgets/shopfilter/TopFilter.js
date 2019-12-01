@@ -17,15 +17,15 @@ class TopFilter extends Component {
                 el.classList.remove('active');
             });
             let layoutstyle=localStorage.getItem('setLayoutStyle')
-            if(layoutstyle == 'col-sm-6 col-xl-3 col-lg-4')
+            if(layoutstyle === 'col-sm-6 col-xl-3 col-lg-4')
             {
                  document.querySelector(".grid-4-column").classList.add("active"); 
             }
-            else if(layoutstyle == 'col-sm-6')
+            else if(layoutstyle === 'col-sm-6')
             {
                 document.querySelector(".grid-2-column").classList.add("active");
             }
-            else if(layoutstyle == 'col-sm-12')
+            else if(layoutstyle === 'col-sm-12')
             {
                 document.querySelector(".gridlist-toggle-list").classList.add("active");
                 document.querySelector(".pgs-product-list").classList.remove("grid");
@@ -62,7 +62,7 @@ class TopFilter extends Component {
             });
 
             document.querySelector(".pgs-product-list").classList.remove("list");
-            if(Size == "6")
+            if(Size === "6")
             {
                 document.querySelector(".grid-2-column").classList.add("active");
                 localStorage.setItem('setLayoutStyle','col-sm-6')
@@ -87,7 +87,7 @@ class TopFilter extends Component {
                 el.classList.remove('active');
             });
             document.querySelector(".pgs-product-list").classList.remove("list");
-            if(Size == "3")
+            if(Size === "3")
             {
                 document.querySelector(".grid-4-column").classList.add("active");
                 localStorage.setItem('setLayoutStyle','col-sm-6 col-xl-3 col-lg-4')
@@ -108,7 +108,7 @@ class TopFilter extends Component {
                 el.classList.remove('active');
             });
             document.querySelector(".pgs-product-list").classList.remove("list");
-            if(Size == "4")
+            if(Size === "4")
             {
                 document.querySelector(".grid-3-column").classList.add("active");
                 localStorage.setItem('setLayoutStyle','col-sm-6 col-md-4')

@@ -3,7 +3,7 @@
  * ProductList Widget
  */
 import React , {Component} from 'react';
-import Slider from "react-slick";
+// import Slider from "react-slick";
 // import { Row, Col, Container } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import { ToastContainer,toast  } from 'react-toastify';
@@ -27,7 +27,7 @@ class ProductList extends Component {
     AddToCart(ProductID,ProductName,ProductImage,Qty,Rate,StockStatus) {
         var Cart = JSON.parse(localStorage.getItem("LocalCartItems"));
         if(Cart == null)
-           Cart = new Array();
+           Cart = new [] ();
         let selectedProduct = Cart.find(product => product.ProductName === ProductName);
         if(selectedProduct == null)
         {
@@ -47,7 +47,7 @@ class ProductList extends Component {
      AddToWishList(ProductID,ProductName,ProductImage,Qty,Rate,StockStatus) {
         var Cart = JSON.parse(localStorage.getItem("LocalWishListItems"));
         if(Cart == null)
-           Cart = new Array();
+           Cart = new []();
 
            let selectedProduct = Cart.find(product => product.ProductName === ProductName);
            if(selectedProduct == null)
@@ -117,7 +117,7 @@ class ProductList extends Component {
                         <div className="product-thumbnail">
                             <div className="product-thumbnail-inner">
                                 <Link to={`/shop/${product.category}/${product.id}`}>
-                                    {product.pictures[0] ?
+                                    {/* {product.pictures[0] ?
                                         <div className="product-thumbnail-main">
                                             <img src={require(`../assets/images/${product.pictures[0]}`)} className="img-fluid" />
                                         </div>
@@ -130,7 +130,7 @@ class ProductList extends Component {
                                         </div>
                                         :
                                         null
-                                    }
+                                    } */}
                                 </Link>
                             </div>
 
@@ -157,7 +157,7 @@ class ProductList extends Component {
                         </div>
                         <div className="product-info">
                             {product.tags ?
-                                   <span className="ciyashop-product-category">
+                                   <span className="moderncover-product-category">
                                     {product.tags.map((tag,index) =>
                                           <span>{tag}{index === product.tags.length-1 ?'':','}</span>
                                      )}

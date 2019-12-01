@@ -4,7 +4,7 @@
 import React , {Component} from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
-import { Row, Col,Container } from 'reactstrap';
+// import { Row, Col,Container } from 'reactstrap';
 
 const settings = {
     dots: false,

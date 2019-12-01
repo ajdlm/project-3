@@ -50,7 +50,7 @@ const productslider = {
     AddToCart(ProductID,ProductName,ProductImage,Qty,Rate,StockStatus) {
         var Cart = JSON.parse(localStorage.getItem("LocalCartItems"));
         if(Cart == null)
-           Cart = new Array();
+           Cart = new []();
         let selectedProduct = Cart.find(product => product.ProductName === ProductName);
         if(selectedProduct == null)
         {
@@ -69,7 +69,7 @@ const productslider = {
      AddToWishList(ProductID,ProductName,ProductImage,Qty,Rate,StockStatus) {
         var Cart = JSON.parse(localStorage.getItem("LocalWishListItems"));
         if(Cart == null)
-           Cart = new Array();
+           Cart = new []();
 
            let selectedProduct = Cart.find(product => product.ProductName === ProductName);
            if(selectedProduct == null)
@@ -136,9 +136,9 @@ const productslider = {
         const qty=this.state.qty;
         const {product} = this.props;
         const images=[];
-        {product.pictures.map((pic)=>
-            images.push(require(`../../assets/images/${pic}`))
-        )}
+        // {product.pictures.map((pic)=>
+        //     images.push(require(`../../assets/images/${pic}`))
+        // )}
 
         let rat=[];
         let rating=product.rating;
@@ -161,29 +161,29 @@ const productslider = {
                 <Row>
                 <div className="product-top-left col-xl-5 col-md-6">
                     <div className="product-top-left-inner">
-                        <div className="ciyashop-product-images">
-                        <div className="ciyashop-product-images-wrapper ciyashop-gallery-style-default ciyashop-gallery-thumb_position-bottom ciyashop-gallery-thumb_vh-horizontal">
-                            <div className="ciyashop-product-gallery ciyashop-product-gallery--with-images slick-carousel">
-                            <Slider {...settings} className="ciyashop-product-gallery__wrapper popup-gallery">
-                                <div className="ciyashop-product-gallery__image">
+                        <div className="moderncover-product-images">
+                        <div className="moderncover-product-images-wrapper moderncover-gallery-style-default moderncover-gallery-thumb_position-bottom moderncover-gallery-thumb_vh-horizontal">
+                            <div className="moderncover-product-gallery moderncover-product-gallery--with-images slick-carousel">
+                            <Slider {...settings} className="moderncover-product-gallery__wrapper popup-gallery">
+                                {/* <div className="moderncover-product-gallery__image">
                                         <img src={require(`../../assets/images/${this.state.newImage}`)}  className="img-fluid" />
-                                </div>
+                                </div> */}
                             </Slider>
-                            <div className="ciyashop-product-gallery_buttons_wrapper">
-                                <div className="ciyashop-product-gallery_button ciyashop-product-gallery_button-zoom popup-gallery" onClick={() => this.setState({ isOpen: true })} >
-                                <Link to="#" className="ciyashop-product-gallery_button-link-zoom">
+                            <div className="moderncover-product-gallery_buttons_wrapper">
+                                <div className="moderncover-product-gallery_button moderncover-product-gallery_button-zoom popup-gallery" onClick={() => this.setState({ isOpen: true })} >
+                                <Link to="#" className="moderncover-product-gallery_button-link-zoom">
                                     <i className="fa fa-arrows-alt" />
                                 </Link>
                                 </div>
                             </div>
                             </div>
-                            <div className="ciyashop-product-thumbnails">
-                                <Slider {...productslider} className="ciyashop-product-thumbnails__wrapper">
+                            <div className="moderncover-product-thumbnails">
+                                <Slider {...productslider} className="moderncover-product-thumbnails__wrapper">
                                     {product.pictures.map((pictureimage,index) =>
-                                        <div className="ciyashop-product-thumbnail__image">
-                                            <Link  onMouseOver={() => this.changePreviewImage(pictureimage)} >
+                                        <div className="moderncover-product-thumbnail__image">
+                                            {/* <Link  onMouseOver={() => this.changePreviewImage(pictureimage)} >
                                                 <img src={require(`../../assets/images/${pictureimage}`)}  className="img-fluid" />
-                                            </Link>
+                                            </Link> */}
                                         </div>
                                     )}
                                 </Slider>
@@ -271,11 +271,11 @@ const productslider = {
                     <div className="social-profiles">
                         <span className="share-label">Share :</span>
                         <ul className="share-links">
-                        <li>
+                        {/* <li>
                             <a href="https://www.facebook.com" className="share-link facebook-share" target="_blank">
                             <i className="fa fa-facebook" />
-                            </a>
-                        </li>
+                            </a> */}
+                        {/* </li> */}
                         <li>
                             <a href="https://twitter.com/" className="share-link twitter-share" target="popup">
                             <i className="fa fa-twitter" />
@@ -298,15 +298,15 @@ const productslider = {
                         </li>
                         </ul>
                     </div>
-                    <div className="ciyashop-sticky-btn">
-                        <div className="ciyashop-sticky-btn-container container">
+                    <div className="moderncover-sticky-btn">
+                        <div className="moderncover-sticky-btn-container container">
                         <div className="row align-items-center">
                             <div className="col-lg-5">
-                            <div className="ciyashop-sticky-btn-content">
-                                <div className="ciyashop-sticky-btn-thumbnail">
+                            <div className="moderncover-sticky-btn-content">
+                                {/* <div className="moderncover-sticky-btn-thumbnail">
                                 <img src={require(`../../assets/images/products/product-01.jpg`)}  className="img-fluid" alt />
-                                </div>
-                                <div className="ciyashop-sticky-btn-info">
+                                </div> */}
+                                <div className="moderncover-sticky-btn-info">
                                 <h4 className="product-title">Women’s Fabric Mix Midi Wrap
                                     Jumpsuit</h4>
                                 <div className="star-rating">
@@ -320,7 +320,7 @@ const productslider = {
                             </div>
                             </div>
                             <div className="col-lg-7">
-                            <div className="ciyashop-sticky-btn-cart">
+                            <div className="moderncover-sticky-btn-cart">
                                 <div className="wishlist-compare-button">
                                 <div className="product-action product-action-wishlist">
                                     <Link to="#" data-toggle="tooltip" data-original-title="Wishlist" data-placement="top">
@@ -336,7 +336,7 @@ const productslider = {
                                 <form className="cart">
                                 <div className="quantity">
                                     <label className="screen-reader-text" htmlFor="quantity_5cdab503cf26f">Quantity</label>
-                                    <input type="number" id="quantity_5cdab503cf26f" className="input-text qty text" step={1} min={1} max name="quantity" defaultValue={1} title="Qty" size={4} pattern="[0-9]*" inputMode="numeric" aria-labelledby />
+                                    {/* <input type="number" id="quantity_5cdab503cf26f" className="input-text qty text" step={1} min={1} max name="quantity" defaultValue={1} title="Qty" size={4} pattern="[0-9]*" inputMode="numeric" aria-labelledby /> */}
                                     <div className="quantity-nav">
                                     <div className="quantity-button quantity-up">+</div>
                                     <div className="quantity-button quantity-down">-

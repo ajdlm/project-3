@@ -12,7 +12,7 @@ function PageTitle(props) {
       <div className="intro-title-inner">
       <h1>{props.title}</h1>
       </div>
-      <ul className="ciyashop_breadcrumbs page-breadcrumb breadcrumbs">
+      <ul className="moderncover_breadcrumbs page-breadcrumb breadcrumbs">
           <li className="home">
               <span>
               <Link className="bread-link   " to="/">Home</Link>

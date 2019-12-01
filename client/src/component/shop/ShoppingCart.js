@@ -25,7 +25,7 @@ class ShoppingCart extends Component {
         this.MinusQty = this.MinusQty.bind(this);
         this.SetShippingCharge = this.SetShippingCharge.bind(this);
         this.SetShippingAddressChange = this.SetShippingAddressChange.bind(this);
-        var removeFromCart, PlusQty, MinusQty, SetShippingCharge,SetShippingAddressChange;
+        // var removeFromCart, PlusQty, MinusQty, SetShippingCharge,SetShippingAddressChange;
         this.SetDefaults = this.SetDefaults.bind(this);
     }
 
@@ -44,7 +44,7 @@ class ShoppingCart extends Component {
         var cart = JSON.parse(localStorage.getItem("LocalCartItems"));
 
 
-        if (cart.length == 0) {
+        if (cart.length === 0) {
             this.props.history.push(`/`)
             return;
         }
@@ -80,8 +80,7 @@ class ShoppingCart extends Component {
     MinusQty = (Index) => {
         var UpdatedCart = JSON.parse(localStorage.getItem("LocalCartItems"));
 
-        if (UpdatedCart[Index].Qty != 1) {
-
+        if (UpdatedCart[Index].Qty !== 1) {
             UpdatedCart[Index].Qty = parseInt(UpdatedCart[Index].Qty - 1);
             localStorage.removeItem("LocalCartItems");
             localStorage.setItem("LocalCartItems", JSON.stringify(UpdatedCart));
@@ -92,11 +91,10 @@ class ShoppingCart extends Component {
 
     SetShippingCharge = (CaseNo) => {
 
-        if (CaseNo == 1) {
-            this.state.TotalShippingCarge = this.state.ShippingFlatRate;
-
-            this.refs.rd1.setAttribute("checked", "checked");
-            this.refs.rd2.removeAttribute("checked");
+        if (CaseNo === 1) {
+            // this.state.TotalShippingCarge = this.state.ShippingFlatRate;
+            // this.refs.rd1.setAttribute("checked", "checked");
+            // this.refs.rd2.removeAttribute("checked");
 
             if (this.refs.rd1 != null)
                 this.refs.rd1.checked = true;
@@ -107,14 +105,14 @@ class ShoppingCart extends Component {
 
 
 
-        } else if (CaseNo == 2) {
-            this.state.TotalShippingCarge = this.state.ShippingLocalPickUp;
+        } else if (CaseNo === 2) {
+            // this.state.TotalShippingCarge = this.state.ShippingLocalPickUp;
 
-            this.refs.rd2.setAttribute("checked", "checked");
-            this.refs.rd1.removeAttribute("checked");
+            // this.refs.rd2.setAttribute("checked", "checked");
+            // this.refs.rd1.removeAttribute("checked");
 
 
-            this.refs.rd2.checked = true;
+            // this.refs.rd2.checked = true;
 
 
             localStorage.setItem("TotalShippingCharge",this.state.TotalShippingCarge);
@@ -129,10 +127,10 @@ class ShoppingCart extends Component {
     SetShippingAddressChange = (CaseNo) => {
 
 
-        if (CaseNo == 1) {
-            this.state.Adress1 = "unnitn eournkt,";
-            this.state.Adress2 = "ienrt";
-            this.state.Adress3 = "NZ";
+        if (CaseNo === 1) {
+            // this.state.Adress1 = "unnitn eournkt,";
+            // this.state.Adress2 = "ienrt";
+            // this.state.Adress3 = "NZ";
 
 
             document.getElementById("ad1").setAttribute("checked", "checked");
@@ -143,10 +141,10 @@ class ShoppingCart extends Component {
 
 
 
-        } else if (CaseNo == 2) {
-            this.state.Adress1 = "rerwd wwewe,";
-            this.state.Adress2 = "3434";
-            this.state.Adress3 = "IND";
+        } else if (CaseNo === 2) {
+            // this.state.Adress1 = "rerwd wwewe,";
+            // this.state.Adress2 = "3434";
+            // this.state.Adress3 = "IND";
 
 
             document.getElementById("ad2").setAttribute("checked", "checked");
@@ -244,20 +242,20 @@ class ShoppingCart extends Component {
                                                     <th>Shipping</th>
                                                     <td data-title="Shipping">
                                                         <ul id="shipping_method" className="shipping-methods">
-                                                            <a onClick={() => this.SetShippingCharge(1)}  >
+                                                            <p onClick={() => this.SetShippingCharge(1)}  >
                                                                 <li>
 
                                                                     <input style={{cursor:'pointer'}} id="rd1" ref="rd1" type="radio" name="shipping_method[0]" data-index="0"  value="flat_rate:3" className="shipping_method" /><label style={{cursor:'pointer'}} for="rd1">Flat rate: <span className="Price-amount amount"><span className="Price-currencySymbol">$</span>{parseFloat(this.state.ShippingFlatRate).toFixed(2)}</span></label>
 
                                                                 </li>
-                                                            </a>
-                                                            <a onClick={() => this.SetShippingCharge(2)} >
+                                                            </p>
+                                                            <p onClick={() => this.SetShippingCharge(2)} >
                                                                 <li>
 
                                                                     <input style={{cursor:'pointer'}} type="radio" id="rd2" ref="rd2" name="shipping_method[0]" data-index="0"  value="local_pickup:4" className="shipping_method" /><label style={{cursor:'pointer'}} for="rd2">Local pickup: <span className="Price-amount amount"><span className="Price-currencySymbol">$</span>{parseFloat(this.state.ShippingLocalPickUp).toFixed(2)}</span></label>
 
                                                                 </li>
-                                                            </a>
+                                                            </p>
                                                         </ul>
                                                         <p className="shipping-destination">
                                                             Estimate for <strong>India</strong>. </p>
@@ -285,7 +283,7 @@ class ShoppingCart extends Component {
                                                                             <div className="table-responsive">
                                                                             <table className="shop_table shop_table_responsive table">
                                                                             <tr className="cart-collaterals">
-                                                                            <a style={{cursor:'pointer'}}  onClick={() => this.SetShippingAddressChange(1)} >
+                                                                            <p style={{cursor:'pointer'}}  onClick={() => this.SetShippingAddressChange(1)} >
                                                                                         <td>
                                                                                              <input type="radio" name="Address" id="ad1" ref="ad1" />
 
@@ -299,10 +297,10 @@ class ShoppingCart extends Component {
                                                                                         </td>
 
 
-                                                                                </a>
+                                                                                </p>
                                                                                 </tr>
                                                                                 <tr className="cart-collaterals" >
-                                                                                <a style={{cursor:'pointer'}} className="cart-collaterals"  onClick={() => this.SetShippingAddressChange(2)}>
+                                                                                <p style={{cursor:'pointer'}} className="cart-collaterals"  onClick={() => this.SetShippingAddressChange(2)}>
 
 
                                                                                         <td>
@@ -316,7 +314,7 @@ class ShoppingCart extends Component {
                                                                                         </td>
 
 
-                                                                                </a>
+                                                                                </p>
                                                                                 </tr>
 
 
@@ -350,7 +348,7 @@ class ShoppingCart extends Component {
                             </Row>
                             :
                             <div className="wishlist-not-found">
-                            <img src={require(`../../assets/images/empty-search.jpg`)} className="img-fluid mb-4" />
+                            {/* <img src={require(`../../assets/images/empty-search.jpg`)} className="img-fluid mb-4" /> */}
                             <h4 className="d-block">Your cart is currently empty.</h4>
                             <a className="btn btn-primary" href="/shop">Return to shop</a>
                             </div>

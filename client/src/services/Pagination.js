@@ -22,7 +22,7 @@ const range = (from, to, step = 1) => {
 class Pagination extends Component {
   constructor(props) {
     super(props);
-    const { totalRecords = null, pageLimit = 30, pageNeighbours = 0 ,IsDeleteProcess = false } = props;
+    const { totalRecords = null, pageLimit = 30, pageNeighbours = 0 ,} = props;
 
     this.pageLimit = typeof pageLimit === "number" ? pageLimit : 30;
     this.totalRecords = typeof totalRecords === "number" ? totalRecords : 0;
@@ -44,7 +44,7 @@ class Pagination extends Component {
   componentDidUpdate(prevProps, prevState) {
      if (this.props.totalRecords !== prevProps.totalRecords) {
 
-        this.state.totalRecords = this.props.totalRecords;
+        // this.state.totalRecords = this.props.totalRecords;
         this.totalBlocks = this.state.totalRecords;
         this.totalPages = Math.ceil(this.state.totalRecords / this.pageLimit);
 
@@ -150,7 +150,7 @@ class Pagination extends Component {
                   <li key={index} className="page-item">
                     <a
                       className="page-link"
-                      href="#"
+                      href="#index"
                       aria-label="Previous"
                       onClick={this.handleMoveLeft}
                     >
@@ -165,7 +165,7 @@ class Pagination extends Component {
                   <li key={index} className="page-item">
                     <a
                       className="page-link"
-                      href="#"
+                      href="#index"
                       aria-label="Next"
                       onClick={this.handleMoveRight}
                     >
@@ -184,7 +184,7 @@ class Pagination extends Component {
                 >
                   <a
                     className="page-link"
-                    href="#"
+                    href="#index"
                     onClick={e => this.handleClick(page, e)}
                   >
                     {page}

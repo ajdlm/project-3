@@ -25,14 +25,14 @@ class AdminDashboard extends Component {
     let pathArray = pathname.split('/');
     let productEditPage = pathArray[pathArray.length -3];
     let pageName = pathArray[pathArray.length -1];
-    if(productEditPage == "Product-edit")
+    if(productEditPage === "Product-edit")
     {
       return true;
     }
     else 
     {
-      if(pageName == "Reports" || pageName == "Invoices" || pageName == "Profile" || pageName == "Product" || pageName == "Profileedit" || pageName == "Profileedit" || pageName == "Collaboration" 
-      || pageName == "Settings" || pageName == "product-add" || pageName == "Product-edit" )
+      if(pageName === "Reports" || pageName === "Invoices" || pageName === "Profile" || pageName === "Product" || pageName === "Profileedit" || pageName === "Profileedit" || pageName === "Collaboration" 
+      || pageName === "Settings" || pageName === "product-add" || pageName === "Product-edit" )
         return true;
       else 
         return false;

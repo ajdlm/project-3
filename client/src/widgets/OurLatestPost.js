@@ -1,9 +1,9 @@
 /**
  * OurLatestPost Widget
  */
-import React , {Component} from 'react';
+import React  from 'react';
 import Slider from "react-slick";
-import { Row, Col, Container } from 'reactstrap';
+import {  Col } from 'reactstrap';
 import {Link} from 'react-router-dom';
 
 
@@ -30,7 +30,7 @@ function OurLatestPost(props) {
                                     <ul>
                                     <li>
                                         <i className="fa fa-user" />
-                                        <Link to="#" rel="category tag">ciyashop</Link>
+                                        <Link to="#" rel="category tag">moderncover</Link>
                                     </li>
                                     <li>
                                         <i className="fa fa-folder-open" />
@@ -96,7 +96,7 @@ function OurLatestPost(props) {
                                     <ul>
                                     <li>
                                         <i className="fa fa-user" />
-                                        <Link to="#" rel="category tag">ciyashop</Link>
+                                        <Link to="#" rel="category tag">moderncover</Link>
                                     </li>
                                     <li>
                                         <i className="fa fa-folder-open" />
@@ -162,7 +162,7 @@ function OurLatestPost(props) {
                                     <ul>
                                     <li>
                                         <i className="fa fa-user" />
-                                        <Link to="#" rel="category tag">ciyashop</Link>
+                                        <Link to="#" rel="category tag">moderncover</Link>
                                     </li>
                                     <li>
                                         <i className="fa fa-folder-open" />
@@ -228,7 +228,7 @@ function OurLatestPost(props) {
                                     <ul>
                                     <li>
                                         <i className="fa fa-user" />
-                                        <Link to="#" rel="category tag">ciyashop</Link>
+                                        <Link to="#" rel="category tag">moderncover</Link>
                                     </li>
                                     <li>
                                         <i className="fa fa-folder-open" />

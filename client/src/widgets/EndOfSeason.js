@@ -18,8 +18,8 @@ class EndOfSeason extends Component {
                 <p>Avail massive discounts and get exciting offers with our shopping across all new arrival categories</p>
             <div className="border-space" />
             </div>
-            <div className="ciyashop_button_wrapper ciyashop_button_width_default">
-                <div className="inline_hover ciyashop_button_default ciyashop_button_border_square ciyashop_button_size_medium">
+            <div className="moderncover_button_wrapper moderncover_button_width_default">
+                <div className="inline_hover moderncover_button_default moderncover_button_border_square moderncover_button_size_medium">
                 <Link to="/shop"> Shop Now </Link>
                 </div>
             </div>

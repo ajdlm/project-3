@@ -2,8 +2,8 @@
  * Brand Logo Set Slider
  */
 import React , {Component} from 'react';
-import { Row, Col, Container } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Row, Col } from 'reactstrap';
+// import { Link } from 'react-router-dom';
 
 
 class BrandLogoSlider2 extends Component {
@@ -20,10 +20,10 @@ class BrandLogoSlider2 extends Component {
                     process. So, what is the first step in any process?</p>
             </Col>
             <Col md={8}>
-                <div className="ciyashop_clients ciyashop_clients-list-type-grid ciyashop_clients-grid-column-4">
+                <div className="moderncover_clients moderncover_clients-list-type-grid moderncover_clients-grid-column-4">
                     <div className="our-clients boxed-list box-4">
-                    <ul className="list-inline clearfix">
-                        <li>
+                    {/* <ul className="list-inline clearfix"> */}
+                        {/* <li>
                         <img className="img-fluid mx-auto" src={require(`../assets/images/clients/01.png`)} width={112} height={65} alt /> </li>
                         <li>
                         <img className="img-fluid mx-auto" src={require(`../assets/images/clients/02.png`)} width={112} height={65} alt /> </li>
@@ -47,7 +47,7 @@ class BrandLogoSlider2 extends Component {
                         <img className="img-fluid mx-auto" src={require(`../assets/images/clients/11.png`)} width={112} height={65} alt /> </li>
                         <li>
                         <img className="img-fluid mx-auto" src={require(`../assets/images/clients/12.png`)} width={112} height={65} alt /> </li>
-                    </ul>
+                    </ul> */}
                     </div>
                 </div>
             </Col>

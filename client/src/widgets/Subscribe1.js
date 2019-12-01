@@ -2,7 +2,7 @@
  * Sub Scribe Widgets
  */
 import React , {Component} from 'react';
-import { Row, Col, Container,Button } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 import BG_Image from '../assets/images/newsletter/img-03.jpg';
 
 class Subscribe1 extends Component {
@@ -62,14 +62,14 @@ class Subscribe1 extends Component {
             <div className="p-4" style={{backgroundImage: `url(${BG_Image})`}}>
                 <Row className="align-items-center">
                 <Col lg={6} className="text-left">
-                    <div className="ciyashop_info_box_2_wrapper">
+                    <div className="moderncover_info_box_2_wrapper">
                     {/* shortcode-base-wrapper */}
-                    <div className="ciyashop_info_box_2 ciyashop_info_box_2-layout-style_2 ciyashop_info_box_2-content_alignment-left animated ciyashop_info_box_2-with-icon ciyashop_info_box_2-icon-source-font ciyashop_info_box_2-icon-style-flat ciyashop_info_box_2-icon-size-md ciyashop_info_box_2-icon-shape-round ciyashop_info_box_2-icon_position-left">
-                        <div className="ciyashop_info_box_2-inner clearfix">
-                        <div className="ciyashop_info_box_2-content">
-                            <div className="ciyashop_info_box_2-content-wrap">
-                            <div className="ciyashop_info_box_2-content-inner">
-                                <h2 className="ciyashop_info_box_2-title inline_hover font-weight-bold">
+                    <div className="moderncover_info_box_2 moderncover_info_box_2-layout-style_2 moderncover_info_box_2-content_alignment-left animated moderncover_info_box_2-with-icon moderncover_info_box_2-icon-source-font moderncover_info_box_2-icon-style-flat moderncover_info_box_2-icon-size-md moderncover_info_box_2-icon-shape-round moderncover_info_box_2-icon_position-left">
+                        <div className="moderncover_info_box_2-inner clearfix">
+                        <div className="moderncover_info_box_2-content">
+                            <div className="moderncover_info_box_2-content-wrap">
+                            <div className="moderncover_info_box_2-content-inner">
+                                <h2 className="moderncover_info_box_2-title inline_hover font-weight-bold">
                                 Sign up for our newsletter</h2>
                                 <p>Keep up on our always evolving product features and technology.</p>
                             </div>

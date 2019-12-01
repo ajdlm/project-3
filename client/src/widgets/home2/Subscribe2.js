@@ -2,8 +2,8 @@
  * Home 2 Sub Scribe
  */
 import React , {Component} from 'react';
-import ProductSlider from '../ProductSlider';
-import { Row, Col,Input,Button } from 'reactstrap';
+// import ProductSlider from '../ProductSlider';
+import { Row, Col } from 'reactstrap';
 
 class Subscribe2 extends Component {
 

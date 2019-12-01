@@ -19,7 +19,7 @@ class Testimonial extends Component {
 
    render() {
     return (
-            <div className="ciyashop_testimonials_wrapper ciyashop_testimonials-1">
+            <div className="moderncover_testimonials_wrapper moderncover_testimonials-1">
                 <div className="testimonial testimonial-style-1">
                 <div className="testimonials slick-carousel">
                     <Slider {...settings}>

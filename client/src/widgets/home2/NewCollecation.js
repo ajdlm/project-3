@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col} from 'reactstrap';
 import MyProducts from '../../api/product.json';
 import { ToastContainer,toast  } from 'react-toastify';
 
@@ -18,7 +18,7 @@ class NewCollecation extends Component {
 AddToCart(ProductID,ProductName,ProductImage,Qty,Rate,StockStatus) {
  var Cart = JSON.parse(localStorage.getItem("LocalCartItems"));
  if(Cart == null)
-    Cart = new Array();
+    Cart = new [] ();
  let selectedProduct = Cart.find(product => product.ProductName === ProductName);
  if(selectedProduct == null)
  {
@@ -38,7 +38,7 @@ AddToCart(ProductID,ProductName,ProductImage,Qty,Rate,StockStatus) {
 AddToWishList(ProductID,ProductName,ProductImage,Qty,Rate,StockStatus) {
  var Cart = JSON.parse(localStorage.getItem("LocalWishListItems"));
  if(Cart == null)
-    Cart = new Array();
+    Cart = new [] ();
 
     let selectedProduct = Cart.find(product => product.ProductName === ProductName);
     if(selectedProduct == null)
@@ -104,7 +104,7 @@ rating(productrat)
 }
   render() {
     return (
-      <Row className="products products-loop grid ciyashop-products-shortcode products-home02">
+      <Row className="products products-loop grid moderncover-products-shortcode products-home02">
               <ToastContainer autoClose={1000} />
         {MyProducts.map((product, index) =>
           (index >= 8 && index <=13) ?
@@ -145,7 +145,7 @@ rating(productrat)
                     </div>
                   </div>
                   <div className="product-info">
-                    <span className="ciyashop-product-category">
+                    <span className="moderncover-product-category">
                       {product.category}
                     </span>
                     <h3 className="product-name">

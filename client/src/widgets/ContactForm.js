@@ -1,7 +1,7 @@
 /**
  * Contact Form
  */
-import React , {Component} from 'react';
+import React  from 'react';
 import { Row, Col } from 'reactstrap';
 import { Form,  Input } from 'reactstrap';
 

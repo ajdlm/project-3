@@ -134,7 +134,7 @@ h6,
 }
 
 /*--------------------  Categoru Slider Start  -------------------*/
-.ciyashop_banner .ciyashop_banner-content .ciyashop_banner-content-inner-wrapper .ciyashop_banner-text-wrap-1 .ciyashop_banner-text.tag-text {
+.moderncover_banner .moderncover_banner-content .moderncover_banner-content-inner-wrapper .moderncover_banner-text-wrap-1 .moderncover_banner-text.tag-text {
   font-size: 0.23em;
   color: #323232;
   background-color: #ffffff;
@@ -146,11 +146,11 @@ h6,
   margin-bottom: 5px;
 }
 
-.ciyashop_banner .ciyashop_banner-content-inner-wrapper {
+.moderncover_banner .moderncover_banner-content-inner-wrapper {
   font-size: 70px;
 }
 
-.ciyashop_banner .ciyashop_banner-content .ciyashop_banner-content-inner-wrapper .ciyashop_banner-text {
+.moderncover_banner .moderncover_banner-content .moderncover_banner-content-inner-wrapper .moderncover_banner-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -159,16 +159,16 @@ h6,
   line-height: 55px;
 }
 
-.ciyashop_banner .ciyashop_banner-content .ciyashop_banner-content-inner-wrapper .ciyashop_banner-btn-wrap.ciyashop_banner-btn-style-link .ciyashop_banner-btn {
+.moderncover_banner .moderncover_banner-content .moderncover_banner-content-inner-wrapper .moderncover_banner-btn-wrap.moderncover_banner-btn-style-link .moderncover_banner-btn {
   color: #323232;
 }
 
-.ciyashop_banner.ciyashop_banner-style-deal-1 .ciyashop_banner-content .ciyashop_banner-content-wrapper .ciyashop_banner-content-inner-wrapper .ciyashop_banner-text-wrap .ciyashop_banner-text h2 {
+.moderncover_banner.moderncover_banner-style-deal-1 .moderncover_banner-content .moderncover_banner-content-wrapper .moderncover_banner-content-inner-wrapper .moderncover_banner-text-wrap .moderncover_banner-text h2 {
   font-size: 62px;
   font-weight: 600;
 }
 
-.ciyashop_banner.ciyashop_banner-style-deal-1 .ciyashop_banner-content-inner-wrapper .ciyashop_banner-btn-wrap.ciyashop_banner-btn-style-flat .ciyashop_banner-btn {
+.moderncover_banner.moderncover_banner-style-deal-1 .moderncover_banner-content-inner-wrapper .moderncover_banner-btn-wrap.moderncover_banner-btn-style-flat .moderncover_banner-btn {
   background: #ffffff;
 }
 

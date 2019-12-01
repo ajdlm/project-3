@@ -26,7 +26,7 @@ class WishList extends Component {
     AddToCart(ProductName, ProductImage, Qty, Rate, StockStatus, Index) {
         var Cart = JSON.parse(localStorage.getItem("LocalCartItems"));
         if (Cart == null)
-            Cart = new Array();
+            Cart = new []();
         let selectedProduct = Cart.find(product => product.ProductName === ProductName);
         if (selectedProduct == null) {
 
@@ -42,8 +42,8 @@ class WishList extends Component {
 
         }
         else {
-             var UpdatedCart1 = JSON.parse(localStorage.getItem("LocalWishListItems"));
-             UpdatedCart1 = UpdatedCart1.slice(0, Index).concat(UpdatedCart1.slice(Index + 1, UpdatedCart1.length));
+             UpdatedCart1 = JSON.parse(localStorage.getItem("LocalWishListItems"));
+            //  UpdatedCart1 = UpdatedCart1.slice(0, Index).concat(UpdatedCart1.slice(Index + 1, UpdatedCart1.length));
              localStorage.removeItem("LocalWishListItems");
              localStorage.setItem("LocalWishListItems", JSON.stringify(UpdatedCart1));
              toast.success("Item is already in cart but removed from wishlist");
@@ -66,7 +66,7 @@ class WishList extends Component {
 
                 <div class="inner-intro"><div class="container"><div class="intro-title align-items-center row"><div class="col-md-6">
                     <div class="intro-title-inner"><h1>Wishlist</h1></div></div><div class="text-right col-md-6">
-                        <ul class="ciyashop_breadcrumbs page-breadcrumb breadcrumbs">
+                        <ul class="moderncover_breadcrumbs page-breadcrumb breadcrumbs">
                                 <li class="home">
                                     <span>
                                         <Link class="bread-link bread-home" to="/">Home</Link>
@@ -112,7 +112,7 @@ class WishList extends Component {
                                                             <Link onClick={() => this.removeFromWishList(index)} className="remove"></Link>
                                                         </td>
                                                         <td className="product-thumbnail">
-                                                            <a href="#">
+                                                            <a href="#index">
                                                                 <img src={require(`../../assets/images/${CartItem.ProductImage}`)} alt="product" />
                                                             </a>
                                                         </td>
@@ -136,7 +136,8 @@ class WishList extends Component {
                                         </Table></div>
                                     :
                                     <div className="wishlist-not-found">
-                                    <img src={require(`../../assets/images/empty-search.jpg`)} className="img-fluid mb-4" />
+                                    {/* <img src={require(`../../assets/images/empty-search.jpg`)} */}
+                                     className="img-fluid mb-4" />
                                     <h4 className="d-block">WishList empty</h4>
                                     <Link to="/shop" className="btn btn-solid">Continue Shopping</Link>
                                     </div>

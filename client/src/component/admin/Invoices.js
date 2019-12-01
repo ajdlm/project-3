@@ -144,10 +144,10 @@ class Invoices extends Component {
               return (
                  <div>
                     <Link className="view-button" onClick={() => this.onViewInvoicePopup(props.original)} > View <i className="fa fa-eye pl-2"></i></Link>
-                    <a  className="delete-button"
+                    {/* <a  className="delete-button"
                        onClick={() => this.onDeleteInvoicePopup(props.original)}
                     >Delete <i className="fa fa-trash-o pl-2"></i>
-                    </a>
+                    </a> */}
                  </div>
               )
            },
@@ -200,7 +200,7 @@ class Invoices extends Component {
                             <li>Ciyashop</li>
                             <li>#1457</li>
                             <li>126-632-2345</li>
-                            <li>support@ciyashop.com</li>
+                            <li>support@moderncover.com</li>
                             <li>1635 Franklin Street Montgomery, Near Sherwood Mall. AL 36104</li>
                           </ul>
                         </Col>
@@ -222,7 +222,8 @@ class Invoices extends Component {
                             <tr className="ordered-item">
                               {typeof(viewInvoice.pictures) != 'undefined' ?
                                 <td className="ordered-image">
-                                  <img  src={require(`../../assets/images/${viewInvoice.pictures}`)}  className="img-fluid" />
+                                  {/* <img  src={require(`../../assets/images/${viewInvoice.pictures}`)}   */}
+                                  className="img-fluid" />
                                 </td>
                               :
                                 null

@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 
 class Footer extends React.Component {
 
-    constructor(props)
-    {
-        super(props);
-    }
+    // constructor(props)
+    // {
+    //     super(props);
+    // }
     componentDidMount()
     {
         window.addEventListener('scroll',this.Checkscroll);
@@ -120,7 +120,7 @@ class Footer extends React.Component {
                                 <div className="footer-address">
                                 <ul>
                                     <li><i className="fa fa-map-marker" /><span>1635 Franklin Street Montgomery, Near Sherwood Mall. AL 36104</span></li>
-                                    <li className="pgs-contact-email"><i className="fa fa-envelope-o" /><span>support@ciyashop.com</span></li>
+                                    <li className="pgs-contact-email"><i className="fa fa-envelope-o" /><span>support@moderncover.com</span></li>
                                     <li><i className="fa fa-phone" /><span>126-632-2345</span></li>
                                 </ul>
                                 </div>
@@ -195,7 +195,8 @@ class Footer extends React.Component {
                             </Col>
                             <Col md={6}  className="float-right">
                                 <div className="payments text-right">
-                                    <img src={require(`../../assets/images/payments.png`)} className="img-fluid" alt />
+                                    {/* <img src={require(`../../assets/images/payments.png`)}  */}
+                                    className="img-fluid" alt />
                                 </div>
                             </Col>
                         </div>
