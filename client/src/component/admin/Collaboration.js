@@ -128,7 +128,7 @@ class Collaboration extends Component {
                   <div className="woocommerce-Address">
                     <div className="woocommerce-Address-title">
                       <h5 class="mb-0 ">Collaboration</h5>
-                      <a class="add-user btn btn-primary ml-auto" onClick={this.toggle} href="#">Add user</a>
+                      <a class="add-user btn btn-primary ml-auto" onClick={this.toggle} href="#index">Add user</a>
                     </div>
                     <div className="woocommerce-Address-info mt-4">
                     <div className="table-responsive">
@@ -155,7 +155,7 @@ class Collaboration extends Component {
                                   <td>{collabro.email}</td>
                                   <td className="text-success">{collabro.access}</td>
                                   <td>
-                                    <a className="delete-button" onClick={()=>this.onDeleteCollaboration(collabro)} href="#"> Delete <i className="fa fa-trash-o pl-2"></i></a>
+                                    <a className="delete-button" onClick={()=>this.onDeleteCollaboration(collabro)} href="#index"> Delete <i className="fa fa-trash-o pl-2"></i></a>
                                   </td>
                                 </tr>
                         )}

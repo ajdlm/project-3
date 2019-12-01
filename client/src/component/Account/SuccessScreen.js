@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col,Container } from 'reactstrap';
 import CommonList from '../../api/common';
+import { Settings } from "luxon";
+Settings.defaultLocale = "en";
 
 class SuccessScreen extends Component {
 
@@ -95,7 +97,7 @@ const date = new Date();
                   </div>
               </Col>
               <Col md={6}  className="text-right">
-                  <ul className="ciyashop_breadcrumbs page-breadcrumb breadcrumbs">
+                  <ul className="moderncover_breadcrumbs page-breadcrumb breadcrumbs">
                   <li className="home">
                       <span>
                       <Link className="bread-link bread-home" to="/">Home</Link>
@@ -139,8 +141,8 @@ const date = new Date();
                         <h6>Summary</h6>
                         <ul className="list-unstyled mb-0">
                           <li><span>Order ID:</span> <strong>7582654455365</strong></li>
-                          <li><span>Order Date:</span> <strong> { date.toLocaleString('en-us', { month: 'long' }) } {new Date(). getDay()}, {new Date().getFullYear()}</strong></li>
-                          <li><span>Order Total:</span> <strong>${parseFloat(parseFloat(this.state.CartItems.reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0)) + parseFloat((this.state.TotalShippingCarge != undefined) ? this.state.TotalShippingCarge.toFixed(2) : 0)).toFixed(2)} </strong></li>
+                          <li><span>Order Date:</span> <strong> { date.toLocaleString('en-us', { month: 'long' }) } {new Date().getDay()}, {new Date().getFullYear()}</strong></li>
+                          <li><span>Order Total:</span> <strong>${parseFloat(parseFloat(this.state.CartItems.reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0)) + parseFloat((this.state.TotalShippingCarge !== undefined) ? this.state.TotalShippingCarge.toFixed(2) : 0)).toFixed(2)} </strong></li>
                         </ul>
                       </Col>
                     </Row>
@@ -195,7 +197,7 @@ const date = new Date();
                           </tr>
                           <tr className="border-top">
                           <td><strong className="h5">Total</strong></td>
-                            <td className="text-right h5"><strong>${parseFloat(parseFloat(this.state.CartItems.reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0)) + parseFloat((this.state.TotalShippingCarge != undefined) ? this.state.TotalShippingCarge.toFixed(2) : 0)).toFixed(2)}</strong></td>
+                            <td className="text-right h5"><strong>${parseFloat(parseFloat(this.state.CartItems.reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0)) + parseFloat((this.state.TotalShippingCarge !== undefined) ? this.state.TotalShippingCarge.toFixed(2) : 0)).toFixed(2)}</strong></td>
                           </tr>
                         </tbody>
                       </table>

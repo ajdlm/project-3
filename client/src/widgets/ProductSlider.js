@@ -1,9 +1,9 @@
 /**
  * ProductSlider Widget
  */
-import React, { Component } from 'react';
+import React from 'react';
 import Slider from "react-slick";
-import { Row, Col, Container } from 'reactstrap';
+import {  Col} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import MyProducts from '../api/product.json';
 import { ToastContainer, toast } from 'react-toastify';
@@ -15,7 +15,7 @@ function ProductSlider(props) {
     function AddToCart(ProductID,ProductName,ProductImage,Qty,Rate,StockStatus) {
         var Cart = JSON.parse(localStorage.getItem("LocalCartItems"));
         if(Cart == null)
-           Cart = new Array();
+           Cart = new [] ();
         let selectedProduct = Cart.find(product => product.ProductName === ProductName);
         if(selectedProduct == null)
         {
@@ -63,7 +63,7 @@ function ProductSlider(props) {
      function AddToWishList(ProductID,ProductName,ProductImage,Qty,Rate,StockStatus) {
         var Cart = JSON.parse(localStorage.getItem("LocalWishListItems"));
         if(Cart == null)
-           Cart = new Array();
+           Cart = new [] ();
 
            let selectedProduct = Cart.find(product => product.ProductName === ProductName);
            if(selectedProduct == null)
@@ -115,14 +115,14 @@ function ProductSlider(props) {
                                                 <div className="product-thumbnail-inner">
                                                     <a href={`/shop/${product.category}/${product.id}`}> {product.pictures[0] ?
                                                             <div className="product-thumbnail-main">
-                                                                <img src={require(`../assets/images/${product.pictures[0]}`)} className="img-fluid" />
+                                                                {/* <img src={require(`../assets/images/${product.pictures[0]}`)} className="img-fluid" /> */}
                                                             </div>
                                                         :
                                                             null
                                                         }
                                                         {product.pictures[1]  ?
                                                             <div className="product-thumbnail-swap">
-                                                                    <img src={require(`../assets/images/${product.pictures[1]}`)} className="img-fluid" />
+                                                                    {/* <img src={require(`../assets/images/${product.pictures[1]}`)} className="img-fluid" /> */}
                                                             </div>
                                                             :
                                                             null
@@ -137,7 +137,7 @@ function ProductSlider(props) {
                                                                     <Link onClick={() => AddToCart(product.id,product.name, product.pictures[0], 1, product.salePrice, "In Stock")} className="button add_to_cart_button" rel="nofollow">Add to
                                                                     cart</Link>
                                                                 : 
-                                                                    <Link  to="/ShopingCart"  className="button add_to_cart_button" rel="nofollow">View Cart</Link>
+                                                                    <Link  to="/ShoppingCart"  className="button add_to_cart_button" rel="nofollow">View Cart</Link>
                                                                 }
                                                         </div>
                                                         <div className="product-action product-action-wishlist">
@@ -152,7 +152,7 @@ function ProductSlider(props) {
                                                 </div>
                                             </div>
                                             <div className="product-info">
-                                                <span className="ciyashop-product-category">
+                                                <span className="moderncover-product-category">
                                                     {product.category}
                                                 </span>
                                                 <h3 className="product-name">

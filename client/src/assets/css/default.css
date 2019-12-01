@@ -200,11 +200,11 @@ h6 {
   margin-top: 12px;
 }
 
-.ciyashop_button_wrapper {
+.moderncover_button_wrapper {
   display: inline-block;
 }
 
-.ciyashop_button_wrapper .ciyashop_button_size_medium a {
+.moderncover_button_wrapper .moderncover_button_size_medium a {
   font-size: 14px;
   padding: 12px 26px;
   line-height: 18px;
@@ -213,34 +213,34 @@ h6 {
   display: inline-block;
 }
 
-.ciyashop_button_wrapper .ciyashop_button_size_medium a:hover {
+.moderncover_button_wrapper .moderncover_button_size_medium a:hover {
   background: #04d39f;
 }
 
-.ciyashop_banner {
+.moderncover_banner {
   position: relative;
   overflow: hidden;
 }
 
-.ciyashop_banner.ciyashop_banner-3 .ciyashop_banner-content-wrapper {
+.moderncover_banner.moderncover_banner-3 .moderncover_banner-content-wrapper {
   align-items: flex-start !important;
 }
 
-.ciyashop_banner.ciyashop_banner-3 .ciyashop_banner-text-wrap .ciyashop_banner-text h2 {
+.moderncover_banner.moderncover_banner-3 .moderncover_banner-text-wrap .moderncover_banner-text h2 {
   font-size: 105px !important;
   line-height: normal !important;
   font-weight: 500 !important;
   font-family: "Open Sans", sans-serif;
 }
 
-.ciyashop_banner.ciyashop_banner-3 .ciyashop_banner-text-wrap .ciyashop_banner-text h3 {
+.moderncover_banner.moderncover_banner-3 .moderncover_banner-text-wrap .moderncover_banner-text h3 {
   font-size: 28px;
   font-weight: 700;
   text-transform: capitalize;
   font-family: "Open Sans", sans-serif;
 }
 
-.ciyashop_banner.ciyashop_banner-3 .ciyashop_banner-btn-wrap .ciyashop_banner-btn {
+.moderncover_banner.moderncover_banner-3 .moderncover_banner-btn-wrap .moderncover_banner-btn {
   line-height: 44px;
   padding: 0 25px !important;
   font-weight: 500 !important;
@@ -249,11 +249,11 @@ h6 {
   border: none !important;
 }
 
-.ciyashop_banner.ciyashop_banner-3 .ciyashop_banner-btn-wrap .ciyashop_banner-btn:hover {
+.moderncover_banner.moderncover_banner-3 .moderncover_banner-btn-wrap .moderncover_banner-btn:hover {
   background-color: #323232;
 }
 
-.ciyashop_banner .ciyashop_banner-content {
+.moderncover_banner .moderncover_banner-content {
   top: 0;
   left: 0;
   right: 0;
@@ -266,31 +266,31 @@ h6 {
   transition: background .5s ease;
 }
 
-.ciyashop_banner .ciyashop_banner-content-1 {
+.moderncover_banner .moderncover_banner-content-1 {
   padding-left: 48%;
 }
 
-.ciyashop_banner .ciyashop_banner-content-2 {
+.moderncover_banner .moderncover_banner-content-2 {
   padding-right: 48%;
   text-align: right;
 }
 
-.ciyashop_banner .ciyashop_banner-content .ciyashop_banner-content-wrapper {
+.moderncover_banner .moderncover_banner-content .moderncover_banner-content-wrapper {
   display: flex;
   height: 100%;
   width: 100%;
   align-items: center;
 }
 
-.ciyashop_banner .ciyashop_banner-content.ciyashop_banner-content-vbottom {
+.moderncover_banner .moderncover_banner-content.moderncover_banner-content-vbottom {
   top: inherit;
 }
 
-.ciyashop_banner .ciyashop_banner-content.ciyashop_banner-content-vbottom .ciyashop_banner-content-wrapper {
+.moderncover_banner .moderncover_banner-content.moderncover_banner-content-vbottom .moderncover_banner-content-wrapper {
   justify-content: center;
 }
 
-.ciyashop_banner .ciyashop_banner-content .ciyashop_banner-content-wrapper .ciyashop_banner-content-inner-wrapper .ciyashop_banner-label-wrap .ciyashop_banner-label {
+.moderncover_banner .moderncover_banner-content .moderncover_banner-content-wrapper .moderncover_banner-content-inner-wrapper .moderncover_banner-label-wrap .moderncover_banner-label {
   font-size: 16px;
   color: #ffffff;
   background-color: #323232;
@@ -302,12 +302,12 @@ h6 {
   display: inline-block;
 }
 
-.ciyashop_banner .ciyashop_banner-content .ciyashop_banner-content-wrapper .ciyashop_banner-content-inner-wrapper .ciyashop_banner-label-wrap .ciyashop_banner-label.ciyashop_banner-lanel-bg-yellow {
+.moderncover_banner .moderncover_banner-content .moderncover_banner-content-wrapper .moderncover_banner-content-inner-wrapper .moderncover_banner-label-wrap .moderncover_banner-label.moderncover_banner-lanel-bg-yellow {
   background-color: #fff2d5;
   color: #323232;
 }
 
-.ciyashop_banner .ciyashop_banner-content .ciyashop_banner-content-wrapper .ciyashop_banner-content-inner-wrapper .ciyashop_banner-text-wrap .ciyashop_banner-text h2 {
+.moderncover_banner .moderncover_banner-content .moderncover_banner-content-wrapper .moderncover_banner-content-inner-wrapper .moderncover_banner-text-wrap .moderncover_banner-text h2 {
   font-size: 32px;
   color: #323232;
   font-weight: 700;
@@ -318,13 +318,13 @@ h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-.ciyashop_banner .ciyashop_banner-content .ciyashop_banner-content-wrapper .ciyashop_banner-content-inner-wrapper .ciyashop_banner-btn-wrap {
+.moderncover_banner .moderncover_banner-content .moderncover_banner-content-wrapper .moderncover_banner-content-inner-wrapper .moderncover_banner-btn-wrap {
   position: relative;
   z-index: 9;
   margin-top: 15px;
 }
 
-.ciyashop_banner .ciyashop_banner-content .ciyashop_banner-content-wrapper .ciyashop_banner-content-inner-wrapper .ciyashop_banner-btn-wrap .ciyashop_banner-btn {
+.moderncover_banner .moderncover_banner-content .moderncover_banner-content-wrapper .moderncover_banner-content-inner-wrapper .moderncover_banner-btn-wrap .moderncover_banner-btn {
   font-weight: 600;
   border-bottom: 0px solid;
   padding-left: 0;
@@ -334,11 +334,11 @@ h6 {
   font-size: 14px;
 }
 
-.ciyashop_banner .ciyashop_banner-content .ciyashop_banner-content-wrapper .ciyashop_banner-content-inner-wrapper .ciyashop_banner-btn-wrap .ciyashop_banner-btn:hover {
+.moderncover_banner .moderncover_banner-content .moderncover_banner-content-wrapper .moderncover_banner-content-inner-wrapper .moderncover_banner-btn-wrap .moderncover_banner-btn:hover {
   color: #04d39f;
 }
 
-.ciyashop_banner .countdown {
+.moderncover_banner .countdown {
   padding: 0;
   margin: 0 0 0 !important;
   display: inline-block;
@@ -347,7 +347,7 @@ h6 {
   border-radius: 3px;
 }
 
-.ciyashop_banner .countdown li {
+.moderncover_banner .countdown li {
   background: 0 0;
   padding: 0;
   margin: 0;
@@ -359,7 +359,7 @@ h6 {
   min-width: 50px;
 }
 
-.ciyashop_banner .countdown li span {
+.moderncover_banner .countdown li span {
   display: block;
   font-size: 28px;
   color: #323232;
@@ -368,7 +368,7 @@ h6 {
   font-weight: 600;
 }
 
-.ciyashop_banner .countdown li p {
+.moderncover_banner .countdown li p {
   background: #323232;
   color: #fff;
   font-size: 13px;
@@ -377,24 +377,24 @@ h6 {
   text-transform: uppercase;
 }
 
-.ciyashop_banner.ciyashop_banner-style-deal-1 .ciyashop_banner-content {
+.moderncover_banner.moderncover_banner-style-deal-1 .moderncover_banner-content {
   padding: 120px 0;
   position: relative;
 }
 
-.section-2 .ciyashop_banner-content-wrapper {
+.section-2 .moderncover_banner-content-wrapper {
   justify-content: center;
   text-align: center;
 }
 
-.section-2 .ciyashop_banner-content-wrapper .ciyashop_banner-label {
+.section-2 .moderncover_banner-content-wrapper .moderncover_banner-label {
   font-size: 28px !important;
   line-height: 38px !important;
   font-family: "Open Sans", sans-serif;
   font-weight: 400 !important;
 }
 
-.section-2 .ciyashop_banner-content-wrapper .ciyashop_banner-text h2 {
+.section-2 .moderncover_banner-content-wrapper .moderncover_banner-text h2 {
   margin-top: 30px;
   font-size: 62px;
   color: #323232;
@@ -405,7 +405,7 @@ h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-.section-2 .ciyashop_banner-content-wrapper .ciyashop_banner-btn {
+.section-2 .moderncover_banner-content-wrapper .moderncover_banner-btn {
   font-size: 14px;
   line-height: 44px;
   padding: 0 25px !important;
@@ -414,16 +414,16 @@ h6 {
   border: none !important;
 }
 
-.section-2 .ciyashop_banner-content-wrapper .ciyashop_banner-btn:hover {
+.section-2 .moderncover_banner-content-wrapper .moderncover_banner-btn:hover {
   background-color: #323232;
   color: #fff !important;
 }
 
-.section-3 .ciyashop_button_wrapper {
+.section-3 .moderncover_button_wrapper {
   margin-top: 0;
 }
 
-.section-3 .ciyashop_button_wrapper a.inline_hover {
+.section-3 .moderncover_button_wrapper a.inline_hover {
   position: relative;
   background: transparent;
   color: #323232;
@@ -432,7 +432,7 @@ h6 {
   line-height: 22px;
 }
 
-.section-3 .ciyashop_button_wrapper a.inline_hover:after {
+.section-3 .moderncover_button_wrapper a.inline_hover:after {
   content: "";
   width: 100%;
   border-bottom: 2px solid;
@@ -443,11 +443,11 @@ h6 {
   transition: .3s ease-in-out;
 }
 
-.section-3 .ciyashop_button_wrapper a.inline_hover:hover {
+.section-3 .moderncover_button_wrapper a.inline_hover:hover {
   background: transparent;
 }
 
-.section-3 .ciyashop_button_wrapper a.inline_hover:hover:after {
+.section-3 .moderncover_button_wrapper a.inline_hover:hover:after {
   width: 30%;
 }
 

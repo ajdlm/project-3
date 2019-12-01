@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col,Container,FormGroup,Form,Input,Button } from 'reactstrap';
+import { Row, Col,Container } from 'reactstrap';
 import Sitebar from './Sitebar';
 import Common from '../../api/common';
 
@@ -26,7 +26,7 @@ class AccountProfile extends Component {
                           </div>
                       </Col>
                       <Col md={6}  className="text-right">
-                          <ul className="ciyashop_breadcrumbs page-breadcrumb breadcrumbs">
+                          <ul className="moderncover_breadcrumbs page-breadcrumb breadcrumbs">
                           <li className="home">
                               <span>
                               <Link className="bread-link bread-home" to="/">Home</Link>

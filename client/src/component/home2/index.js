@@ -70,18 +70,18 @@ class HomePage2 extends Component {
                                             <Container>
                                                 <Row className="mb-7">
                                                     <Col lg={4} className="mb-5 mb-lg-0">
-                                                        <div className="ciyashop_banner ciyashop_banner-style-style-1 ciyashop_banner-effect-border" style={{ backgroundImage: 'url(' + require(`../../assets/images/categories/new-fashion/adv-img4.jpg`) + ')' }} >
-                                                        <img src={require(`../../assets/images/categories/new-fashion/adv-img4.jpg`)} className="ciyashop_banner-image img-fluid" alt="bannner-img" />
-                                                        <div className="ciyashop_banner-content ciyashop_banner-content-hleft  ciyashop_banner-content-vtop">
-                                                            <div className="ciyashop_banner-content-wrapper">
-                                                            <div className="ciyashop_banner-content-inner-wrapper">
-                                                                <div className="ciyashop_banner-text-wrap ciyashop_banner-text-wrap-1 hidden-lg hidden-md hidden-sm hidden-xs">
-                                                                <div className="ciyashop_banner-text">
+                                                        <div className="moderncover_banner moderncover_banner-style-style-1 moderncover_banner-effect-border" style={{ backgroundImage: 'url(' + require(`../../assets/images/categories/new-fashion/adv-img4.jpg`) + ')' }} >
+                                                        <img src={require(`../../assets/images/categories/new-fashion/adv-img4.jpg`)} className="moderncover_banner-image img-fluid" alt="bannner-img" />
+                                                        <div className="moderncover_banner-content moderncover_banner-content-hleft  moderncover_banner-content-vtop">
+                                                            <div className="moderncover_banner-content-wrapper">
+                                                            <div className="moderncover_banner-content-inner-wrapper">
+                                                                <div className="moderncover_banner-text-wrap moderncover_banner-text-wrap-1 hidden-lg hidden-md hidden-sm hidden-xs">
+                                                                <div className="moderncover_banner-text">
                                                                     <h2 className="mb-0">New Collection</h2>
                                                                 </div>
                                                                 </div>
-                                                                <div className="ciyashop_banner-btn-wrap ciyashop_banner-btn-style-link ciyashop_banner-btn-shape-square mt-0">
-                                                                <Link to="/shop" className="ciyashop_banner-btn inline_hover">Shop Now</Link>
+                                                                <div className="moderncover_banner-btn-wrap moderncover_banner-btn-style-link moderncover_banner-btn-shape-square mt-0">
+                                                                <Link to="/shop" className="moderncover_banner-btn inline_hover">Shop Now</Link>
                                                                 </div>
                                                             </div>
                                                             </div>
@@ -99,7 +99,7 @@ class HomePage2 extends Component {
                                                         <DealOfTheWeek2 />
                                                 </Container>
                                             </div>
-                                            <div className="container ciyashop-listing-wrapper">
+                                            <div className="container moderncover-listing-wrapper">
                                                 <Row className="section-ptb">
                                                     <Col sm={12}>
                                                         <Row>
@@ -109,7 +109,7 @@ class HomePage2 extends Component {
                                                                 </div>
                                                             </Col>
                                                         </Row>
-                                                        <div className="ciyashop_products_listing_wrapper ciyashop_products_listing-1">
+                                                        <div className="moderncover_products_listing_wrapper moderncover_products_listing-1">
                                                              <div className="products-listing-wrapper products-listing-type-carousel products-listing-without-intro">
                                                             <Row>
                                                                  <ProductSlider settings={saleslider}    />

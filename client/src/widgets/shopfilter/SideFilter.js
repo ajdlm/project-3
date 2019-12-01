@@ -5,7 +5,7 @@ import React , {Component} from 'react';
 import { connect } from 'react-redux';
 import InputRange from 'react-input-range';
 import 'react-input-range/lib/css/index.css';
-import {uniqueCategory,uniqueSizes,uniqueColors,uniqueMinMaxPrice} from '../../services';
+// import {uniqueCategory,uniqueSizes,uniqueColors,uniqueMinMaxPrice} from '../../services';
 import {categoryValue, sizeValue,colorValue,priceValue,searchValue} from '../../actions/filter';
 
 
@@ -158,10 +158,10 @@ class SideFilter extends Component {
 }
 
 const mapDispatchToProps  = state => ({
-    categorys: uniqueCategory(state.data.products),
-    sizes: uniqueSizes(state.data.products),
-    colors: uniqueColors(state.data.products),
-    prices: uniqueMinMaxPrice(state.data.products),
+    // categorys: uniqueCategory(state.data.products),
+    // sizes: uniqueSizes(state.data.products),
+    // colors: uniqueColors(state.data.products),
+    // prices: uniqueMinMaxPrice(state.data.products),
     filters: state.filters
 })
 export default connect(

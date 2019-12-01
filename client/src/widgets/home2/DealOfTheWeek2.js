@@ -3,7 +3,7 @@
  */
 import React , {Component} from 'react';
 import CountDownTimer from '../CountDownTimer';
-import { Row, Col,Container } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class DealOfTheWeek2 extends Component {
@@ -23,8 +23,8 @@ class DealOfTheWeek2 extends Component {
                          <CountDownTimer time={'152350'}></CountDownTimer>
                       </div>
                     </div>
-                    <div className="ciyashop-btn-wrap ciyashop-btn-style-middle ciyashop-btn-shape-square text-center">
-                      <Link to="/shop" className="ciyashop-btn inline_hover">Get the offer</Link>
+                    <div className="moderncover-btn-wrap moderncover-btn-style-middle moderncover-btn-shape-square text-center">
+                      <Link to="/shop" className="moderncover-btn inline_hover">Get the offer</Link>
                     </div>
                   </Col>
                 </Row>

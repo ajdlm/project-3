@@ -47,7 +47,7 @@ class OrderHistory extends Component {
                       </div>
                   </Col>
                   <Col md={6}  className="text-right">
-                      <ul className="ciyashop_breadcrumbs page-breadcrumb breadcrumbs">
+                      <ul className="moderncover_breadcrumbs page-breadcrumb breadcrumbs">
                       <li className="home">
                           <span>
                           <Link className="bread-link bread-home" to="/">Home</Link>
@@ -123,7 +123,7 @@ class OrderHistory extends Component {
                             <li>Ciyashop</li>
                             <li>#1457</li>
                             <li>126-632-2345</li>
-                            <li>support@ciyashop.com</li>
+                            <li>support@moderncover.com</li>
                             <li>1635 Franklin Street Montgomery, Near Sherwood Mall. AL 36104</li>
                           </ul>
                         </Col>

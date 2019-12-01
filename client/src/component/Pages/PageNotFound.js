@@ -2,7 +2,7 @@
  *  Page Not Found Page
  */
 import React, { Component } from 'react';
-import PageNotFoundImage from '../../assets/images/error-404-image.png';
+// import PageNotFoundImage from '../../assets/images/error-404-image.png';
 import { Link } from 'react-router-dom';
 import { Row, Col,Container,Button } from 'reactstrap';
 
@@ -52,9 +52,9 @@ class PageNotFound extends Component {
                         </div>
                     </Col>
                     <Col sm={5} className="d-none d-lg-block d-xl-block">
-                            <div className="content-404-image">
+                            {/* <div className="content-404-image">
                                 <img className="img-fluid" src={PageNotFoundImage}   alt="404 Image"/>
-                            </div>
+                            </div> */}
                     </Col>
                 </Row>
             </Container>

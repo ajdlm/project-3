@@ -2,7 +2,7 @@
  * Home Slider
  */
 import React , {Component} from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 
 const settings = {
@@ -31,17 +31,17 @@ class HomSlider extends Component {
                           <div class="slide-left">
                             <div class="slide-sale">20 <span>%<br/>off</span></div>
                             <div class="slide-title">
-                               <h1>Spring</h1>
+                               {/* <h1>Spring</h1> */}
                             </div>
-                            <div class="slide-subtitle">Season festival</div>
-                            <span class="slide-since">Catalogue 2018</span>
+                            {/* <div class="slide-subtitle">Season festival</div> */}
+                            {/* <span class="slide-since">Catalogue 2018</span> */}
                           </div>
                           </div>
                           <div class="col-xl-6 col-md-4 text-right d-none d-md-block">
                              <div class="slide-offer">
-                                 Limited time offer
+                                 {/* Limited time offer */}
                              </div>
-                             <Link class="slide-button" to="/shop">Get the Offer</Link>
+                             {/* <Link class="slide-button" to="/shop">Get the Offer</Link> */}
                           </div>
                           </div>
                        </div>
@@ -60,17 +60,17 @@ class HomSlider extends Component {
                           <div class="col-xl-6 col-md-8">
                             <div class="slide-left">
                             <div class="slide-title">
-                               <h1>New Arrival</h1>
+                               {/* <h1>New Arrival</h1> */}
                             </div>
-                            <div class="slide-subtitle">For women</div>
-                             <Link class="slide-button-flat" to="/shop">Shop now</Link>
+                            {/* <div class="slide-subtitle">For women</div> */}
+                             {/* <Link class="slide-button-flat" to="/shop">Shop now</Link> */}
                           </div>
                           </div>
                           <div class="col-xl-6 col-md-4 text-right d-none d-md-block">
                              <div class="slide-offer">
-                                 Limited time offer
+                                 {/* Limited time offer */}
                              </div>
-                             <Link class="slide-button" to="/shop">Get the Offer</Link>
+                             {/* <Link class="slide-button" to="/shop">Get the Offer</Link> */}
                           </div>
                        </div>
                        </div>

@@ -2,7 +2,7 @@
  * About Banner 3
  */
 import React , {Component} from 'react';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class AboutBanner3 extends Component {
@@ -25,26 +25,26 @@ class AboutBanner3 extends Component {
             <div className="col-sm-12">
                 <Row className="d-flex align-items-center">
                 <Col sm={12} lg={7}>
-                <div className="ciyashop_banner_wrapper">
-                    <div className="ciyashop_banner ciyashop_banner-style-style-1 ciyashop_banner-effect-none banner-1">
-                        <img className="ciyashop_banner-image img-fluid inline" alt="Banner" src={require(`../assets/images/sub-banner-01-1.png`)} />
-                        <div className="ciyashop_banner-content ciyashop_banner-content-hcenter ciyashop_banner-content-vbottom ">
-                            <div className="ciyashop_banner-content-wrapper ">
-                                <div className="ciyashop_banner-content-inner-wrapper ">
-                                    <div className="ciyashop_banner-text-wrap ciyashop_banner-text-wrap-1 ciyashop_banner-text-bg_color hidden-lg hidden-md hidden-sm hidden-xs ">
-                                        <div className="ciyashop_banner-text bg-dark text-white px-3 px-sm-5 font-weight-bold">
+                <div className="moderncover_banner_wrapper">
+                    <div className="moderncover_banner moderncover_banner-style-style-1 moderncover_banner-effect-none banner-1">
+                        <img className="moderncover_banner-image img-fluid inline" alt="Banner" src={require(`../assets/images/sub-banner-01-1.png`)} />
+                        <div className="moderncover_banner-content moderncover_banner-content-hcenter moderncover_banner-content-vbottom ">
+                            <div className="moderncover_banner-content-wrapper ">
+                                <div className="moderncover_banner-content-inner-wrapper ">
+                                    <div className="moderncover_banner-text-wrap moderncover_banner-text-wrap-1 moderncover_banner-text-bg_color hidden-lg hidden-md hidden-sm hidden-xs ">
+                                        <div className="moderncover_banner-text bg-dark text-white px-3 px-sm-5 font-weight-bold">
                                         End of Season</div>
                                     </div>
-                                    <div class="ciyashop_button_wrapper ciyashop_button_width_default mt-0">
-                                        <div className="inline_hover ciyashop_button_default ciyashop_button_border_square ciyashop_button_size_medium"> <Link to="/shop" className="ciyashop_banner-btn ">Shop now</Link></div>
+                                    <div class="moderncover_button_wrapper moderncover_button_width_default mt-0">
+                                        <div className="inline_hover moderncover_button_default moderncover_button_border_square moderncover_button_size_medium"> <Link to="/shop" className="moderncover_banner-btn ">Shop now</Link></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="ciyashop_banner-badge-wrap ">
-                            <div className="ciyashop_banner-badge-inner-wrap ">
-                                <div className="ciyashop_banner-badge ciyashop_banner-badge_style-style-1 ciyashop_banner-badge_type-flat ciyashop_banner-badge_align-vtop ciyashop_banner-badge_align-hleft ">
-                                    <div className="ciyashop_banner-badge-inner "> <span className="ciyashop_banner-badge-text ">Sale</span></div>
+                        <div className="moderncover_banner-badge-wrap ">
+                            <div className="moderncover_banner-badge-inner-wrap ">
+                                <div className="moderncover_banner-badge moderncover_banner-badge_style-style-1 moderncover_banner-badge_type-flat moderncover_banner-badge_align-vtop moderncover_banner-badge_align-hleft ">
+                                    <div className="moderncover_banner-badge-inner "> <span className="moderncover_banner-badge-text ">Sale</span></div>
                                 </div>
                             </div>
                         </div>
@@ -59,8 +59,8 @@ class AboutBanner3 extends Component {
                     ex ea commodo consequat.</p>
                     { expandedDiv }
                 </div>
-                <div className="ciyashop_button_wrapper ciyashop_button_width_default ">
-                    <div className="inline_hover ciyashop_button_default">
+                <div className="moderncover_button_wrapper moderncover_button_width_default ">
+                    <div className="inline_hover moderncover_button_default">
                     <Link className="banner-link"  onClick={() => this.setState({ showText: !this.state.showText }) }> {(this.state.showText) ? "Read Less.." : "Read More.."}   </Link>
                     </div>
                 </div>

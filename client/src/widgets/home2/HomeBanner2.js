@@ -2,7 +2,7 @@
  * Home 2 Banner
  **/
 import React , {Component} from 'react';
-import { Row, Col,Container } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class HomeBanner2 extends Component {
@@ -21,7 +21,7 @@ class HomeBanner2 extends Component {
                         <div className="border-line" />
                         <h3 className="font-weight-bold">Always Trendy</h3>
                         <p>All your fashion &amp; lifestyle needs at an affordable price</p>
-                        <div className="ciyashop-btn">
+                        <div className="moderncover-btn">
                         <Link to="/shop" className="inline_hover">Shop Now</Link>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ class HomeBanner2 extends Component {
                         <div className="border-line" />
                         <h3 className="font-weight-bold">Women Tops</h3>
                         <p>Massive range of Women Clothing for your wardrobe</p>
-                        <div className="ciyashop-btn">
+                        <div className="moderncover-btn">
                         <Link to="/shop" className="inline_hover">Shop Now</Link>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ class HomeBanner2 extends Component {
                         <div className="border-line" />
                         <h3 className="font-weight-bold">New Backpack</h3>
                         <p>Select from New Collection Bags for Women available</p>
-                        <div className="ciyashop-btn">
+                        <div className="moderncover-btn">
                         <Link to="/shop" className="inline_hover">Shop Now</Link>
                         </div>
                     </div>

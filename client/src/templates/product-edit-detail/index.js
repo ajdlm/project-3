@@ -73,27 +73,27 @@ class ProductEditDetail extends Component {
                     <Row>
                         <div className="product-top-left col-xl-5 col-md-6">
                             <div className="product-top-left-inner">
-                                <div className="ciyashop-product-images">
-                                <div className="ciyashop-product-images-wrapper ciyashop-gallery-style-default ciyashop-gallery-thumb_position-bottom ciyashop-gallery-thumb_vh-horizontal">
-                                    <div className="ciyashop-product-gallery ciyashop-product-gallery--with-images slick-carousel">
-                                    <Slider {...settings} className="ciyashop-product-gallery__wrapper popup-gallery">
-                                        <div className="ciyashop-product-gallery__image">
+                                <div className="moderncover-product-images">
+                                <div className="moderncover-product-images-wrapper moderncover-gallery-style-default moderncover-gallery-thumb_position-bottom moderncover-gallery-thumb_vh-horizontal">
+                                    <div className="moderncover-product-gallery moderncover-product-gallery--with-images slick-carousel">
+                                    <Slider {...settings} className="moderncover-product-gallery__wrapper popup-gallery">
+                                        <div className="moderncover-product-gallery__image">
                                                 {/* <img src={require(`../../assets/images/${product.pictures[0]}`)}  className="img-fluid" /> */}
                                         </div>
                                     </Slider>
-                                    <div className="ciyashop-product-gallery_buttons_wrapper">
-                                        <div className="ciyashop-product-gallery_button ciyashop-product-gallery_button-zoom popup-gallery" onClick={() => this.setState({ isOpen: true })} >
-                                        <Link to="#" className="ciyashop-product-gallery_button-link-zoom">
+                                    <div className="moderncover-product-gallery_buttons_wrapper">
+                                        <div className="moderncover-product-gallery_button moderncover-product-gallery_button-zoom popup-gallery" onClick={() => this.setState({ isOpen: true })} >
+                                        <Link to="#" className="moderncover-product-gallery_button-link-zoom">
                                             <i className="fa fa-arrows-alt" />
                                         </Link>
                                         </div>
                                     </div>
                                     </div>
-                                    <div className="ciyashop-product-thumbnails">
-                                        <Slider {...productslider} className="ciyashop-product-thumbnails__wrapper">
+                                    <div className="moderncover-product-thumbnails">
+                                        <Slider {...productslider} className="moderncover-product-thumbnails__wrapper">
                                             {product.pictures.map((pictureimage,index) =>
                                                 <div key={index}>
-                                                    <div className="ciyashop-product-thumbnail__image">
+                                                    <div className="moderncover-product-thumbnail__image">
                                                         {/* <a href="javascript:void(0)">
                                                             <img src={require(`../../assets/images/${pictureimage}`)}  className="img-fluid" />
                                                         </a> */}
@@ -167,7 +167,7 @@ class ProductEditDetail extends Component {
                                         <Label className="title">Product Stock</Label>
                                         <input type="text" class="form-control" placeholder="Product Stock" defaultValue={product.stock}></input>
 
-                                        <a href="#" class="btn btn-primary mb-2 mr-2"> Update </a>
+                                        <a href="#index" class="btn btn-primary mb-2 mr-2"> Update </a>
                                         <Link to="/admin-panel/Product" class="btn btn-danger mb-2"> Cancel </Link>
                                     </div>
                                 </div>

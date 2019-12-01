@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col,Container,Form, NavItem, Input,Table } from 'reactstrap';
+import { Row, Col,Container,Input} from 'reactstrap';
 import CommonList from '../../api/common';
 
 class CheckOut extends Component {
@@ -40,16 +40,16 @@ class CheckOut extends Component {
     {
         if(localStorage.getItem("TotalShippingCharge") != null)
         {
-            this.state.TotalShippingCarge =  parseFloat(localStorage.getItem("TotalShippingCharge"));
+            // this.state.TotalShippingCarge =  parseFloat(localStorage.getItem("TotalShippingCharge"));
         }
         else  {
-            this.state.TotalShippingCarge = 0;
+            // this.state.TotalShippingCarge = 0;
         }
 
 
         if(localStorage.getItem("ShippingType") != null)
         {
-            if(localStorage.getItem("ShippingType") == 1)
+            if(localStorage.getItem("ShippingType") === 1)
             {
                 this.refs.rd1.setAttribute("checked", "checked");
                 this.refs.rd2.removeAttribute("checked");
@@ -57,7 +57,7 @@ class CheckOut extends Component {
                 if (this.refs.rd1 != null)
                     this.refs.rd1.checked = true;
             }
-            else if (localStorage.getItem("ShippingType") == 2)
+            else if (localStorage.getItem("ShippingType") === 2)
             {
                  this.refs.rd2.setAttribute("checked", "checked");
                  this.refs.rd1.removeAttribute("checked");
@@ -72,8 +72,8 @@ class CheckOut extends Component {
 
     SetShippingCharge = (CaseNo) => {
 
-        if (CaseNo == 1) {
-            this.state.TotalShippingCarge = this.state.ShippingFlatRate;
+        if (CaseNo === 1) {
+            // this.state.TotalShippingCarge = this.state.ShippingFlatRate;
 
             this.refs.rd1.setAttribute("checked", "checked");
             this.refs.rd2.removeAttribute("checked");
@@ -84,8 +84,8 @@ class CheckOut extends Component {
                 localStorage.setItem("TotalShippingCharge",this.state.TotalShippingCarge);
                 localStorage.setItem("ShippingType",1);
 
-        } else if (CaseNo == 2) {
-            this.state.TotalShippingCarge = this.state.ShippingLocalPickUp;
+        } else if (CaseNo === 2) {
+            // this.state.TotalShippingCarge = this.state.ShippingLocalPickUp;
 
             this.refs.rd2.setAttribute("checked", "checked");
             this.refs.rd1.removeAttribute("checked");
@@ -218,7 +218,7 @@ class CheckOut extends Component {
                             </div>
                         </Col>
                         <Col md={6} className="text-right">
-                            <ul className="ciyashop_breadcrumbs page-breadcrumb breadcrumbs">
+                            <ul className="moderncover_breadcrumbs page-breadcrumb breadcrumbs">
                                 <li className="home">
                                     <span>
                                         <Link className="bread-link bread-home" to="/">Home</Link>
@@ -584,27 +584,27 @@ class CheckOut extends Component {
                                         <tr class="shipping-totals shipping">
                                             <th>Shipping</th>
                                             <td data-title="Shipping">
-                                            <ul id="shipping_method" className="shipping-methods">
-                                                            <a onClick={() => this.SetShippingCharge(1)}>
+                                            {/* <ul id="shipping_method" className="shipping-methods"> */}
+                                                            {/* <a onClick={() => this.SetShippingCharge(1)}>
                                                                 <li>
 
                                                                     <input style={{cursor:'pointer'}}  id="rd1" ref="rd1" type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_flat_rate3" value="flat_rate:3" className="shipping_method" /><label style={{cursor:'pointer'}} for="shipping_method_0_flat_rate3">Flat rate: <span className="Price-amount amount"><span className="Price-currencySymbol">$</span>{parseFloat(this.state.ShippingFlatRate).toFixed(2)} </span></label>
 
                                                                 </li>
-                                                            </a>
+                                                            </a> }
                                                             <a onClick={() => this.SetShippingCharge(2)}>
                                                                 <li>
 
-                                                                    <input style={{cursor:'pointer'}}  type="radio" id="rd2" ref="rd2" name="shipping_method[0]" data-index="0" id="shipping_method_0_local_pickup4" value="local_pickup:4" className="shipping_method" /><label style={{cursor:'pointer'}}  for="shipping_method_0_local_pickup4">Local pickup: <span className="Price-amount amount"><span className="Price-currencySymbol">$</span>{parseFloat(this.state.ShippingLocalPickUp).toFixed(2)}</span></label>
+                                                                    {/* <input style={{cursor:'pointer'}}  type="radio" id="rd2" ref="rd2" name="shipping_method[0]" data-index="0" id="shipping_method_0_local_pickup4" value="local_pickup:4" className="shipping_method" /><label style={{cursor:'pointer'}}  for="shipping_method_0_local_pickup4">Local pickup: <span className="Price-amount amount"><span className="Price-currencySymbol">$</span>{parseFloat(this.state.ShippingLocalPickUp).toFixed(2)}</span></label> */}
 
-                                                                </li>
-                                                            </a>
-                                                        </ul>
+                                                                {/* </li> */}
+                                                            {/* </a> */}
+                                                        {/* </ul> */}
                                             </td>
                                         </tr>
                                         <tr class="order-total">
                                             <th>Total</th>
-                                            <td><strong><span class="woocs_special_price_code"><span class="Price-amount amount"><span class="Price-currencySymbol">$</span>{parseFloat(parseFloat(this.ReadCartItems().reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0)) + parseFloat((this.state.TotalShippingCarge != undefined) ? this.state.TotalShippingCarge.toFixed(2) : 0)).toFixed(2)}    </span></span></strong>
+                                            <td><strong><span class="woocs_special_price_code"><span class="Price-amount amount"><span class="Price-currencySymbol">$</span>{parseFloat(parseFloat(this.ReadCartItems().reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0)) + parseFloat((this.state.TotalShippingCarge !== undefined) ? this.state.TotalShippingCarge.toFixed(2) : 0)).toFixed(2)}    </span></span></strong>
                                             </td>
                                         </tr>
                                     </tfoot>

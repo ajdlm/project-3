@@ -36,9 +36,10 @@ class BlogFullWidth extends Component {
                     <Row>
                         <Col sm={12} md={12}>
                         <article className="post format-standard">
-                            <div className="post-entry-image clearfix">
-                            <img src={require(`../../assets/images/blog/blog-01.jpg`)} className="img-fluid" alt />
-                            </div>
+                            {/* <div className="post-entry-image clearfix"> */}
+                            {/* <img src={require(`../../assets/images/blog/blog-01.jpg`)} */}
+                             {/* className="img-fluid" alt />
+                            </div> */}
                             <div className="entry-header-section">
                             <div className="entry-meta-date">
                                 <Link to="#">August 14, 2017</Link>
@@ -77,7 +78,7 @@ class BlogFullWidth extends Component {
                             </div>
                             <footer className="entry-footer clearfix">
                             <Link to="/BlogSinglePage" className="readmore">Read More</Link>
-                            <div className="entry-social share pull-right">
+                            {/* <div className="entry-social share pull-right">
                                 <a  className="share-button" data-title="Share it on">
                                 <i className="fa fa-share-alt" />
                                 </a>
@@ -108,23 +109,23 @@ class BlogFullWidth extends Component {
                                     </a>
                                 </li>
                                 </ul>
-                            </div>
+                            </div> */}
                             </footer>
                         </article>
                         <article className="post format-gallery">
                             <div className="blog-entry-slider">
                             <Slider {...settings} className="slider-arrow-hover">
                                 <div className="blog-item item">
-                                    <img src={require(`../../assets/images/blog/blog-02.jpg`)} alt className="img-fluid" />
+                                    {/* <img src={require(`../../assets/images/blog/blog-02.jpg`)} alt className="img-fluid" /> */}
                                 </div>
                                 <div className="blog-item item">
-                                 <img src={require(`../../assets/images/blog/blog-03.jpg`)} alt className="img-fluid" />
+                                 {/* <img src={require(`../../assets/images/blog/blog-03.jpg`)} alt className="img-fluid" /> */}
                                 </div>
                                 <div className="blog-item item">
-                                    <img src={require(`../../assets/images/blog/blog-04.jpg`)} alt className="img-fluid" />
+                                    {/* <img src={require(`../../assets/images/blog/blog-04.jpg`)} alt className="img-fluid" /> */}
                                 </div>
                                 <div className="blog-item item">
-                                 <img src={require(`../../assets/images/blog/blog-05.jpg`)} alt className="img-fluid" />
+                                 {/* <img src={require(`../../assets/images/blog/blog-05.jpg`)} alt className="img-fluid" /> */}
                                 </div>
                             </Slider>
                             </div>
@@ -167,7 +168,7 @@ class BlogFullWidth extends Component {
                             </div>
                             <footer className="entry-footer clearfix">
                             <Link to="/BlogSinglePage" className="readmore">Read More</Link>
-                            <div className="entry-social share pull-right">
+                            {/* <div className="entry-social share pull-right">
                                 <a  className="share-button" data-title="Share it on">
                                 <i className="fa fa-share-alt" />
                                 </a>
@@ -198,7 +199,7 @@ class BlogFullWidth extends Component {
                                     </a>
                                 </li>
                                 </ul>
-                            </div>
+                            </div> */}
 
                            </footer>
                         </article>
@@ -253,7 +254,7 @@ class BlogFullWidth extends Component {
                             </div>
                             <footer className="entry-footer clearfix">
                             <Link to="/BlogSinglePage" className="readmore">Read More</Link>
-                            <div className="entry-social share pull-right">
+                            {/* <div className="entry-social share pull-right">
                                 <a  className="share-button" data-title="Share it on">
                                 <i className="fa fa-share-alt" />
                                 </a>
@@ -600,7 +601,7 @@ class BlogFullWidth extends Component {
                                     </a>
                                 </li>
                                 </ul>
-                            </div>
+                            </div> */}
 
                             </footer>
                         </article>

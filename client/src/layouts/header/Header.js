@@ -105,7 +105,7 @@ class Header extends React.Component {
             if(elm != null)
             {
             document.getElementById("DivCartContent").setAttribute("style","display:block");
-            this.state.CartHide = false;
+            // this.state.CartHide = false;
             }
           }
       }
@@ -116,7 +116,7 @@ class Header extends React.Component {
            if(elm != null)
            {
            document.getElementById("DivCartContent").setAttribute("style","display:none");
-           this.state.CartHide = true;
+        //    this.state.CartHide = true;
            }
       }
 
@@ -191,7 +191,7 @@ class Header extends React.Component {
                                                 <ul>
 
                                                     <li className="topbar_item topbar_item_type-email">
-                                                        <Link to="/Contactus"><i className="fa fa-envelope-o">&nbsp;</i>support@ciyashop.com</Link>
+                                                        <Link to="/Contactus"><i className="fa fa-envelope-o">&nbsp;</i>support@moderncover.com</Link>
                                                     </li>
                                                     <li className="topbar_item topbar_item_type-phone_number">
                                                         <Link to="/Contactus"><i className="fa fa-phone">&nbsp;</i>126-632-2345</Link>
@@ -324,17 +324,17 @@ class Header extends React.Component {
                                                             <ul className="ciya-tools-actions">
                                                                 <li className="ciya-tools-action ciya-tools-cart">
                                                                     {
-                                                                        (this.ReadCartItems() == null || this.ReadCartItems().length == 0) ?
+                                                                        (this.ReadCartItems() === null || this.ReadCartItems().length === 0) ?
                                                                         <Link className="cart-link" to="#" onClick={() => this.ShowCart()} >
                                                                             <span className="cart-icon"><i className="glyph-icon pgsicon-ecommerce-empty-shopping-cart" /></span>
-                                                                            <span className="cart-count count">  {this.ReadCartItems() == null ? 0 : this.ReadCartItems().length}  </span>
+                                                                            <span className="cart-count count">  {this.ReadCartItems() === null ? 0 : this.ReadCartItems().length}  </span>
                                                                         </Link>
 
                                                                         :
 
-                                                                        <Link className="cart-link" to="/ShopingCart" onClick={() => this.ShowCart()} >
+                                                                        <Link className="cart-link" to="/ShoppingCart" onClick={() => this.ShowCart()} >
                                                                             <span className="cart-icon"><i className="glyph-icon pgsicon-ecommerce-empty-shopping-cart" /></span>
-                                                                            <span className="cart-count count">  {this.ReadCartItems() == null ? 0 : this.ReadCartItems().length}  </span>
+                                                                            <span className="cart-count count">  {this.ReadCartItems() === null ? 0 : this.ReadCartItems().length}  </span>
                                                                         </Link>
 
                                                                     }
@@ -343,10 +343,10 @@ class Header extends React.Component {
                                                                     {(this.ReadCartItems() != null && this.ReadCartItems().length > 0) ?
 
                                                                         <div className="cart-contents" id="DivCartContent">
-                                                                            <div className="widget ciyashop widget-shopping-cart">
+                                                                            <div className="widget moderncover widget-shopping-cart">
                                                                                 <div className="widget-shopping-cart-content">
                                                                                     <div className="pgs-product-list-widget-container has-scrollbar">
-                                                                                        <ul className="ciyashop-mini-cart cart-list">
+                                                                                        <ul className="moderncover-mini-cart cart-list">
 
 
 
@@ -355,9 +355,11 @@ class Header extends React.Component {
                                                                                                 <li className="ciya-mini-cart-item"   >
                                                                                                     <Link onClick={() => this.removeFromCart(index)} id={`Product_${CartItem.ProductID}`} className="remove remove_from_cart_button">×</Link>
                                                                                                     <div className="media">
-                                                                                                        <Link to="#"><img width={60} height={76} src={require(`../../assets/images/${CartItem.ProductImage}`)} className="img-fluid" alt /></Link>
+                                                                                                        {/* <Link to="#index">
+                                                                                                            <img width={60} height={76} src={require(`../../assets/images/${CartItem.ProductImage}`)} 
+                                                                                                        className="img-fluid" alt /></Link> */}
                                                                                                         <div className="media-body">
-                                                                                                            <Link to="#" className="product-title">{CartItem.ProductName}</Link>
+                                                                                                            <Link to="#index" className="product-title">{CartItem.ProductName}</Link>
                                                                                                             <span className="quantity">{CartItem.Qty} × <span className="woocs-special_price_code"><span className="ciya-Price-amount amount"><span className="ciya-Price-currencySymbol">$</span>{CartItem.Rate}</span></span></span>
                                                                                                         </div>
                                                                                                     </div>
@@ -366,9 +368,9 @@ class Header extends React.Component {
 
                                                                                         </ul>
                                                                                     </div>
-                                                                                    <p className="ciyashop-mini-cart__total total"><strong>Subtotal:</strong> <span className="woocs_special_price_code"><span className="ciyashop-Price-amount amount"><span className="ciyashop-Price-currencySymbol">$</span> {this.ReadCartItems().reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0)}</span></span></p>
-                                                                                    <p className="ciyashop-mini-cart__buttons buttons">
-                                                                                        <Link onClick={() => this.HideCart()} to="/ShopingCart" className="button wc-forward">View cart</Link>
+                                                                                    <p className="moderncover-mini-cart__total total"><strong>Subtotal:</strong> <span className="woocs_special_price_code"><span className="moderncover-Price-amount amount"><span className="moderncover-Price-currencySymbol">$</span> {this.ReadCartItems().reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0)}</span></span></p>
+                                                                                    <p className="moderncover-mini-cart__buttons buttons">
+                                                                                        <Link onClick={() => this.HideCart()} to="/ShoppingCart" className="button wc-forward">View cart</Link>
                                                                                         <Link onClick={() => this.HideCart()}  to="/CheckOut" className="button checkout wc-forward">Checkout</Link>
                                                                                     </p>
                                                                                 </div>
@@ -377,11 +379,12 @@ class Header extends React.Component {
 
                                                                         :
                                                                         <div className="cart-contents" id="DivCartContent">
-                                                                            <div className="widget ciyashop widget-shopping-cart">
+                                                                            <div className="widget moderncover widget-shopping-cart">
                                                                                 <div className="widget-shopping-cart-content">
-                                                                                    <p className="ciyashop-mini-cart__total total">
-                                                                                    <img src={require(`../../assets/images/empty-cart.png`)} className="img-fluid mr-3" />
-                                                                                    <strong>Your cart is currently empty.</strong> <span className="woocs_special_price_code"><span className="ciyashop-Price-amount amount"><span className="ciyashop-Price-currencySymbol"></span> </span></span></p>
+                                                                                    <p className="moderncover-mini-cart__total total">
+                                                                                    {/* <img src={require(`../../assets/images/empty-cart.png`)}  */}
+                                                                                    className="img-fluid mr-3" />
+                                                                                    <strong>Your cart is currently empty.</strong> <span className="woocs_special_price_code"><span className="moderncover-Price-amount amount"><span className="moderncover-Price-currencySymbol"></span> </span></span></p>
 
 
                                                                                 </div>
@@ -389,7 +392,7 @@ class Header extends React.Component {
                                                                         </div>
                                                                     }
                                                                 </li>
-                                                                 <li className="ciya-tools-action ciya-tools-wishlist"> <Link to="/wishlist"><i className="glyph-icon pgsicon-ecommerce-like" /> <span className="wishlist ciyashop-wishlist-count"> {this.ReadWishListItems() == null ? 0 : this.ReadWishListItems().length} </span> </Link></li>
+                                                                 <li className="ciya-tools-action ciya-tools-wishlist"> <Link to="/wishlist"><i className="glyph-icon pgsicon-ecommerce-like" /> <span className="wishlist moderncover-wishlist-count"> {this.ReadWishListItems() == null ? 0 : this.ReadWishListItems().length} </span> </Link></li>
                                                                  <li className="ciya-tools-action ciya-tools-search"><Link to="/shop"><i className="glyph-icon pgsicon-ecommerce-magnifying-glass"  /></Link></li>
                                                             </ul>
                                                         </div>
@@ -402,13 +405,13 @@ class Header extends React.Component {
                                                                 <Collapse isOpen={!this.state.collapsed} navbar>
                                                                 <Nav className="ml-auto" navbar>
                                                                 {navLinks.map((navLink, index) => (
-                                                                                         <li className={`nav-item ${(this.state.classset == navLink.menu_title) ? 'show' : '' }`}>
+                                                                                         <li className={`nav-item ${(this.state.classset === navLink.menu_title) ? 'show' : '' }`}>
                                                                                             {(navLink.type && navLink.type === 'subMenu') ?
                                                                                                 <Fragment>
                                                                                                             <Link href="#" className="nav-link" onClick={()=>this.onClickClassAdd(navLink.menu_title)}>{navLink.menu_title}</Link>
-                                                                                                            <ul className={(this.state.classset == navLink.menu_title) ? 'showcollapsed' : 'submenu' }>
+                                                                                                            <ul className={(this.state.classset === navLink.menu_title) ? 'showcollapsed' : 'submenu' }>
                                                                                                                 {navLink.child_routes && navLink.child_routes.map((subNavLink, index) => (
-                                                                                                                    <li  className={`nav-item  ${(pageName == subNavLink.path) ? 'active' : '' }`} toggle={false}   >
+                                                                                                                    <li  className={`nav-item  ${(pageName === subNavLink.path) ? 'active' : '' }`} toggle={false}   >
                                                                                                                         <Link className="nav-link"  onClick={() => this.closeNavbar()} to={subNavLink.path}>{subNavLink.menu_title}</Link>
                                                                                                                     </li>
                                                                                                                ))}

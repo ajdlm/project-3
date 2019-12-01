@@ -119,7 +119,7 @@ class AccountProfileedit extends Component {
   }
 
    render() {
-    const Profile=Common['0']['profile'];
+    // const Profile=Common['0']['profile'];
     return (
           <div>
           <div className="inner-intro">
@@ -131,7 +131,7 @@ class AccountProfileedit extends Component {
                         </div>
                     </Col>
                     <Col md={6}  className="text-right">
-                        <ul className="ciyashop_breadcrumbs page-breadcrumb breadcrumbs">
+                        <ul className="moderncover_breadcrumbs page-breadcrumb breadcrumbs">
                         <li className="home">
                             <span>
                             <Link className="bread-link bread-home" to="/">Home</Link>

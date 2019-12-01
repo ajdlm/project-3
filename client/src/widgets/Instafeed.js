@@ -61,8 +61,8 @@ class Instagram extends Component {
                 <Slider {...settings} >
                   {APIData.map((image,i) =>
                       <div key={i}>
-                              <a href={image.link} target="_blank">
-                              <img src={`${image.images.standard_resolution.url}`}  />
+                              <a href={image.link} target=".index">
+                              {/* <img src={`${image.images.standard_resolution.url}`}  /> */}
                           </a>
                       </div>
                   )}

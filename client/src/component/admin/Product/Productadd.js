@@ -7,13 +7,13 @@ import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 import ImageUploader from 'react-images-upload';
 
-const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+// const settings = {
+//     dots: false,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 1,
+//     slidesToScroll: 1
+//   };
 const productslider = {
     dots: false,
     infinite: false,
@@ -91,25 +91,26 @@ class Productadd extends Component{
                                     <Row>
                                         <div className="product-top-left col-xl-5 col-md-6">
                                             <div className="product-top-left-inner">
-                                                <div className="ciyashop-product-images">
-                                                <div className="ciyashop-product-images-wrapper ciyashop-gallery-style-default ciyashop-gallery-thumb_position-bottom ciyashop-gallery-thumb_vh-horizontal">
-                                                    <div className="ciyashop-product-gallery ciyashop-product-gallery--with-images slick-carousel">
-                                                    <Slider {...settings} className="ciyashop-product-gallery__wrapper popup-gallery">
-                                                        <div className="ciyashop-product-gallery__image">
+                                                <div className="moderncover-product-images">
+                                                <div className="moderncover-product-images-wrapper moderncover-gallery-style-default moderncover-gallery-thumb_position-bottom moderncover-gallery-thumb_vh-horizontal">
+                                                    <div className="moderncover-product-gallery moderncover-product-gallery--with-images slick-carousel">
+                                                    {/* <Slider {...settings} className="moderncover-product-gallery__wrapper popup-gallery">
+                                                        <div className="moderncover-product-gallery__image">
                                                                 <img src={require(`../../../assets/images/${productdata.Product_single}`)}   className="img-fluid" />
                                                         </div>
 
-                                                    </Slider>
+                                                    </Slider> */}
 
                                                     </div>
-                                                    <div className="ciyashop-product-thumbnails">
-                                                        <Slider {...productslider} className="ciyashop-product-thumbnails__wrapper">
+                                                    <div className="moderncover-product-thumbnails">
+                                                        <Slider {...productslider} className="moderncover-product-thumbnails__wrapper">
                                                             {productdata.product_gallery.map((pictureimage,index) =>
                                                                 <div key={index}>
-                                                                    <div className="ciyashop-product-thumbnail__image">
-                                                                        <a href="javascript:void(0)">
-                                                                            <img src={require(`../../../assets/images/${pictureimage}`)}  className="img-fluid" />
-                                                                        </a>
+                                                                    <div className="moderncover-product-thumbnail__image">
+                                                                        {/* <a href="javascript:void(0)">
+                                                                            <img src={require(`../../../assets/images/${pictureimage}`)}  
+                                                                            className="img-fluid" />
+                                                                        </a> */}
                                                                         <div className="d-flex justify-content-center image-content align-items-center">
                                                                             <ImageUploader
                                                                                 buttonText=""
@@ -184,7 +185,7 @@ class Productadd extends Component{
                                                         <input type="text" className="form-control" placeholder="Total Product" ></input>
                                                         </FormGroup>
 
-                                                        <a href="#" class="btn btn-primary mb-2 mr-2"> Save </a>
+                                                        <a href="#index" class="btn btn-primary mb-2 mr-2"> Save </a>
                                                         <Link to="/admin-panel/Product" class="btn btn-danger mb-2"> Cancel </Link>
                                                     </div>
                                                 </div>

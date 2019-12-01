@@ -2,9 +2,9 @@
  * About Banner
  */
 import React , {Component} from 'react';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
-import { Collapse } from 'reactstrap';
+// import { Collapse } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class AboutBanner extends Component {
@@ -40,8 +40,8 @@ class AboutBanner extends Component {
                     { expandedDiv }
                  </div>
                  </div>
-                <div className="ciyashop_button_wrapper ciyashop_button_width_default">
-                    <div className="inline_hover ciyashop_button_link ciyashop_button_size_medium button-underline">
+                <div className="moderncover_button_wrapper moderncover_button_width_default">
+                    <div className="inline_hover moderncover_button_link moderncover_button_size_medium button-underline">
                         <Link Style="cursor:pointer;" className="inline_hover"  onClick={() => this.setState({ showText: !this.state.showText }) }> {(this.state.showText) ? "Read Less.." : "Read More.."} </Link>
 
                     </div>

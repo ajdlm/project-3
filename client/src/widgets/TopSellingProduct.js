@@ -2,7 +2,7 @@
  * Top Salling Product Widgets
  */
 import React, { Component } from 'react';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import { ToastContainer,toast  } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -15,13 +15,13 @@ class TopSellingProduct extends Component {
       super(props);
       this.AddToCart = this.AddToCart.bind(this);
       this.AddToWishList = this.AddToWishList.bind(this);
-      var AddToCart,AddToWishList
+      // var AddToCart,AddToWishList
   }
 
   AddToCart(ProductID,ProductName,ProductImage,Qty,Rate,StockStatus) {
    var Cart = JSON.parse(localStorage.getItem("LocalCartItems"));
    if(Cart == null)
-      Cart = new Array();
+      Cart = new []();
    let selectedProduct = Cart.find(product => product.ProductName === ProductName);
    if(selectedProduct == null)
    {
@@ -41,7 +41,7 @@ class TopSellingProduct extends Component {
 AddToWishList(ProductID,ProductName,ProductImage,Qty,Rate,StockStatus) {
    var Cart = JSON.parse(localStorage.getItem("LocalWishListItems"));
    if(Cart == null)
-      Cart = new Array();
+      Cart = new []();
 
       let selectedProduct = Cart.find(product => product.ProductName === ProductName);
       if(selectedProduct == null)
@@ -105,7 +105,7 @@ rating(productrat)
    render() {
       return (
 
-         <Row className="products products-loop grid ciyashop-products-shortcode">
+         <Row className="products products-loop grid moderncover-products-shortcode">
               <ToastContainer autoClose={1000} />
 
             { MyProducts.map((product, index) =>
@@ -120,11 +120,11 @@ rating(productrat)
                         <div className="product-thumbnail-inner">
                         <Link to={`/shop/${product.category}/${product.id}`}>
                               <div className="product-thumbnail-main">
-                                 <img src={require(`../assets/images/${product.pictures[0]}`)} className="img-fluid" alt="shop" />
+                                 {/* <img src={require(`../assets/images/${product.pictures[0]}`)} className="img-fluid" alt="shop" /> */}
 
                               </div>
                               <div className="product-thumbnail-swap">
-                                 <img src={require(`../assets/images/${product.pictures[1]}`)} className="img-fluid" alt="shop" />
+                                 {/* <img src={require(`../assets/images/${product.pictures[1]}`)} className="img-fluid" alt="shop" /> */}
 
                               </div>
                            </Link>
@@ -136,7 +136,7 @@ rating(productrat)
                                        <Link onClick={()=>this.AddToCart(product.id,product.name,product.pictures[0],1,product.salePrice,"In Stock")}  className="button add_to_cart_button" rel="nofollow">Add to
                                         cart</Link>
                                  :
-                                       <Link  to="/ShopingCart"  className="button add_to_cart_button" rel="nofollow">View Cart</Link>
+                                       <Link  to="/ShoppingCart"  className="button add_to_cart_button" rel="nofollow">View Cart</Link>
                                  }
 
                               </div>
@@ -152,7 +152,7 @@ rating(productrat)
                         </div>
                      </div>
                      <div className="product-info">
-                        <span className="ciyashop-product-category">
+                        <span className="moderncover-product-category">
                            {product.category}
                         </span>
                         <h3 className="product-name">

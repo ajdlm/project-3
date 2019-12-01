@@ -2,7 +2,7 @@
  *  Admin Header
  */
 import React, { Component } from 'react';
-import { Row, Col,Container,Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Navbar,NavbarToggler, Nav, NavItem, NavLink, UncontrolledDropdown, Collapse } from 'reactstrap';
+import { Row, Col,Container,Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Navbar,NavbarToggler, Nav, NavItem, UncontrolledDropdown, Collapse } from 'reactstrap';
 import profile from '../../assets/images/testimonials/img-02.jpg';
 import logo from '../../assets/images/logo.svg';
 import { Link } from 'react-router-dom';
@@ -36,19 +36,19 @@ class AdminHeader extends Component {
             el.classList.remove('active');
         });
 
-        if(val == "report")
+        if(val === "report")
         {
             document.querySelector(".report").classList.add("active");
         }
-        if(val == "invoice")
+        if(val === "invoice")
         {
             document.querySelector(".invoice").classList.add("active");
         }
-        if(val == "profile")
+        if(val === "profile")
         {
             document.querySelector(".profile").classList.add("active");
         }
-        if(val == "backhome")
+        if(val === "backhome")
         {
             document.querySelector(".backhome").classList.add("active");
         }

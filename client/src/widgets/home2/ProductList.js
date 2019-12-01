@@ -9,7 +9,7 @@ class ProductList extends Component {
 
    render() {
     return (
-            <div className="ciyashop_products_listing_wrapper ciyashop_products_listing-1">
+            <div className="moderncover_products_listing_wrapper moderncover_products_listing-1">
                 <div className="products-listing-wrapper products-listing-type-carousel products-listing-without-intro">
                     <Row>
                         <ProductSlider />

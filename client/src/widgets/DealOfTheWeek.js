@@ -3,7 +3,7 @@
  */
 import React , {Component} from 'react';
 import CountDownTimer from './CountDownTimer';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import {Link} from 'react-router-dom';
 
 import BG_Image from '../assets/images/categories/default/deal-bg.png';
@@ -14,16 +14,16 @@ class DealOfTheWeek extends Component {
     return (
             <Row>
                 <Col sm={12} className="px-0">
-                <div className="ciyashop_banner_wrapper" style={{backgroundImage: `url(${BG_Image})`}} >
-                <div className="ciyashop_banner ciyashop_banner-style-deal-1 ciyashop_banner-effect-none">
-                    <div className="ciyashop_banner-content">
-                        <div className="ciyashop_banner-content-wrapper">
-                        <div className="ciyashop_banner-content-inner-wrapper">
-                            <div className="ciyashop_banner-label-wrap ciyashop_banner-text-wrap-1 ciyashop_banner-text-bg_color hidden-lg hidden-md hidden-sm hidden-xs">
-                            <div className="ciyashop_banner-label"> 50% Off</div>
+                <div className="moderncover_banner_wrapper" style={{backgroundImage: `url(${BG_Image})`}} >
+                <div className="moderncover_banner moderncover_banner-style-deal-1 moderncover_banner-effect-none">
+                    <div className="moderncover_banner-content">
+                        <div className="moderncover_banner-content-wrapper">
+                        <div className="moderncover_banner-content-inner-wrapper">
+                            <div className="moderncover_banner-label-wrap moderncover_banner-text-wrap-1 moderncover_banner-text-bg_color hidden-lg hidden-md hidden-sm hidden-xs">
+                            <div className="moderncover_banner-label"> 50% Off</div>
                             </div>
-                            <div className="ciyashop_banner-text-wrap ciyashop_banner-text-wrap-2 hidden-lg hidden-md hidden-sm hidden-xs">
-                            <div className="ciyashop_banner-text">
+                            <div className="moderncover_banner-text-wrap moderncover_banner-text-wrap-2 hidden-lg hidden-md hidden-sm hidden-xs">
+                            <div className="moderncover_banner-text">
                             <h2> Deal of The Week</h2>
                             </div>
                             </div>
@@ -32,7 +32,7 @@ class DealOfTheWeek extends Component {
                                     <CountDownTimer time={'152350'}></CountDownTimer>
                                 </div>
                             </div>
-                            <div className="ciyashop_banner-btn-wrap ciyashop_banner-btn-style-flat ciyashop_banner-btn-size-md ciyashop_banner-btn-shape-square justify-content-center mt-lg-5 mt-2"> <Link to="/shop" className="ciyashop_banner-btn">Shop Now</Link></div>
+                            <div className="moderncover_banner-btn-wrap moderncover_banner-btn-style-flat moderncover_banner-btn-size-md moderncover_banner-btn-shape-square justify-content-center mt-lg-5 mt-2"> <Link to="/shop" className="moderncover_banner-btn">Shop Now</Link></div>
                         </div>
                         </div>
                     </div>

@@ -94,7 +94,7 @@ class HomePage4 extends Component {
                         </div>
                         <Row className="margin-top-4">
                         <Col sm={12}  >
-                            <div className="products products-loop grid ciyashop-products-shortcode row">
+                            <div className="products products-loop grid moderncover-products-shortcode row">
                                     <ProductSlider settings={saleslider} />
                             </div>
                         </Col>
@@ -115,19 +115,19 @@ class HomePage4 extends Component {
                             <NewCollecation />
                         </div>
                          <div className="col-lg-4">
-                            <div className="ciyashop_banner_wrapper">
+                            <div className="moderncover_banner_wrapper">
                             {/* shortcode-base-wrapper */}
-                            <div className="ciyashop_banner ciyashop_banner-style-style-1 ciyashop_banner-effect-border banner-2">
-                                {/* <img className="ciyashop_banner-image img-fluid inline" alt="Banner" src={require(`../../assets/images/sub-banner-02-1.jpg`)} /> */}
-                                <div className="ciyashop_banner-content ciyashop_banner-content-hleft ciyashop_banner-content-vtop">
-                                <div className="ciyashop_banner-content-wrapper">
-                                    <div className="ciyashop_banner-content-inner-wrapper">
-                                    <div className="ciyashop_banner-text-wrap ciyashop_banner-text-wrap-1 hidden-lg hidden-md hidden-sm hidden-xs">
-                                        <div className="ciyashop_banner-text">
+                            <div className="moderncover_banner moderncover_banner-style-style-1 moderncover_banner-effect-border banner-2">
+                                {/* <img className="moderncover_banner-image img-fluid inline" alt="Banner" src={require(`../../assets/images/sub-banner-02-1.jpg`)} /> */}
+                                <div className="moderncover_banner-content moderncover_banner-content-hleft moderncover_banner-content-vtop">
+                                <div className="moderncover_banner-content-wrapper">
+                                    <div className="moderncover_banner-content-inner-wrapper">
+                                    <div className="moderncover_banner-text-wrap moderncover_banner-text-wrap-1 hidden-lg hidden-md hidden-sm hidden-xs">
+                                        <div className="moderncover_banner-text">
                                         New Collection </div>
                                     </div>
-                                    <div className="ciyashop_banner-btn-wrap ciyashop_banner-btn-style-link ciyashop_banner-btn-shape-square mt-0">
-                                        <Link to="/shop" className="ciyashop_banner-btn inline_hover">Shop Now</Link> </div>
+                                    <div className="moderncover_banner-btn-wrap moderncover_banner-btn-style-link moderncover_banner-btn-shape-square mt-0">
+                                        <Link to="/shop" className="moderncover_banner-btn inline_hover">Shop Now</Link> </div>
                                     </div>
                                 </div>
                                 </div>

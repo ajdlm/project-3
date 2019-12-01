@@ -22,7 +22,7 @@ class MyAccount extends Component {
                         </div>
                     </Col>
                     <Col md={6} className="text-right">
-                        <ul className="ciyashop_breadcrumbs page-breadcrumb breadcrumbs">
+                        <ul className="moderncover_breadcrumbs page-breadcrumb breadcrumbs">
                             <li className="home">
                                 <span>
                                     <Link className="bread-link bread-home" to="/">Home</Link>Math.floor(Math.random() * 10)

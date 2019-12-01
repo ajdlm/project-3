@@ -260,7 +260,7 @@ class BlogSinglePage extends Component {
                                     <div className="widget widget_pgs_social_profiles">
                                         <h4 className="widget-title">Social Info</h4>
                                         <div className="social-profiles-wrapper-inner social-profiles-default social-profiles-shape-square">
-                                            <div className="social-profiles">
+                                            {/* <div className="social-profiles">
                                                 <ul>
                                                     <li><a href="https://www.facebook.com" title="Facebook" target="_blank"><i className="fa fa-facebook"></i></a></li>
                                                     <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i className="fa fa-twitter"></i></a></li>
@@ -268,7 +268,7 @@ class BlogSinglePage extends Component {
                                                     <li><a href="https://vimeo.com/" title="Vimeo" target="_blank"><i className="fa fa-vimeo"></i></a></li>
                                                     <li><a href="https://in.pinterest.com/" title="Pinterest" target="_blank"><i className="fa fa-pinterest"></i></a></li>
                                                 </ul>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </Col>

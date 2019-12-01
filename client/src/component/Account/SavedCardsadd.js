@@ -5,7 +5,7 @@
 import React, { Component } from 'react';
 import { Row, Col,Container } from 'reactstrap';
 import Sitebar from './Sitebar';
-import Common from '../../api/common';
+// import Common from '../../api/common';
 import { Link } from 'react-router-dom';
 class SavedCardsadd extends Component {
   state = {
@@ -113,7 +113,7 @@ class SavedCardsadd extends Component {
 
 
     render() {
-      const CartDetail=Common['0']['carddetail'];
+      // const CartDetail=Common['0']['carddetail'];
    return (
     <div>
     <div className="inner-intro">
@@ -125,7 +125,7 @@ class SavedCardsadd extends Component {
                   </div>
               </Col>
               <Col md={6}  className="text-right">
-                  <ul className="ciyashop_breadcrumbs page-breadcrumb breadcrumbs">
+                  <ul className="moderncover_breadcrumbs page-breadcrumb breadcrumbs">
                   <li className="home">
                       <span>
                       <Link className="bread-link bread-home" to="/">Home</Link>

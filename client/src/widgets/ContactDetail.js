@@ -1,7 +1,7 @@
 /**
  *  Contact Detail Page
  */
-import React, { Component } from 'react';
+import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
 
 
@@ -21,21 +21,21 @@ function ContactDetail() {
       </Row>
       <Row>
         <Col md={6} lg={4} >
-          <div className="ciyashop_info_box_2 ciyashop_info_box_2-layout-style_2 ciyashop_info_box_2-content_alignment-left ciyashop_info_box_2-with-icon ciyashop_info_box_2-icon-source-font ciyashop_info_box_2-icon-style-border ciyashop_info_box_2-icon-size-lg ciyashop_info_box_2-icon-shape-round ciyashop_info_box_2-icon_position-left mb-3 mb-sm-0">
-            <div className="ciyashop_info_box_2-inner clearfix">
-              <div className="ciyashop_info_box_2-icon">
-                <div className="ciyashop_info_box_2-icon-wrap">
-                  <div className="ciyashop_info_box_2-icon-outer">
-                    <div className="ciyashop_info_box_2-icon-inner">
+          <div className="moderncover_info_box_2 moderncover_info_box_2-layout-style_2 moderncover_info_box_2-content_alignment-left moderncover_info_box_2-with-icon moderncover_info_box_2-icon-source-font moderncover_info_box_2-icon-style-border moderncover_info_box_2-icon-size-lg moderncover_info_box_2-icon-shape-round moderncover_info_box_2-icon_position-left mb-3 mb-sm-0">
+            <div className="moderncover_info_box_2-inner clearfix">
+              <div className="moderncover_info_box_2-icon">
+                <div className="moderncover_info_box_2-icon-wrap">
+                  <div className="moderncover_info_box_2-icon-outer">
+                    <div className="moderncover_info_box_2-icon-inner">
                       <i className="fa fa-map-marker" /> </div>
                   </div>
                 </div>
               </div>
-              <div className="ciyashop_info_box_2-content">
-                <div className="ciyashop_info_box_2-content-wrap">
-                  <div className="ciyashop_info_box_2-content-inner">
-                    <h6 className="ciyashop_info_box_2-title inline_hover">Location : </h6>
-                    <div className="ciyashop_info_box_2-content">
+              <div className="moderncover_info_box_2-content">
+                <div className="moderncover_info_box_2-content-wrap">
+                  <div className="moderncover_info_box_2-content-inner">
+                    <h6 className="moderncover_info_box_2-title inline_hover">Location : </h6>
+                    <div className="moderncover_info_box_2-content">
                       <p>1635 Franklin Street Montgomery, Near Sherwood Mall. AL 36104</p>
                     </div>
                   </div>
@@ -45,22 +45,22 @@ function ContactDetail() {
           </div>
         </Col>
         <Col md={6} lg={4} >
-          <div className="ciyashop_info_box_2 ciyashop_info_box_2-layout-style_2 ciyashop_info_box_2-content_alignment-left ciyashop_info_box_2-with-icon ciyashop_info_box_2-icon-source-font ciyashop_info_box_2-icon-style-border ciyashop_info_box_2-icon-size-lg ciyashop_info_box_2-icon-shape-round ciyashop_info_box_2-icon_position-left mb-3 mb-sm-0">
-            <div className="ciyashop_info_box_2-inner clearfix">
-              <div className="ciyashop_info_box_2-icon">
-                <div className="ciyashop_info_box_2-icon-wrap">
-                  <div className="ciyashop_info_box_2-icon-outer">
-                    <div className="ciyashop_info_box_2-icon-inner">
+          <div className="moderncover_info_box_2 moderncover_info_box_2-layout-style_2 moderncover_info_box_2-content_alignment-left moderncover_info_box_2-with-icon moderncover_info_box_2-icon-source-font moderncover_info_box_2-icon-style-border moderncover_info_box_2-icon-size-lg moderncover_info_box_2-icon-shape-round moderncover_info_box_2-icon_position-left mb-3 mb-sm-0">
+            <div className="moderncover_info_box_2-inner clearfix">
+              <div className="moderncover_info_box_2-icon">
+                <div className="moderncover_info_box_2-icon-wrap">
+                  <div className="moderncover_info_box_2-icon-outer">
+                    <div className="moderncover_info_box_2-icon-inner">
                       <i className="fa fa-phone" /> </div>
                   </div>
                 </div>
               </div>
-              <div className="ciyashop_info_box_2-content">
-                <div className="ciyashop_info_box_2-content-wrap">
-                  <div className="ciyashop_info_box_2-content-inner">
-                    <h6 className="ciyashop_info_box_2-title inline_hover">
+              <div className="moderncover_info_box_2-content">
+                <div className="moderncover_info_box_2-content-wrap">
+                  <div className="moderncover_info_box_2-content-inner">
+                    <h6 className="moderncover_info_box_2-title inline_hover">
                       Phone : </h6>
-                    <div className="ciyashop_info_box_2-content">
+                    <div className="moderncover_info_box_2-content">
                       <p>126-632-2345<br />
                         857-778-1265</p>
                     </div>
@@ -71,23 +71,23 @@ function ContactDetail() {
           </div>
         </Col>
         <Col lg={4}>
-          <div className="ciyashop_info_box_2 ciyashop_info_box_2-layout-style_2 ciyashop_info_box_2-content_alignment-left ciyashop_info_box_2-with-icon ciyashop_info_box_2-icon-source-font ciyashop_info_box_2-icon-style-border ciyashop_info_box_2-icon-size-lg ciyashop_info_box_2-icon-shape-round ciyashop_info_box_2-icon_position-left pb-0">
-            <div className="ciyashop_info_box_2-inner clearfix">
-              <div className="ciyashop_info_box_2-icon">
-                <div className="ciyashop_info_box_2-icon-wrap">
-                  <div className="ciyashop_info_box_2-icon-outer">
-                    <div className="ciyashop_info_box_2-icon-inner">
+          <div className="moderncover_info_box_2 moderncover_info_box_2-layout-style_2 moderncover_info_box_2-content_alignment-left moderncover_info_box_2-with-icon moderncover_info_box_2-icon-source-font moderncover_info_box_2-icon-style-border moderncover_info_box_2-icon-size-lg moderncover_info_box_2-icon-shape-round moderncover_info_box_2-icon_position-left pb-0">
+            <div className="moderncover_info_box_2-inner clearfix">
+              <div className="moderncover_info_box_2-icon">
+                <div className="moderncover_info_box_2-icon-wrap">
+                  <div className="moderncover_info_box_2-icon-outer">
+                    <div className="moderncover_info_box_2-icon-inner">
                       <i className="fa fa-envelope-o" /> </div>
                   </div>
                 </div>
               </div>
-              <div className="ciyashop_info_box_2-content">
-                <div className="ciyashop_info_box_2-content-wrap">
-                  <div className="ciyashop_info_box_2-content-inner">
-                    <h6 className="ciyashop_info_box_2-title inline_hover">Mail : </h6>
-                    <div className="ciyashop_info_box_2-content">
-                      <p>support@ciyashop.com<br />
-                        gethelp@ciyashop.com</p>
+              <div className="moderncover_info_box_2-content">
+                <div className="moderncover_info_box_2-content-wrap">
+                  <div className="moderncover_info_box_2-content-inner">
+                    <h6 className="moderncover_info_box_2-title inline_hover">Mail : </h6>
+                    <div className="moderncover_info_box_2-content">
+                      <p>support@moderncover.com<br />
+                        gethelp@moderncover.com</p>
                     </div>
                   </div>
                 </div>

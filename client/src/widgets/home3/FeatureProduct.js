@@ -3,7 +3,7 @@
  */
 import React , {Component} from 'react';
 import ProductSlider from '../ProductSlider';
-import { Row, Col,Container } from 'reactstrap';
+import { Row} from 'reactstrap';
 
 const homesaleslider = {
     dots: false,
@@ -93,7 +93,7 @@ class FeatureProduct extends Component {
                 </Row>
                 <div className="row">
                     <div className="col-12">
-                    <div className="products products-loop grid ciyashop-products-shortcode row">
+                    <div className="products products-loop grid moderncover-products-shortcode row">
                     <ProductSlider settings={homesaleslider} />
                     </div>
                 </div>

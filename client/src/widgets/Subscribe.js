@@ -2,7 +2,7 @@
  * Subscribe Widget
  */
 import React , {Component} from 'react';
-import { Row, Col, Container,Button } from 'reactstrap';
+import { Row, Col} from 'reactstrap';
 import BG_Image from '../assets/images/categories/default/subscribe-bg.jpg';
 
 class Subscribe extends Component {

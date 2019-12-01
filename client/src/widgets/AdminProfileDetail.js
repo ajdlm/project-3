@@ -20,7 +20,7 @@ class AdminProfileDetail extends Component{
                         <h6 className="mb-0">{Profile.firstname+' '+Profile.lastname}</h6>
                         <span className="text-dark">{Profile.email}</span>
                     </div>
-                   {Profile.phoneno != '' ? 
+                   {Profile.phoneno !== '' ? 
                         <div className="admin-profile-number ml-auto">
                             <strong className="h2"> <i className="fa fa-phone-square pr-2"></i>{Profile.phoneno}</strong>
                         </div>
