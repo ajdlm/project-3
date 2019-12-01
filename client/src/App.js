@@ -15,7 +15,7 @@ import './Vendor.js';
  import { IntlProvider } from 'react-intl';
 // import ShopPage from './component/shop';
 // import ProductDetail from './component/shop/product-detail';
-// import ShopingCart from './component/shop/ShopingCart';
+// import ShoppingCart from './component/shop/ShoppingCart';
 // import MyAccount from './component/Account/MyAccount';
 // import PageNotFound from './component/Pages/PageNotFound';
 import ComingSoon from './component/Pages/ComingSoon';
@@ -76,7 +76,7 @@ class App extends Component {
                     <Route exact path="/index-modern" component={HomePage3} />
                     <Route exact path="/index-home-classic" component={HomePage4} />
                     <Route exact path="/shop" component={ShopPage} />
-                    <Route exact path="/ShopingCart" component={ShopingCart} />
+                    <Route exact path="/ShoppingCart" component={ShoppingCart} />
                     <Route exact path="/MyAccount" component={MyAccount} />
                     <Route exact path="/BlogSinglePage" component={BlogSinglePage} />
                     <Route exact path="/BlogFullWidth" component={BlogFullWidth} />
