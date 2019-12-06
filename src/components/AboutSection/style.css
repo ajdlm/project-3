@@ -1,0 +1,17 @@
+.aboutContainer {
+    margin: 112px auto 40px;
+    background: #F8F8F8;
+}
+
+.row {
+    width: 100%;
+}
+
+.aboutHeading {
+    color: #3FA9BB;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 1.1em;
+}
