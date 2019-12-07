@@ -41,25 +41,8 @@ function Index() {
     <>
       <IndexNavbar />
       <div className="wrapper">
-        
-
         <div className="main">
-          <IndexHeader/>
-        <Carousel />
-
-          {/*<Images />*/}
-          {/*<BasicElements />*/}
-          {/*<Navbars />*/}
-          {/*<Tabs />*/}
-          {/*<Pagination />*/}
-          {/*<Notifications />*/}
-          {/*<Typography />*/}
-          {/*<Javascript />*/}
-          {/*<NucleoIcons />*/}
-          {/*<CompleteExamples />*/}
-          {/*<SignUp />*/}
-          <Examples />
-          {/*<Download />*/}
+          <Carousel />
         </div>
         <DarkFooter />
       </div>
