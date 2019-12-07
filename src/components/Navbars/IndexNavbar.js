@@ -56,9 +56,8 @@ function IndexNavbar() {
             {/*change the link to home page*/}
             <NavbarBrand
               href="/index"
-              target="_blank"
               id="navbar-brand"
-              style={{color:"black"}}
+              style={{ color: "black" }}
             >
               Brand Logo
             </NavbarBrand>
@@ -90,11 +89,8 @@ function IndexNavbar() {
               {/*download-section is in views/index-sections/Download.js  will jump to the section in the same page below*/}
               <NavItem>
                 {/*change route*/}
-                <NavLink
-                  href="/about"
-      
-                >
-                  <p style={{color:"black"}}>About</p>
+                <NavLink href="/about">
+                  <p style={{ color: "black" }}>About</p>
                 </NavLink>
               </NavItem>
               {/*************************end of download button*/}
@@ -108,12 +104,12 @@ function IndexNavbar() {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <p style={{color:"black"}} >Work</p>
+                  <p style={{ color: "black" }}>Work</p>
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem to="/landing-page" tag={Link}>
                     Paintings
-                    </DropdownItem>
+                  </DropdownItem>
                   <DropdownItem
                     href="https://www.moderncover.net/"
                     target="_blank"
@@ -122,7 +118,7 @@ function IndexNavbar() {
                   </DropdownItem>
                   <DropdownItem to="/login-page" tag={Link}>
                     Curation
-                    </DropdownItem>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               {/*************************end of component button(drop down)*/}
@@ -134,8 +130,13 @@ function IndexNavbar() {
                   target="_blank"
                   id="instagram-tooltip"
                 >
-                  <i className="fab fa-instagram" style={{color:"black"}}></i>
-                  <p className="d-lg-none d-xl-none" style={{color:"black"}}>Instagram</p>
+                  <i
+                    className="fab fa-instagram"
+                    style={{ color: "black" }}
+                  ></i>
+                  <p className="d-lg-none d-xl-none" style={{ color: "black" }}>
+                    Instagram
+                  </p>
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
                   Follow me on Instagram
@@ -144,14 +145,10 @@ function IndexNavbar() {
               {/****************************************end instagram button*/}
               <NavItem>
                 {/*change route*/}
-                <NavLink
-                  href="/contact"
-      
-                >
-                  <p style={{color:"black"}}>Contact</p>
+                <NavLink href="/contact">
+                  <p style={{ color: "black" }}>Contact</p>
                 </NavLink>
               </NavItem>
-
             </Nav>
           </Collapse>
         </Container>

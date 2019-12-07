@@ -13,7 +13,6 @@ function DarkFooter() {
             <li>
               <a
                 href="/about"
-                target="_blank"
               >
                 About
               </a>
@@ -21,7 +20,6 @@ function DarkFooter() {
             <li>
               <a
                 href="/contact"
-                target="_blank"
               >
                 Contact  
               </a>
