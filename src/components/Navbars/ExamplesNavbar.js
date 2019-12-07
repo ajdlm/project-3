@@ -138,7 +138,7 @@ function ExamplesNavbar() {
                   <p className="d-lg-none d-xl-none">Twitter</p>
                 </NavLink>
                 <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
+                  Follow me on Twitter
                 </UncontrolledTooltip>
               </NavItem>
               <NavItem>
