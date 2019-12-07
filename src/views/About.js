@@ -5,7 +5,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 // Importing components specific to the About page
-import AboutSection from "components/AboutSection"
+import AboutSection from "components/AboutSection";
 
 const About = () => {
   return (

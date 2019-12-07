@@ -5,7 +5,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 // Importing components specific to the Contact page
-import ContactForm from "components/ContactForm"
+import ContactForm from "components/ContactForm";
 
 const Contact = () => {
   return (
