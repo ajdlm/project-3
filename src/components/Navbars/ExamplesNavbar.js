@@ -49,7 +49,7 @@ function ExamplesNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
+      <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg" >
         <Container>
           <UncontrolledDropdown className="button-dropdown">
             <DropdownToggle
@@ -64,39 +64,29 @@ function ExamplesNavbar() {
               <span className="button-bar"></span>
               <span className="button-bar"></span>
             </DropdownToggle>
-            <DropdownMenu aria-labelledby="navbarDropdown">
-              <DropdownItem header tag="a">
-                Dropdown header
+            <DropdownMenu aria-labelledby="navbarDropdown" >
+              <DropdownItem href="/about" onClick={e => e.preventDefault()} style={{ color: "black" }}>
+                About
               </DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                Action
+              <DropdownItem href="/contact" onClick={e => e.preventDefault()}>
+                Contact
               </DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                Another action
-              </DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                Something else here
-              </DropdownItem>
-              <DropdownItem divider></DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                Separated link
-              </DropdownItem>
-              <DropdownItem divider></DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                One more separated link
+              <DropdownItem href="https://www.instagram.com/suyaotian/" onClick={e => e.preventDefault()}>
+                Instagram
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
+              href="/index"
               target="_blank"
               id="navbar-brand"
+              style={{ color: "black" }}
             >
-              Now Ui Kit
+              Brand Logo
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
+              Go to Homepage
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
@@ -119,53 +109,56 @@ function ExamplesNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink to="/index" tag={Link}>
-                  Back to Kit
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
-                  Have an issue?
+                <NavLink
+                    onClick={e => {
+                      e.preventDefault();
+                      document
+                          .getElementById("spring")
+                          .scrollIntoView();
+                    }}
+                    style={{ color: "black" }}
+                >
+                  Spring Series
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="twitter-tooltip"
+                    onClick={e => {
+                      e.preventDefault();
+                      document
+                          .getElementById("summer")
+                          .scrollIntoView();
+                    }}
+                    style={{ color: "black" }}
                 >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
+                  Summer Series
                 </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow me on Twitter
-                </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="facebook-tooltip"
+                    onClick={e => {
+                      e.preventDefault();
+                      document
+                          .getElementById("autumn")
+                          .scrollIntoView();
+                    }}
+                    style={{ color: "black" }}
                 >
-                  <i className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
+                  Autumn Series
                 </NavLink>
-                <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
-                </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                  target="_blank"
-                  id="instagram-tooltip"
+                    onClick={e => {
+                      e.preventDefault();
+                      document
+                          .getElementById("winter")
+                          .scrollIntoView();
+                    }}
+                    style={{ color: "black" }}
                 >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
+                  Winter Series
                 </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
-                </UncontrolledTooltip>
               </NavItem>
             </Nav>
           </Collapse>
