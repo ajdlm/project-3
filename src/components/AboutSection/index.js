@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
 
-function AboutSection() {
+const AboutSection = () => {
   return (
-    <div className="aboutContainer container pt-2 pr-0 pb-3">
+    <div className="aboutContainer mx-5 pt-2 pl-3 pr-0 pb-3">
       <div className="row">
-        <div className="col-7">
+        <div className="textColumn col-xl-7 col-lg-6">
           <h2 className="aboutHeading my-3">MEET THE DOCTOR</h2>
 
           <p>
@@ -32,12 +32,10 @@ function AboutSection() {
             rhoncus aenean vel elit scelerisque mauris pellentesque. Integer
             quis auctor elit sed vulputate mi sit amet.
           </p>
-
-          <p></p>
         </div>
 
-        <div className="col-5 d-flex justify-content-end">
-          <img className="my-1" src={require("assets/img/doctor.jpg")} alt="about-portrait" />
+        <div className="col-xl-5 col-lg-6">
+          <img className="aboutPortrait img-fluid my-1" src={require("assets/img/doctor.jpg")} alt="about-portrait" />
         </div>
       </div>
     </div>
