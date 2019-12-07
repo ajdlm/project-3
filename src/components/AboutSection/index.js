@@ -3,10 +3,10 @@ import "./style.css";
 
 const AboutSection = () => {
   return (
-    <div className="aboutContainer mx-5 pt-2 pl-3 pr-0 pb-3">
+    <div className="aboutContainer pt-2 pl-3 pr-0 pb-3 mb-0">
       <div className="row">
         <div className="textColumn col-xl-7 col-lg-6">
-          <h2 className="aboutHeading my-3">MEET THE DOCTOR</h2>
+          <h2 className="aboutHeading my-3">Meet Suyao Tian</h2>
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -35,7 +35,7 @@ const AboutSection = () => {
         </div>
 
         <div className="col-xl-5 col-lg-6">
-          <img className="aboutPortrait img-fluid my-1" src={require("assets/img/doctor.jpg")} alt="about-portrait" />
+          <img className="aboutPortrait img-fluid my-1" src={require("assets/img/about-portrait.jpeg")} alt="about-portrait" />
         </div>
       </div>
     </div>
