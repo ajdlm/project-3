@@ -11,212 +11,425 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip
+  UncontrolledTooltip, Modal, ModalBody
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import ExamplesNavbar from "components/Navbars/IndexNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
 
 function ProfilePage() {
-  const [pills, setPills] = React.useState("2");
+  const [firstFocus, setFirstFocus] = React.useState(false);
+  const [lastFocus, setLastFocus] = React.useState(false);
   React.useEffect(() => {
-    document.body.classList.add("profile-page");
+    document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
     return function cleanup() {
-      document.body.classList.remove("profile-page");
+      document.body.classList.remove("landing-page");
       document.body.classList.remove("sidebar-collapse");
     };
   });
+  const [modal1, setModal1] = React.useState(false);
+  const [modal2, setModal2] = React.useState(false);
+
+
   return (
-    <>
-      <ExamplesNavbar />
-      <div className="wrapper">
-        <ProfilePageHeader />
-        <div className="section">
-          <Container>
-            <div className="button-container">
-              <Button className="btn-round" color="info" size="lg">
-                Follow
-              </Button>
-              <Button
-                className="btn-round btn-icon"
-                color="default"
-                id="tooltip515203352"
-                size="lg"
-              >
-                <i className="fab fa-twitter"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip515203352">
-                Follow me on Twitter
-              </UncontrolledTooltip>
-              <Button
-                className="btn-round btn-icon"
-                color="default"
-                id="tooltip340339231"
-                size="lg"
-              >
-                <i className="fab fa-instagram"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip340339231">
-                Follow me on Instagram
-              </UncontrolledTooltip>
-            </div>
-            <h3 className="title">About me</h3>
-            <h5 className="description">
-              An artist of considerable range, Ryan — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure. An artist of considerable range.
-            </h5>
-            <Row>
-              <Col className="ml-auto mr-auto" md="6">
-                <h4 className="title text-center">My Portfolio</h4>
-                <div className="nav-align-center">
-                  <Nav
-                    className="nav-pills-info nav-pills-just-icons"
-                    pills
-                    role="tablist"
-                  >
-                    <NavItem>
-                      <NavLink
-                        className={pills === "1" ? "active" : ""}
-                        href="#pablo"
-                        onClick={e => {
-                          e.preventDefault();
-                          setPills("1");
+      <>
+        <ExamplesNavbar />
+        <div className="wrapper">
+          <div className="section section-about-us">
+            <Container>
+
+              <div className="separator separator-primary"></div>
+              <div className="section-story-overview">
+                <Row id="spring">
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian3.jpg") + ")"
                         }}
-                      >
-                        <i className="now-ui-icons design_image"></i>
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={pills === "2" ? "active" : ""}
-                        href="#pablo"
-                        onClick={e => {
-                          e.preventDefault();
-                          setPills("2");
+                    >
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal2(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian1.jpg") + ")",
                         }}
-                      >
-                        <i className="now-ui-icons location_world"></i>
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={pills === "3" ? "active" : ""}
-                        href="#pablo"
-                        onClick={e => {
-                          e.preventDefault();
-                          setPills("3");
+                    >
+
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian2.jpg") + ")"
                         }}
-                      >
-                        <i className="now-ui-icons sport_user-run"></i>
-                      </NavLink>
-                    </NavItem>
-                  </Nav>
-                </div>
-              </Col>
-              <TabContent className="gallery" activeTab={"pills" + pills}>
-                <TabPane tabId="pills1">
-                  <Col className="ml-auto mr-auto" md="10">
-                    <Row className="collections">
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg1.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg3.jpg")}
-                        ></img>
-                      </Col>
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
-                        ></img>
-                      </Col>
-                    </Row>
+                    >
+
+                    </div>
                   </Col>
-                </TabPane>
-                <TabPane tabId="pills2">
-                  <Col className="ml-auto mr-auto" md="10">
-                    <Row className="collections">
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg6.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg11.jpg")}
-                        ></img>
-                      </Col>
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
-                        ></img>
-                      </Col>
-                    </Row>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian3.jpg") + ")"
+                        }}
+                    >
+
+                    </div>
                   </Col>
-                </TabPane>
-                <TabPane tabId="pills3">
-                  <Col className="ml-auto mr-auto" md="10">
-                    <Row className="collections">
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg3.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
-                        ></img>
-                      </Col>
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg6.jpg")}
-                        ></img>
-                      </Col>
-                    </Row>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian1.jpg") + ")",
+                        }}
+                    >
+
+                    </div>
                   </Col>
-                </TabPane>
-              </TabContent>
-            </Row>
-          </Container>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian2.jpg") + ")"
+                        }}
+                    >
+
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian3.jpg") + ")"
+                        }}
+                    >
+
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian1.jpg") + ")",
+                        }}
+                    >
+
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian2.jpg") + ")"
+                        }}
+                    >
+
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian3.jpg") + ")"
+                        }}
+                    >
+
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian1.jpg") + ")",
+                        }}
+                    >
+
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian2.jpg") + ")"
+                        }}
+                    >
+
+                    </div>
+                  </Col>
+                </Row>
+                {/******************************************************************/}
+                <Row id = "summer">
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    >
+
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg1.jpg") + ")",
+                        }}
+                    >
+
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    >
+
+                    </div>
+                  </Col>
+                </Row>
+                {/******************************************************************/}
+                <Row id = "autumn">
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg1.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                </Row>
+                {/******************************************************************/}
+                <Row id = "winter">
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg1.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                </Row>
+                {/******************************************************************/}
+                <Row>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg1.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                </Row>
+                {/******************************************************************/}
+
+                <Row>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg1.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                </Row>
+
+                <Row>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg1.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/bg3.jpg") + ")",
+                        }}
+                    ></div>
+                  </Col>
+                </Row>
+
+                <Modal size = "lg" isOpen={modal1} toggle={() => setModal1(false)}>
+                  <ModalBody>
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian3.jpg") + ")",
+                          height: "45em"
+                        }}
+                    ></div>
+                  </ModalBody>
+                </Modal>
+
+                <Modal size = "lg" isOpen={modal2} toggle={() => setModal2(false)}>
+                  <ModalBody>
+                    <div
+                        className="image-container"
+                        onClick={() => setModal1(true)}
+                        style={{
+                          backgroundImage:
+                              "url(" + require("assets/img/Tian1.jpg") + ")",
+                          height: "45em"
+                        }}
+                    ></div>
+                  </ModalBody>
+                </Modal>
+
+              </div>
+            </Container>
+          </div>
+
+          <DarkFooter />
         </div>
-        <DefaultFooter />
-      </div>
-    </>
+      </>
   );
 }
 
