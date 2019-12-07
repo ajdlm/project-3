@@ -91,7 +91,7 @@ function IndexNavbar() {
               <NavItem>
                 {/*change route*/}
                 <NavLink
-                  href="/profile-page"
+                  href="/about"
       
                 >
                   <p style={{color:"black"}}>About</p>
@@ -145,7 +145,7 @@ function IndexNavbar() {
               <NavItem>
                 {/*change route*/}
                 <NavLink
-                  href=""
+                  href="/contact"
       
                 >
                   <p style={{color:"black"}}>Contact</p>
