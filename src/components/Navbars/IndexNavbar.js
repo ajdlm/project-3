@@ -58,11 +58,12 @@ function IndexNavbar() {
               href=""
               target="_blank"
               id="navbar-brand"
+              style={{color:"black"}}
             >
-              Now UI Kit React
+              Brand Logo
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
+              Designed by Project 3
             </UncontrolledTooltip>
             {/******************************start toggle (small screen)*/}
             <button
@@ -90,16 +91,10 @@ function IndexNavbar() {
               <NavItem>
                 {/*change route*/}
                 <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
+                  href="/profile-page"
+      
                 >
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
-                  <p>Download</p>
+                  <p style={{color:"black"}}>About</p>
                 </NavLink>
               </NavItem>
               {/*************************end of download button*/}
@@ -109,25 +104,25 @@ function IndexNavbar() {
                 <DropdownToggle
                   caret
                   color="default"
-                  href="#pablo"
+                  href=""
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <i className="now-ui-icons design_app mr-1"></i>
-                  <p>Components</p>
+                  <p style={{color:"black"}} >Work</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    All components
-                  </DropdownItem>
+                  <DropdownItem to="/landing-page" tag={Link}>
+                    Paintings
+                    </DropdownItem>
                   <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
+                    href="https://www.moderncover.net/"
                     target="_blank"
                   >
-                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    Documentation
+                    Gloves
                   </DropdownItem>
+                  <DropdownItem to="/login-page" tag={Link}>
+                    Curation
+                    </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               {/*************************end of component button(drop down)*/}
@@ -135,18 +130,27 @@ function IndexNavbar() {
               {/*************************************start instagram button*/}
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="https://www.instagram.com/suyaotian/"
                   target="_blank"
                   id="instagram-tooltip"
                 >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
+                  <i className="fab fa-instagram" style={{color:"black"}}></i>
+                  <p className="d-lg-none d-xl-none" style={{color:"black"}}>Instagram</p>
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
+                  Follow me on Instagram
                 </UncontrolledTooltip>
               </NavItem>
               {/****************************************end instagram button*/}
+              <NavItem>
+                {/*change route*/}
+                <NavLink
+                  href=""
+      
+                >
+                  <p style={{color:"black"}}>Contact</p>
+                </NavLink>
+              </NavItem>
 
             </Nav>
           </Collapse>
