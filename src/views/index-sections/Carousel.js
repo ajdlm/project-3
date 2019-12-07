@@ -7,7 +7,7 @@ import { Carousel, CarouselItem, CarouselIndicators } from "reactstrap";
 
 const items = [
   {
-    src: require("assets/img/Tian1.jpg")
+    src: require("assets/img/Tian1.jpg"),
     // altText: "Nature, United States",
     // caption: "Nature, United States"
   },
