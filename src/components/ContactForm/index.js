@@ -5,21 +5,27 @@ const ContactForm = () => {
   return (
     <div className="contactContainer mx-5 pt-2 px-5 pb-3">
       <div className="mx-5 px-5">
-        <h2 className="contactHeading text-center my-4 pb-1">CONNECT WITH US</h2>
+        <h2 className="contactHeading text-center my-4 pb-1">
+          CONNECT WITH US
+        </h2>
 
         <form>
-          <div className="form-group form-inline d-flex">
-            <input
-              type="text"
-              className="form-control bg-white flex-grow-1"
-              placeholder="Name"
-            ></input>
+          <div className="form-inline d-flex">
+            <div className="form-group flex-grow-1">
+              <input
+                type="text"
+                className="form-control bg-white w-100"
+                placeholder="Name"
+              ></input>
+            </div>
 
-            <input
-              type="text"
-              className="form-control bg-white flex-grow-1 ml-2"
-              placeholder="Email"
-            ></input>
+            <div className="form-group flex-grow-1 ml-4">
+              <input
+                type="text"
+                className="form-control bg-white w-100"
+                placeholder="Email"
+              ></input>
+            </div>
           </div>
 
           <div className="form-group my-4">
@@ -31,8 +37,16 @@ const ContactForm = () => {
           </div>
 
           <div className="form-group mb-4">
-            <textarea className="contactTextarea form-control bg-white" rows="10" placeholder="Your message"></textarea>
+            <textarea
+              className="contactTextarea form-control bg-white"
+              rows="10"
+              placeholder="Your message"
+            ></textarea>
           </div>
+
+          <button type="submit" className="btn my-2 px-4">
+            SEND MESSAGE
+          </button>
         </form>
       </div>
     </div>

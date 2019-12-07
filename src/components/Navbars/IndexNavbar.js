@@ -55,7 +55,7 @@ function IndexNavbar() {
           <div className="navbar-translate">
             {/*change the link to home page*/}
             <NavbarBrand
-              href=""
+              href="/index"
               target="_blank"
               id="navbar-brand"
               style={{color:"black"}}
