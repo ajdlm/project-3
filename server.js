@@ -24,6 +24,8 @@ mongoose.connect(MONGODB_URI);
 // Require database routes
 const dbRoutes = require("./controllers/dbRoutes.js");
 
+app.use(dbRoutes);
+
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function(req, res) {

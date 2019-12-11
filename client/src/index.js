@@ -50,14 +50,8 @@ ReactDOM.render(
           path="/profile-page"
           render={props => <ProfilePage {...props} />}
         />
-        <Route
-          path="/about"
-          render={props => <About {...props} />}
-        />
-        <Route
-          path="/contact"
-          render={props => <Contact {...props} />}
-        />
+        <Route path="/about" render={props => <About {...props} />} />
+        <Route path="/contact" component={Contact} />
         <Route path="/login-page" render={props => <LoginPage {...props} />} />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
