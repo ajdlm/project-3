@@ -98,5 +98,85 @@
     ],
     "price": 0,
     "description": "Nunc congue nisi vitae suscipit tellus mauris a diam. Purus in mollis nunc sed."
+  },
+  {
+    "name": "Curation 2",
+    "painting": false,
+    "imageUrls": [
+      "https://quod.lib.umich.edu/cgi/i/image/api/image/aict:NE008:NE008/full/res:1/0/native.jpg",
+      "http://cdn.animalhi.com/1440x990/20121103/courage%20the%20cowardly%20dog%201440x990%20wallpaper_www.animalhi.com_87.jpg",
+      "https://wallpaperaccess.com/full/22920.jpg"
+    ],
+    "price": 0,
+    "description": "Fromage frais cauliflower cheese melted cheese. Pepper jack taleggio mascarpone pecorino cheesecake edam fromage frais macaroni cheese."
+  },
+  {
+    "name": "Curation 3",
+    "painting": false,
+    "imageUrls": [
+      "http://cdn.animalhi.com/1440x900/20121027/pokemon%20squirtle%201440x900%20wallpaper_www.animalhi.com_6.jpg"
+    ],
+    "price": 0,
+    "description": "Dolcelatte cheddar edam. Manchego edam cheese strings paneer cheeseburger bocconcini jarlsberg edam."
+  },
+  {
+    "name": "Curation 4",
+    "painting": false,
+    "imageUrls": [
+      "https://api.contemporaryartswitzerland.ch/content/uploads/2019/06/CHET_GGS_2019_02-1440x990.jpg",
+      "https://www.imd.org/contentassets/3b0687a5e3d14782b1c845dd2c75256a/1440x990-_0069_26-artificial-intelligence-and-machine-learning---internal.jpg"
+    ],
+    "price": 0,
+    "description": "Pepper jack goat mascarpone monterey jack pepper jack stilton gouda swiss. Melted cheese fromage frais."
+  },
+  {
+    "name": "Curation 5",
+    "painting": false,
+    "imageUrls": [
+      "http://dailyhdwallpaper.com/wp-content/uploads/Art-Paint-Tunner-Wallpaper-1-1440x990.jpg",
+      "http://i.imgur.com/4MFOsPF.jpg"
+    ],
+    "price": 0,
+    "description": "Cottage cheese st. agur blue cheese macaroni cheese. Cottage cheese swiss edam chalk and cheese roquefort dolcelatte cheesecake cheesy grin."
+  },
+  {
+    "name": "Curation 6",
+    "painting": false,
+    "imageUrls": [
+      "https://exhibition.canadaalamosaproject.org/wp-content/uploads/2015/12/Victorio-Site-12-1440x990.jpg",
+      "https://blissfuldomestication.com/wp-content/uploads/2019/01/WEDGWOOD-16-e1543517512358-1440x990.jpg"
+    ],
+    "price": 0,
+    "description": "Taleggio cheese strings when the cheese comes out everybody's happy cheesecake chalk and cheese fromage cheddar mascarpone."
+  },
+  {
+    "name": "Curation 7",
+    "painting": false,
+    "imageUrls": [
+      "https://cdn.pursuitist.com/wp-content/uploads/2014/01/ch-house-front-night-01-1440x990.jpg"
+    ],
+    "price": 0,
+    "description": "Croque monsieur stilton queso. Stinking bishop cow rubber cheese croque monsieur fondue pecorino dolcelatte smelly cheese."
+  },
+  {
+    "name": "Curation 8",
+    "painting": false,
+    "imageUrls": [
+      "https://www.imd.org/contentassets/ab8ea9f8fb794daaae28a85cc0d720ee/1440x990-_0013_holisticentreprisetechnology-952067554.jpg",
+      "https://www.mind-mag.com/wp-content/uploads/2019/06/ph_Ciriaco-Brown-by-Pichiglas-1-1440x990.jpeg",
+      "https://teatimeinwonderland.co.uk/wp-content/uploads/2019/03/IMG_9646-1440x990.jpg"
+    ],
+    "price": 0,
+    "description": "Cheddar halloumi dolcelatte. Caerphilly everyone loves edam pepper jack squirty cheese smelly cheese mozzarella parmesan."
+  },
+  {
+    "name": "Curation 9",
+    "painting": false,
+    "imageUrls": [
+      "http://api.ogrtorino.it/wp-content/uploads/2017/09/13-1440x990.jpg",
+      "http://www.domesticadventurer.com/wp-content/uploads/2018/06/Puffins-1440x990.jpg"
+    ],
+    "price": 0,
+    "description": "Caerphilly cow boursin caerphilly jarlsberg boursin fromage frais boursin. St. agur blue cheese cheeseburger taleggio cut the cheese."
   }
 ]
