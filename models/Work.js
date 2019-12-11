@@ -8,14 +8,14 @@ const WorkSchema = new Schema({
     unique: true
   },
 
-  painting: {
-    type: Boolean
+  series: {
+    type: String
   },
 
   imageUrls: [
     {
-      type: String,
-      unique: true
+      type: String/*,
+      unique: true*/
     }
   ],
 
