@@ -1,10 +1,6 @@
 import React from "react";
 import "./style.css";
 
-// Importing stuff to make the SEND MESSAGE button populate
-// the Mongo database with dummy data
-import dummyWork from "./dummyWork.json";
-
 const ContactForm = props => {
   return (
     <div className="contactContainer pt-2 px-5 pb-3 mb-0">
@@ -51,7 +47,6 @@ const ContactForm = props => {
           <button
             type="submit"
             className="btn my-2 px-4"
-            onClick={() => props.addWorkArray(dummyWork)}
           >
             SEND MESSAGE
           </button>

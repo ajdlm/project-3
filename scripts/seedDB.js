@@ -1,17 +1,17 @@
 const mongoose = require("mongoose");
 const Work = require("../models/Work.js");
-const array = require("./dummyWork.json");
+const imageSeed = require("./dummyWork.json");
 
+// If deployed, use deployed database;
+// otherwise, use local googleBooks database
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/galleryDB";
 
 // Connect Mongo database to Mongoose
 mongoose.connect(MONGODB_URI);
 
-// This file empties the Books collection and inserts the books below
-const imageSeed = array;
-
+// Empty the Work collection and re-insert the dummy data
 Work.remove({})
-  .then(() => db.Work.collection.insertMany(imageSeed))
+  .then(() => Work.collection.insertMany(imageSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
