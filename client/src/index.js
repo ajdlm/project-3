@@ -29,7 +29,7 @@ import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
+import CurationPage from "views/examples/CurationPage";
 import About from "views/About.js";
 import Contact from "views/Contact.js";
 
@@ -47,8 +47,8 @@ ReactDOM.render(
           render={props => <LandingPage {...props} />}
         />
         <Route
-          path="/profile-page"
-          render={props => <ProfilePage {...props} />}
+          path="/curationpage"
+          render={props => <CurationPage {...props} />}
         />
         <Route path="/about" render={props => <About {...props} />} />
         <Route path="/contact" component={Contact} />

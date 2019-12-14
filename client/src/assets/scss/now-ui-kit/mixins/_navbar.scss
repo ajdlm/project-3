@@ -74,7 +74,7 @@
             width: 22px;
             height: 1px;
             border-radius: 1px;
-            background: $white-bg;
+            background: black;
 
             & + .navbar-toggler-bar{
                 margin-top: 7px;
@@ -87,7 +87,7 @@
         }
 
         &.bg-white:not(.navbar-transparent) .navbar-toggler-bar{
-            background: $default-color;
+            background: grey;
         }
 
     }

@@ -14,4 +14,14 @@ router.post("/api/work", function(req, res) {
     });
 });
 
+//Route for Curation Data
+router.get("/api/work", function(req, res) {
+  Work.find({series: "curation"})
+    .then(function(works) {
+      res.json(works);
+    }).catch(function(err) {
+      res.json(err);
+    });
+});
+
 module.exports = router;

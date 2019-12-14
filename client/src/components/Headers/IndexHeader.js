@@ -35,7 +35,7 @@ function IndexHeader() {
         <div
           className="page-header-image"
           ref={pageHeader}
-          style={{ backgroundColor: "blue" }}
+          style={{ backgroundColor: "grey" }}
         ></div>
 
         <Container>
