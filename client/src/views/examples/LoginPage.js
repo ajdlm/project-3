@@ -37,7 +37,7 @@ function LoginPage() {
   return (
     <>
       <ExamplesNavbar />
-      <div className="page-header clear-filter" filter-color="blue">
+      <div className="page-header clear-filter" filter-color="grey">
         <div
           className="page-header-image"
           style={{

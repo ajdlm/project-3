@@ -116,7 +116,7 @@ function IndexNavbar() {
                   >
                     Gloves
                   </DropdownItem>
-                  <DropdownItem to="/profile-page" tag={Link}>
+                  <DropdownItem to="/curationpage" tag={Link}>
                     Curation
                   </DropdownItem>
                 </DropdownMenu>

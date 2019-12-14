@@ -31,7 +31,7 @@ function Examples() {
               </Button>
             </div>
             <div className="col">
-              <a href="examples/profile-page.html" target="_blank">
+              <a href="examples/.html" target="_blank">
                 <img
                   alt="..."
                   className="img-raised"
@@ -41,7 +41,7 @@ function Examples() {
               <Button
                 className="btn-round"
                 color="default"
-                to="/profile-page"
+                to="/curationpage"
                 outline
                 tag={Link}
               >
