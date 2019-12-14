@@ -80,7 +80,8 @@ class CurationPage extends Component {
                className="image-container">
                <CurationCards
                id={curationImage._id}
-               image={curationImage.imageUrls[0]}
+               image={curationImage.imageUrls}
+
                />
                </div>
                </Col>
