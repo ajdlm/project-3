@@ -51,7 +51,7 @@ const ContactForm = props => {
           <button
             type="submit"
             className="btn my-2 px-4"
-            onClick={props.addWorkArray(dummyWork)}
+            onClick={() => props.addWorkArray(dummyWork)}
           >
             SEND MESSAGE
           </button>
