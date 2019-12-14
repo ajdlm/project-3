@@ -75,6 +75,7 @@ class CurationPage extends Component {
               <div className="separator separator-primary"></div>
               <CardDeck>
                {this.state.curationArray.map(curationImage => 
+               <Col md='4'>
                <div
                className="image-container">
                <CurationCards
@@ -82,6 +83,7 @@ class CurationPage extends Component {
                image={curationImage.imageUrls[0]}
                />
                </div>
+               </Col>
                )}
                </CardDeck>
                </Container>
