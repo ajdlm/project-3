@@ -12,19 +12,16 @@ const WorkSchema = new Schema({
     type: String
   },
 
-  imageUrls: [
-    {
-      type: String/*,
-      unique: true*/
-    }
-  ],
+  imageUrls: {
+    type: Array
+  },
 
   price: {
     type: Number
   },
 
   description: {
-    type: String,
+    type: String
   }
 });
 
