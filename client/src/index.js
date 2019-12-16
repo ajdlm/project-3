@@ -28,7 +28,7 @@ import "assets/demo/nucleo-icons-page-styles.css";
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
-import LandingPage from "views/examples/LandingPage.js";
+import PaintPage from "views/examples/PaintPage.js";
 import CurationPage from "views/examples/CurationPage";
 import About from "views/About.js";
 import Contact from "views/Contact.js";
@@ -43,8 +43,8 @@ ReactDOM.render(
           render={props => <NucleoIcons {...props} />}
         />
         <Route
-          path="/landing-page"
-          render={props => <LandingPage {...props} />}
+          path="/PaintPage"
+          render={props => <PaintPage {...props} />}
         />
         <Route
           path="/curationpage"

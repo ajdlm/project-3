@@ -26,7 +26,7 @@ import CurationCards from "components/CurationCards";
 
 class CurationPage extends Component {
 
- 
+
   CurationTest = () => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -38,7 +38,7 @@ class CurationPage extends Component {
     };
   }
 
-  //Curation Images 
+  //Curation Images
   state = {
     curationArray: []
   }
@@ -47,9 +47,9 @@ class CurationPage extends Component {
     .get("/api/work")
     .then(res => {
       const NewArray = res.data;
-      console.log(NewArray);        
+      console.log(NewArray);
       this.setState({curationArray: NewArray})
-      
+
     }).catch(error => {
       console.log(error);
     })
@@ -60,21 +60,16 @@ class CurationPage extends Component {
     this.CurationTest();
   }
 
-  //  [modal1, setModal1] = useState(false);
-  //  [modal2, setModal2] = useState(false);
-  //  [modal3, setModal3] = useState(false);
-
   render() {
-
     return (
       <>
         <ExamplesNavbar />
         <div className="wrapper">
           <div className="section section-about-us">
-            <Container>     
+            <Container>
               <div className="separator separator-primary"></div>
               <CardDeck>
-               {this.state.curationArray.map(curationImage => 
+               {this.state.curationArray.map(curationImage =>
                <Col md='4'>
                <div
                className="image-container">
