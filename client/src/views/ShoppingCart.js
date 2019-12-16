@@ -8,7 +8,7 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 // Importing components specific to the Contact page
 import CartHeader from "components/CartHeader";
 import CartItem from "components/CartItem";
-
+import CartCheckout from "components/CartCheckout";
 
 class ShoppingCart extends Component {
   state = {
@@ -24,6 +24,16 @@ class ShoppingCart extends Component {
       document.body.classList.remove("landing-page");
       document.body.classList.remove("sidebar-collapse");
     };
+  };
+
+  calculateTotalPrice = items => {
+    let totalPrice = 0;
+
+    for (let i = 0; i < items.length; i++) {
+      totalPrice += items[i].price;
+    }
+
+    return totalPrice;
   };
 
   componentDidMount() {
@@ -48,12 +58,17 @@ class ShoppingCart extends Component {
       <>
         <IndexNavbar />
         <div className="wrapper">
-          <div className="main pb-3" style={{background: "#f8f8f8"}}>
+          <div className="main pb-3" style={{ background: "#f8f8f8" }}>
             <CartHeader />
 
             {this.state.itemsInCart.map(item => (
               <CartItem itemInfo={item} />
             ))}
+
+            <CartCheckout
+              quantity={this.state.itemsInCart.length}
+              totalPrice={this.calculateTotalPrice(this.state.itemsInCart)}
+            />
           </div>
           <DarkFooter />
         </div>
