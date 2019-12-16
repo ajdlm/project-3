@@ -32,6 +32,7 @@ import PaintPage from "views/examples/PaintPage.js";
 import CurationPage from "views/examples/CurationPage";
 import About from "views/About.js";
 import Contact from "views/Contact.js";
+import ShoppingCart from "views/ShoppingCart.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -52,6 +53,7 @@ ReactDOM.render(
         />
         <Route path="/about" render={props => <About {...props} />} />
         <Route path="/contact" component={Contact} />
+        <Route path="/shopping-cart" component={ShoppingCart} />
         <Route path="/login-page" render={props => <LoginPage {...props} />} />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
