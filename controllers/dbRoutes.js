@@ -15,4 +15,14 @@ router.get("/api/work", function(req, res) {
     });
 });
 
+//Route for finding by series
+router.get("/api/work/:series", function(req, res) {
+  Work.find({series: req.params.series})
+    .then(works => {
+      res.json(works);
+    }).catch(function(err) {
+      res.json(err);
+    });
+});
+
 module.exports = router;
