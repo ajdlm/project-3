@@ -23,6 +23,9 @@ import ExamplesNavbar from "components/Navbars/IndexNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import CurationCards from "components/CurationCards";
+import CarouselSection from "views/index-sections/Carousel";
+import Carousel from "../index-sections/Carousel.js";
+
 
 class CurationPage extends Component {
 
@@ -81,8 +84,8 @@ class CurationPage extends Component {
                <CurationCards
                id={curationImage._id}
                image={curationImage.imageUrls}
-
                />
+                
                </div>
                </Col>
                )}
