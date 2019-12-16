@@ -4,9 +4,9 @@ import "./style.css";
 const AboutSection = () => {
   return (
     <div className="aboutContainer pt-2 pl-3 pr-0 pb-3 mb-0">
-      <div className="row">
+      <div className="row mt-2">
         <div className="textColumn col-xl-7 col-lg-6">
-          <h2 className="aboutHeading my-3">Meet Suyao Tian</h2>
+          <h2 className="aboutHeading my-3">MEET SUYAO TIAN</h2>
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

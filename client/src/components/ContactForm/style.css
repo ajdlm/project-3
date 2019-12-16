@@ -3,11 +3,6 @@
   background: #f8f8f8;
 }
 
-.contactHeading {
-  color: #3fa9bb;
-  font-weight: bolder;
-}
-
 .contactTextarea {
   max-height: none !important;
   border-radius: 30px !important;
