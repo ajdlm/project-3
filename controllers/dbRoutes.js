@@ -10,7 +10,7 @@ const Work = require("../models/Work.js");
 >>>>>>> 964d43ffa7304c90444fc5e88e3e0d349db12344
 //Route for Curation Data
 router.get("/api/work", function(req, res) {
-  Work.find({series: curation})
+  Work.find({series: "curation"})
     .then(function(works) {
       res.json(works);
     }).catch(function(err) {
