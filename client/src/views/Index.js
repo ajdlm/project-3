@@ -25,6 +25,24 @@ import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
 
+const carouselItems = [
+  {
+    src: require("assets/img/Tian1.jpg"),
+    altText: "Nature, United States",
+    caption: "Nature, United States"
+  },
+  {
+    src: require("assets/img/Tian2.jpg"),
+    altText: "Somewhere Beyond, United States",
+    caption: "Somewhere Beyond, United States"
+  },
+  {
+    src: require("assets/img/Tian3.jpg"),
+    altText: "Yellowstone National Park, United States",
+    caption: "Yellowstone National Park, United States"
+  }
+];
+
 function Index() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -42,7 +60,7 @@ function Index() {
       <IndexNavbar />
       <div className="wrapper">
         <div className="main">
-          <Carousel />
+          <Carousel image={carouselItems} />
         </div>
         <DarkFooter />
       </div>
