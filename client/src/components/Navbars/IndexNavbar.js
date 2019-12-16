@@ -107,7 +107,7 @@ function IndexNavbar() {
                   <p style={{ color: "black" }}>Work</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/landing-page" tag={Link}>
+                  <DropdownItem to="/PaintPage" tag={Link}>
                     Paintings
                   </DropdownItem>
                   <DropdownItem
