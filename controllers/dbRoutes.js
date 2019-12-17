@@ -26,7 +26,7 @@ router.get("/api/paint", function(req, res) {
     });
 });
 
-//Route for finding by series
+//Route for finding work by series
 router.get("/api/work/:series", function(req, res) {
   Work.find({ series: req.params.series })
     .then(works => {

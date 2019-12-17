@@ -1,7 +1,6 @@
 [
   {
     "name": "Spring 1",
-    "isPaint": true,
     "series": "spring",
     "imageUrls": [
       {
@@ -19,7 +18,6 @@
   },
   {
     "name": "Spring 2",
-    "isPaint": true,
     "series": "spring",
     "imageUrls": [
       {
@@ -34,7 +32,6 @@
   },
   {
     "name": "Spring 3",
-    "isPaint": true,
     "series": "spring",
     "imageUrls": [
       {
@@ -49,7 +46,6 @@
   },
   {
     "name": "Spring 4",
-    "isPaint": true,
     "series": "spring",
     "imageUrls": [
       {
@@ -67,7 +63,6 @@
   },
   {
     "name": "Spring 5",
-    "isPaint": true,
     "series": "spring",
     "imageUrls": [
       {
@@ -82,7 +77,6 @@
   },
   {
     "name": "Spring 6",
-    "isPaint": true,
     "series": "spring",
     "imageUrls": [
       {
@@ -97,7 +91,6 @@
   },
   {
     "name": "Spring 7",
-    "isPaint": true,
     "series": "spring",
     "imageUrls": [
       {
@@ -115,7 +108,6 @@
   },
   {
     "name": "Spring 8",
-    "isPaint": true,
     "series": "spring",
     "imageUrls": [
       {
@@ -130,7 +122,6 @@
   },
   {
     "name": "Spring 9",
-    "isPaint": true,
     "series": "spring",
     "imageUrls": [
       {
@@ -145,7 +136,6 @@
   },
   {
     "name": "Summer 1",
-    "isPaint": true,
     "series": "summer",
     "imageUrls": [
       {
@@ -163,7 +153,6 @@
   },
   {
     "name": "Summer 2",
-    "isPaint": true,
     "series": "summer",
     "imageUrls": [
       {
@@ -175,7 +164,6 @@
   },
   {
     "name": "Summer 3",
-    "isPaint": true,
     "series": "summer",
     "imageUrls": [
       {
@@ -190,7 +178,6 @@
   },
   {
     "name": "Summer 4",
-    "isPaint": true,
     "series": "summer",
     "imageUrls": [
       {
@@ -208,7 +195,6 @@
   },
   {
     "name": "Summer 5",
-    "isPaint": true,
     "series": "summer",
     "imageUrls": [
       {
@@ -220,7 +206,6 @@
   },
   {
     "name": "Summer 6",
-    "isPaint": true,
     "series": "summer",
     "imageUrls": [
       {
@@ -235,7 +220,6 @@
   },
   {
     "name": "Autumn 1",
-    "isPaint": true,
     "series": "autumn",
     "imageUrls": [
       {
@@ -250,7 +234,6 @@
   },
   {
     "name": "Autumn 2",
-    "isPaint": true,
     "series": "autumn",
     "imageUrls": [
       {
@@ -262,7 +245,6 @@
   },
   {
     "name": "Autumn 3",
-    "isPaint": true,
     "series": "autumn",
     "imageUrls": [
       {
@@ -277,7 +259,6 @@
   },
   {
     "name": "Autumn 4",
-    "isPaint": true,
     "series": "autumn",
     "imageUrls": [
       {
@@ -292,7 +273,6 @@
   },
   {
     "name": "Autumn 5",
-    "isPaint": true,
     "series": "autumn",
     "imageUrls": [
       {
@@ -304,7 +284,6 @@
   },
   {
     "name": "Autumn 6",
-    "isPaint": true,
     "series": "autumn",
     "imageUrls": [
       {
@@ -319,7 +298,6 @@
   },
   {
     "name": "Winter 1",
-    "isPaint": true,
     "series": "winter",
     "imageUrls": [
       {
@@ -337,7 +315,6 @@
   },
   {
     "name": "Winter 2",
-    "isPaint": true,
     "series": "winter",
     "imageUrls": [
       {
@@ -352,7 +329,6 @@
   },
   {
     "name": "Winter 3",
-    "isPaint": true,
     "series": "winter",
     "imageUrls": [
       {
@@ -367,7 +343,6 @@
   },
   {
     "name": "Winter 4",
-    "isPaint": true,
     "series": "winter",
     "imageUrls": [
       {
@@ -385,7 +360,6 @@
   },
   {
     "name": "Winter 5",
-    "isPaint": true,
     "series": "winter",
     "imageUrls": [
       {
@@ -400,7 +374,6 @@
   },
   {
     "name": "Winter 6",
-    "isPaint": true,
     "series": "winter",
     "imageUrls": [
       {
@@ -415,7 +388,6 @@
   },
   {
     "name": "Winter 7",
-    "isPaint": true,
     "series": "winter",
     "imageUrls": [
       {
@@ -433,7 +405,6 @@
   },
   {
     "name": "Winter 8",
-    "isPaint": true,
     "series": "winter",
     "imageUrls": [
       {
@@ -448,7 +419,6 @@
   },
   {
     "name": "Winter 9",
-    "isPaint": true,
     "series": "winter",
     "imageUrls": [
       {
@@ -463,7 +433,6 @@
   },
   {
     "name": "Curation 1",
-    "isPaint": false,
     "series": "curation",
     "imageUrls": [
       {
@@ -478,7 +447,6 @@
   },
   {
     "name": "Curation 2",
-    "isPaint": false,
     "series": "curation",
     "imageUrls": [
       {
@@ -496,7 +464,6 @@
   },
   {
     "name": "Curation 3",
-    "isPaint": false,
     "series": "curation",
     "imageUrls": [
       {
@@ -508,7 +475,6 @@
   },
   {
     "name": "Curation 4",
-    "isPaint": false,
     "series": "curation",
     "imageUrls": [
       {
@@ -523,7 +489,6 @@
   },
   {
     "name": "Curation 5",
-    "isPaint": false,
     "series": "curation",
     "imageUrls": [
       {
@@ -538,7 +503,6 @@
   },
   {
     "name": "Curation 6",
-    "isPaint": false,
     "series": "curation",
     "imageUrls": [
       {
@@ -553,7 +517,6 @@
   },
   {
     "name": "Curation 7",
-    "isPaint": false,
     "series": "curation",
     "imageUrls": [
       {
@@ -565,7 +528,6 @@
   },
   {
     "name": "Curation 8",
-    "isPaint": false,
     "series": "curation",
     "imageUrls": [
       {
@@ -583,7 +545,6 @@
   },
   {
     "name": "Curation 9",
-    "isPaint": false,
     "series": "curation",
     "imageUrls": [
       {
