@@ -2,8 +2,8 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
-const Work = require("./models/Work.js");
 const app = express();
+const transactionRoutes = require("./controllers/transactionRoutes.js");
 
 // Define middleware
 app.use(express.urlencoded({ extended: true }));
@@ -26,8 +26,11 @@ const dbRoutes = require("./controllers/dbRoutes.js");
 
 app.use(dbRoutes);
 
+// Use the following get/post routes for completed transactions
+app.get("/api/transactions", transactionRoutes.getTransactions);
+app.post("/api/transactions", transactionRoutes.postTransaction);
+
 // Send every request to the React app
-// Define any API routes before this runs
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/"));
 });

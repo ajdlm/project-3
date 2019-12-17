@@ -26,16 +26,6 @@ class ShoppingCart extends Component {
     };
   };
 
-  calculateTotalPrice = items => {
-    let totalPrice = 0;
-
-    for (let i = 0; i < items.length; i++) {
-      totalPrice += items[i].price;
-    }
-
-    return totalPrice;
-  };
-
   componentDidMount() {
     this.navResponsive();
 
@@ -52,6 +42,20 @@ class ShoppingCart extends Component {
   componentDidUpdate() {
     this.navResponsive();
   }
+
+  calculateTotalPrice = items => {
+    let totalPrice = 0;
+
+    for (let i = 0; i < items.length; i++) {
+      totalPrice += items[i].price;
+    }
+
+    return totalPrice;
+  };
+
+  performTransaction(array, totalPrice) {
+
+  };
 
   render() {
     return (
