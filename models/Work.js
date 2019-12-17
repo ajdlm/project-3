@@ -8,6 +8,10 @@ const WorkSchema = new Schema({
     unique: true
   },
 
+  isPaint: {
+    type: Boolean,
+  },
+
   series: {
     type: String
   },
