@@ -15,17 +15,6 @@ router.get("/api/work", function(req, res) {
     });
 });
 
-//Route for Painting Data
-router.get("/api/paint", function(req, res) {
-  Work.find({ isPaint: true })
-    .then(function(works) {
-      res.json(works);
-    })
-    .catch(function(err) {
-      res.json(err);
-    });
-});
-
 //Route for finding work by series
 router.get("/api/work/:series", function(req, res) {
   Work.find({ series: req.params.series })
