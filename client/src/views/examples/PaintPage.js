@@ -38,7 +38,7 @@ class PaintPage extends Component {
   }
 
   componentDidMount() {
-    axios.get("/api/paint/spring")
+    axios.get("/api/work/spring")
       .then(res => {
         const NewArray = res.data;
         this.setState({spring: NewArray});
@@ -46,7 +46,7 @@ class PaintPage extends Component {
       console.log(error);
     })
 
-    axios.get("/api/paint/summer")
+    axios.get("/api/work/summer")
       .then(res => {
         const NewArray = res.data;
         this.setState({summer: NewArray});
@@ -54,7 +54,7 @@ class PaintPage extends Component {
       console.log(error);
     })
 
-    axios.get("/api/paint/autumn")
+    axios.get("/api/work/autumn")
       .then(res => {
         const NewArray = res.data;
         this.setState({autumn: NewArray});
@@ -62,7 +62,7 @@ class PaintPage extends Component {
       console.log(error);
     })
 
-    axios.get("/api/paint/winter")
+    axios.get("/api/work/winter")
       .then(res => {
         const NewArray = res.data;
         this.setState({winter: NewArray});

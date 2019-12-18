@@ -26,16 +26,6 @@ class ShoppingCart extends Component {
     };
   };
 
-  calculateTotalPrice = items => {
-    let totalPrice = 0;
-
-    for (let i = 0; i < items.length; i++) {
-      totalPrice += items[i].price;
-    }
-
-    return totalPrice;
-  };
-
   componentDidMount() {
     this.navResponsive();
 
@@ -53,6 +43,31 @@ class ShoppingCart extends Component {
     this.navResponsive();
   }
 
+  calculateTotalPrice = items => {
+    let totalPrice = 0;
+
+    for (let i = 0; i < items.length; i++) {
+      totalPrice += items[i].price;
+    }
+
+    return totalPrice;
+  };
+
+  performTransaction = array => {
+    const itemArray = [];
+
+    for (let j = 0; j < array.length; j++) {
+      let newItem = {
+        name: array[j].name,
+        price: array[j].price
+      };
+
+      itemArray.push(newItem);
+    }
+
+    return itemArray;
+  };
+
   render() {
     return (
       <>
@@ -68,6 +83,9 @@ class ShoppingCart extends Component {
             <CartCheckout
               quantity={this.state.itemsInCart.length}
               totalPrice={this.calculateTotalPrice(this.state.itemsInCart)}
+              performTransaction={this.performTransaction(
+                this.state.itemsInCart
+              )}
             />
           </div>
           <DarkFooter />
