@@ -9,15 +9,18 @@ import AboutSection from "components/AboutSection";
 
 const About = () => {
   return (
-    <>
-      <IndexNavbar />
-      <div className="wrapper">
+    <div
+      className="d-flex"
+      style={{ minHeight: "100vh", flexDirection: "column" }}
+    >
+      <div className="wrapper" style={{ flex: "1", background: "#f8f8f8 !important" }}>
+        <IndexNavbar />
         <div className="main">
           <AboutSection />
         </div>
-        <DarkFooter />
       </div>
-    </>
+      <DarkFooter />
+    </div>
   );
 };
 
