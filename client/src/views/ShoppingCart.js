@@ -53,7 +53,7 @@ class ShoppingCart extends Component {
     return totalPrice;
   };
 
-  performTransaction = itemsToPurchase => {
+  assembleTransaction = itemsToPurchase => {
     const itemArray = [];
 
     for (let j = 0; j < itemsToPurchase.length; j++) {
@@ -89,9 +89,10 @@ class ShoppingCart extends Component {
             <CartCheckout
               quantity={this.state.itemsInCart.length}
               totalPrice={this.calculateTotalPrice(this.state.itemsInCart)}
-              performTransaction={this.postTransaction(this.performTransaction(
+              transactionArray={this.assembleTransaction(
                 this.state.itemsInCart
-              ))}
+              )}
+              performTransaction={this.postTransaction}
             />
           </div>
           <DarkFooter />
