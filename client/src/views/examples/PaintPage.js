@@ -21,11 +21,11 @@ import PaintCard from "components/PaintCard";
 
 class PaintPage extends Component {
     PaintTest = () => {
-      document.body.classList.add("landing-page");
+      document.body.classList.add("PaintPage");
       document.body.classList.add("sidebar-collapse");
       document.documentElement.classList.remove("nav-open");
       return function cleanup() {
-        document.body.classList.remove("landing-page");
+        document.body.classList.remove("PaintPage");
         document.body.classList.remove("sidebar-collapse");
       };
     }
@@ -38,41 +38,37 @@ class PaintPage extends Component {
   }
 
   componentDidMount() {
-    axios
-      .get("/api/paint")
+    axios.get("/api/paint/spring")
       .then(res => {
         const NewArray = res.data;
-        let Nspring = [];
-        let Nsummer = [];
-        let Nautumn = [];
-        let Nwinter = [];
-        console.log(NewArray[0]);
-        for (let i = 0; i < NewArray.size; i ++)
-        {
-          if (NewArray[i].series === "spring")
-          {
-            Nspring.push(NewArray[i]);
-          }
-          else if (NewArray[i].series === "summer")
-          {
-            Nsummer.push(NewArray[i]);
-          }
-          else if (NewArray[i].series === "autumn")
-          {
-            Nautumn.push(NewArray[i]);
-          }
-          else if (NewArray[i].series === "winter")
-          {
-            Nwinter.push(NewArray[i]);
-          }
-        }
-        console.log (Nspring);
-        this.setState({spring: Nspring, summer: Nsummer, autumn: Nautumn, winter: Nwinter});
-
+        this.setState({spring: NewArray});
       }).catch(error => {
       console.log(error);
     })
-    this.PaintTest();
+
+    axios.get("/api/paint/summer")
+      .then(res => {
+        const NewArray = res.data;
+        this.setState({summer: NewArray});
+      }).catch(error => {
+      console.log(error);
+    })
+
+    axios.get("/api/paint/autumn")
+      .then(res => {
+        const NewArray = res.data;
+        this.setState({autumn: NewArray});
+      }).catch(error => {
+      console.log(error);
+    })
+
+    axios.get("/api/paint/winter")
+      .then(res => {
+        const NewArray = res.data;
+        this.setState({winter: NewArray});
+      }).catch(error => {
+      console.log(error);
+    })
   }
 
   componentDidUpdate() {
@@ -84,28 +80,25 @@ class PaintPage extends Component {
       <>
         <ExamplesNavbar/>
         <div className="wrapper">
-          <div className="section section-about-us">
-            <Container>
 
-              <div className="separator separator-primary"></div>
-              <div className="section-story-overview">
-                <Row id="spring">
-                  <CardDeck>
+            <Container>
+              <div id = "spring">
+               <CardDeck>
                     {this.state.spring.map(springImage =>
                       <Col md='4'>
                         <div
                           className="image-container">
                           <PaintCard
                             id={springImage._id}
-                            image={springImage.imageUrls}
+                            image={springImage}
                           />
                         </div>
                       </Col>
                     )}
                   </CardDeck>
-                </Row>
+              </div>
                 {/******************************************************************/}
-                <Row id="summer">
+                <div id = "summer">
                   <CardDeck>
                     {this.state.summer.map(summerImage =>
                       <Col md='4'>
@@ -113,15 +106,15 @@ class PaintPage extends Component {
                           className="image-container">
                           <PaintCard
                             id={summerImage._id}
-                            image={summerImage.imageUrls}
+                            image={summerImage}
                           />
                         </div>
                       </Col>
                     )}
                   </CardDeck>
-                </Row>
+                </div>
                 {/******************************************************************/}
-                <Row id="autumn">
+              <div id = "autumn">
                   <CardDeck>
                     {this.state.autumn.map(autumnImage =>
                       <Col md='4'>
@@ -129,15 +122,15 @@ class PaintPage extends Component {
                           className="image-container">
                           <PaintCard
                             id={autumnImage._id}
-                            image={autumnImage.imageUrls}
+                            image={autumnImage}
                           />
                         </div>
                       </Col>
                     )}
                   </CardDeck>
-                </Row>
+              </div>
                 {/******************************************************************/}
-                <Row id="winter">
+              <div id = "winter">
                   <CardDeck>
                     {this.state.winter.map(winterImage =>
                       <Col md='4'>
@@ -145,22 +138,20 @@ class PaintPage extends Component {
                           className="image-container">
                           <PaintCard
                             id={winterImage._id}
-                            image={winterImage.imageUrls}
+                            image={winterImage}
                           />
                         </div>
                       </Col>
                     )}
                   </CardDeck>
-                </Row>
+              </div>
                 {/******************************************************************/}
 
-              </div>
             </Container>
           </div>
 
           <DarkFooter/>
-        </div>
-      </>
+          </>
     );
     }
 }
