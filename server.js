@@ -4,10 +4,27 @@ const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const transactionRoutes = require("./controllers/transactionRoutes.js");
-
+const session = require("express-session");
+const mongoSessionStore = require('connect-mongo');
+const MongoStore = mongoSessionStore(session);
+const sess = {
+  name: 'builderbook.sid',
+  secret: sessionSecret,
+  store: new MongoStore({
+    mongooseConnection: mongoose.connection,
+    ttl: 14 * 24 * 60 * 60, // save session 14 days
+  }),
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    httpOnly: true,
+    maxAge: 14 * 24 * 60 * 60 * 1000, // expires in 14 days
+  },
+};
 // Define middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(session(sess));
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
