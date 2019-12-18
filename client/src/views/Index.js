@@ -25,6 +25,14 @@ import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
 
+const items = [
+    {
+      "src": "https://images4.alphacoders.com/665/665216.jpg"
+    },
+    {
+      "src": "https://www.cursaintercol.cat/upload/o/24/240775_desktop-backgrounds-art.jpg"
+    }
+  ];
 function Index() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -42,7 +50,7 @@ function Index() {
       <IndexNavbar />
       <div className="wrapper">
         <div className="main">
-          <Carousel />
+          <Carousel image={items}/>
         </div>
         <DarkFooter />
       </div>
