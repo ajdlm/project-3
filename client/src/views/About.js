@@ -13,9 +13,9 @@ const About = () => {
       className="d-flex"
       style={{ minHeight: "100vh", flexDirection: "column" }}
     >
-      <div className="wrapper" style={{ flex: "1", background: "#f8f8f8 !important" }}>
+      <div className="wrapper d-flex" style={{ flex: "1", flexDirection: "column"  }}>
         <IndexNavbar />
-        <div className="main">
+        <div className="main d-flex" style={{ flex: "1", flexDirection: "column"}}>
           <AboutSection />
         </div>
       </div>

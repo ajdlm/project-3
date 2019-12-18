@@ -53,19 +53,25 @@ class ShoppingCart extends Component {
     return totalPrice;
   };
 
-  performTransaction = array => {
+  performTransaction = itemsToPurchase => {
     const itemArray = [];
 
-    for (let j = 0; j < array.length; j++) {
+    for (let j = 0; j < itemsToPurchase.length; j++) {
       let newItem = {
-        name: array[j].name,
-        price: array[j].price
+        name: itemsToPurchase[j].name,
+        price: itemsToPurchase[j].price
       };
 
       itemArray.push(newItem);
     }
 
     return itemArray;
+  };
+
+  postTransaction = purchasedItems => {
+    axios.post("/api/transactions", purchasedItems, function(data) {
+      console.log(data);
+    });
   };
 
   render() {
@@ -83,9 +89,9 @@ class ShoppingCart extends Component {
             <CartCheckout
               quantity={this.state.itemsInCart.length}
               totalPrice={this.calculateTotalPrice(this.state.itemsInCart)}
-              performTransaction={this.performTransaction(
+              performTransaction={this.postTransaction(this.performTransaction(
                 this.state.itemsInCart
-              )}
+              ))}
             />
           </div>
           <DarkFooter />

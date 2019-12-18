@@ -12,7 +12,9 @@ const CartCheckout = props => {
             Subtotal ({props.quantity}): ${props.totalPrice}
           </h5>
 
-          <button className="btn" onClick={props.performTransaction}>PROCEED TO CHECKOUT</button>
+          <button className="btn" onClick={() => props.performTransaction}>
+            PROCEED TO CHECKOUT
+          </button>
         </div>
       </div>
     </div>
