@@ -31,7 +31,7 @@ function CarouselSection(props) {
   };
   return (
     <>
-      <div className="section pb-0" id="carousel">
+      {/* <div className="section pb-0" id="carousel"> */}
         <Carousel activeIndex={activeIndex} next={next} previous={previous}>
           <CarouselIndicators
             items={props.image}
@@ -77,7 +77,7 @@ function CarouselSection(props) {
             <i className="now-ui-icons arrows-1_minimal-right"></i>
           </a>
         </Carousel>
-      </div>
+      {/* </div> */}
     </>
   );
 }

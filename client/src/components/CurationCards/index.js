@@ -1,5 +1,5 @@
 import React from "react";
-import {Row, Col, Modal, ModalBody, Button} from "reactstrap";
+import {Row, Col, Modal, ModalBody, Button, CardText} from "reactstrap";
 import Carousel from "../../views/index-sections/Carousel";
 
 
@@ -18,15 +18,21 @@ function CurationCards(props) {
                      </div>
             </div>
             <Modal size = "lg" isOpen={modal1} toggle={() => setModal1(false)}>
-                <ModalBody>
-                    <div
+            <ModalBody> 
+
+                    <div  
                         className="image-container"
                         onClick={() => setModal1(true)}
                       >
-                        <Carousel
+                        <Carousel 
                       image={props.image}
+                      
                ></Carousel>
+                    
                     </div>
+                    <br>
+                    </br>
+                   <h6>Details: </h6> {props.text}
                 </ModalBody>
               </Modal>
             </Col>
