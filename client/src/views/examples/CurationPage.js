@@ -79,8 +79,9 @@ class CurationPage extends Component {
                <CurationCards
                id={curationImage._id}
                image={curationImage.imageUrls}
+               text={curationImage.description}
                />
-                
+               
                </div>
                </Col>
                )}
