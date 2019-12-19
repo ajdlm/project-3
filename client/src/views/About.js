@@ -1,7 +1,10 @@
 import React from "react";
 
 // Importing core components of the website
+import PageContainer from "components/PageContainer";
+import Wrapper from "components/Wrapper";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import Main from "components/Main";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 // Importing components specific to the About page
@@ -9,18 +12,17 @@ import AboutSection from "components/AboutSection";
 
 const About = () => {
   return (
-    <div
-      className="d-flex"
-      style={{ minHeight: "100vh", flexDirection: "column" }}
-    >
-      <div className="wrapper d-flex" style={{ flex: "1", flexDirection: "column"  }}>
+    <PageContainer>
+      <Wrapper>
         <IndexNavbar />
-        <div className="main d-flex" style={{ flex: "1", flexDirection: "column"}}>
+
+        <Main>
           <AboutSection />
-        </div>
-      </div>
+        </Main>
+      </Wrapper>
+
       <DarkFooter />
-    </div>
+    </PageContainer>
   );
 };
 
