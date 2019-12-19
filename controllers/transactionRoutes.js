@@ -6,6 +6,8 @@ module.exports = {
   },
 
   postTransaction: (req, res) => {
+    console.log(req.body);
+
     transactions.push(req.body);
 
     res.json(req.body);

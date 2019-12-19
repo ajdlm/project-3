@@ -1,6 +1,7 @@
 .contactContainer {
-  margin: 72px auto 40px;
+  margin-top: 72px;
   background: #f8f8f8;
+  flex: 1;
 }
 
 .contactTextarea {

@@ -1,6 +1,7 @@
 .aboutContainer {
     margin: 72px auto 40px;
     background: #F8F8F8;
+    flex: 1;
 }
 
 .row {

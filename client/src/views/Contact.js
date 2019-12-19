@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 
 // Importing core components of the website
+import PageContainer from "components/PageContainer";
+import Wrapper from "components/Wrapper";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import Main from "components/Main";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 // Importing components specific to the Contact page
@@ -29,15 +32,17 @@ class Contact extends Component {
 
   render() {
     return (
-      <>
-        <IndexNavbar />
-        <div className="wrapper">
-          <div className="main">
+      <PageContainer>
+        <Wrapper>
+          <IndexNavbar />
+
+          <Main>
             <ContactForm />
-          </div>
-          <DarkFooter />
-        </div>
-      </>
+          </Main>
+        </Wrapper>
+        
+        <DarkFooter />
+      </PageContainer>
     );
   }
 }
