@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 // Importing core components of the website
 import PageContainer from "components/PageContainer";
@@ -30,6 +31,43 @@ class Contact extends Component {
     this.navResponsive();
   }
 
+  resetForm = () => {
+    document.getElementById("contactForm").reset();
+  };
+
+  submitForm = event => {
+    event.preventDefault();
+
+    const newMessage = {
+      name: document
+        .getElementById("name")
+        .value,
+
+      email: document
+        .getElementById("email")
+        .value,
+
+      subject: document
+        .getElementById("subject")
+        .value,
+
+      message: document
+        .getElementById("message")
+        .value
+    };
+
+    axios
+      .post("/send-message", newMessage)
+      .then(response => {
+        console.log(response);
+
+        this.resetForm();
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  };
+
   render() {
     return (
       <PageContainer>
@@ -37,10 +75,10 @@ class Contact extends Component {
           <IndexNavbar />
 
           <Main>
-            <ContactForm />
+            <ContactForm submitForm={this.submitForm} />
           </Main>
         </Wrapper>
-        
+
         <DarkFooter />
       </PageContainer>
     );

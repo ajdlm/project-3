@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
@@ -21,10 +22,14 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/galleryDB";
 // Connect Mongo database to Mongoose
 mongoose.connect(MONGODB_URI);
 
-// Require database routes
+// Require and use the database routes
 const dbRoutes = require("./controllers/dbRoutes.js");
-
 app.use(dbRoutes);
+
+// Require and use the route for sending emails
+// from the Contact page
+const messageRoute = require("./controllers/messageRoute.js");
+app.use(messageRoute);
 
 // Use the following get/post routes for completed transactions
 app.get("/api/transactions", transactionRoutes.getTransactions);
