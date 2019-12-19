@@ -24,7 +24,7 @@ function PaintCard(props) {
         <Col md-4>
           <div className="card">
             <div className="img-container">
-              <img src={props.image.imageUrls[0].src} onClick={()=> setModal(true)}/>
+              <img src={props.image.imageUrls[0].src} alt="pic" onClick={()=> setModal(true)}/>
             </div>
           </div>
           <Modal size = "lg" isOpen={modal} toggle={() => setModal(false)}>
