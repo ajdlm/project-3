@@ -29,17 +29,17 @@ const carouselItems = [
   {
     src: require("assets/img/Tian1.jpg"),
     altText: "Nature, United States",
-    caption: "Nature, United States"
+    caption: ""
   },
   {
     src: require("assets/img/Tian2.jpg"),
     altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States"
+    caption: ""
   },
   {
     src: require("assets/img/Tian3.jpg"),
     altText: "Yellowstone National Park, United States",
-    caption: "Yellowstone National Park, United States"
+    caption: ""
   }
 ];
 
@@ -58,12 +58,13 @@ function Index() {
   return (
     <>
       <IndexNavbar />
-      <div className="wrapper">
         <div className="main">
-          <Carousel image={carouselItems} />
-        </div>
+          <div className style={{marginTop: "70px"}}>
+      
+          <Carousel image={carouselItems}/>
+          </div>
+          </div>
         <DarkFooter />
-      </div>
     </>
   );
 }
