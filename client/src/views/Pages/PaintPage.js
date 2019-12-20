@@ -97,7 +97,8 @@ class PaintPage extends Component {
                             image={springImage}
                           />
                         </div>
-                      </Col>
+                          <p>                                  </p>
+                          </Col>
                     )}
                   </CardDeck>
               </div>
