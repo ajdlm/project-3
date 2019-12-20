@@ -3,7 +3,7 @@ import "./style.css";
 
 const CartHeader = () => {
   return (
-    <div className="row cartRow headerRow mx-0 pt-3 px-3">
+    <div className="row cartRow mx-0 pt-3 px-3">
       <div className="col-3"></div>
 
       <div className="col-6 d-flex align-items-end justify-content-center">

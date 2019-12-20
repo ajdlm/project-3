@@ -25,7 +25,7 @@ const CartItem = props => {
               {props.itemInfo.series.toUpperCase()} COLLECTION
             </h5>
 
-            <p>{props.itemInfo.description}</p>
+            <p className="cartText">{props.itemInfo.description}</p>
 
             <button
               className="btn mt-0"

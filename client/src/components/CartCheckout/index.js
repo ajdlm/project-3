@@ -7,7 +7,7 @@ const CartCheckout = props => {
       <div className="col-9"></div>
 
       <div className="col-3">
-        <div className="py-3 text-center bg-dark text-white rounded">
+        <div className="p-3 text-center bg-dark text-white rounded">
           <h5 className="mb-0">
             Subtotal ({props.quantity}): ${props.totalPrice}
           </h5>

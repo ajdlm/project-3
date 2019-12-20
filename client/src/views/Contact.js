@@ -39,21 +39,13 @@ class Contact extends Component {
     event.preventDefault();
 
     const newMessage = {
-      name: document
-        .getElementById("name")
-        .value,
+      name: document.getElementById("name").value,
 
-      email: document
-        .getElementById("email")
-        .value,
+      email: document.getElementById("email").value,
 
-      subject: document
-        .getElementById("subject")
-        .value,
+      subject: document.getElementById("subject").value,
 
-      message: document
-        .getElementById("message")
-        .value
+      message: document.getElementById("message").value
     };
 
     axios
@@ -71,9 +63,9 @@ class Contact extends Component {
   render() {
     return (
       <PageContainer>
-        <Wrapper>
-          <IndexNavbar />
+        <IndexNavbar />
 
+        <Wrapper>
           <Main>
             <ContactForm submitForm={this.submitForm} />
           </Main>

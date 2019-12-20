@@ -34,7 +34,9 @@ class ShoppingCart extends Component {
     axios
       .get("/api/cart")
       .then(res => {
-        this.setState({ itemsInCart: res.data });
+        if (res.data) {
+          this.setState({ itemsInCart: res.data });
+        }
       })
       .catch(error => {
         console.log(error);
@@ -104,11 +106,13 @@ class ShoppingCart extends Component {
   render() {
     return (
       <PageContainer>
-        <Wrapper>
-          <IndexNavbar />
+        <IndexNavbar />
 
+        <Wrapper>
           <Main>
-            <div style={{ flex: "1" }}>
+            <div
+              style={{ background: "#f8f8f8", marginTop: "72px", flex: "1" }}
+            >
               <CartHeader />
 
               {this.state.itemsInCart.map(item => (
