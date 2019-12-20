@@ -83,7 +83,7 @@ class PaintPage extends Component {
     return (
       <>
         <ExamplesNavbar/>
-        <div className="wrapper">
+        <div className="wrapper" style={{margin: "72px 0"}}>
 
             <Container>
               <div id = "spring">

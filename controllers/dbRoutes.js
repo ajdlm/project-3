@@ -30,7 +30,9 @@ router.post("/api/user", function(req, res) {
   if (req.session.newPaint) {
     req.session.newPaint.push(req.body);
     console.log(req.session.newPaint);
-  } else {
+  }
+  
+  else {
     req.session.newPaint = [];
     req.session.newPaint.push(req.body);
     console.log("Empty");
