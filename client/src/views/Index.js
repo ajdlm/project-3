@@ -58,13 +58,12 @@ function Index() {
   return (
     <>
       <IndexNavbar />
-        <div className="main">
-          <div className style={{marginTop: "70px"}}>
-      
+      <div className="wrapper">
+        <div className="main"style={{marginTop: "70px"}}>
           <Carousel image={carouselItems}/>
           </div>
-          </div>
         <DarkFooter />
+        </div>
     </>
   );
 }
