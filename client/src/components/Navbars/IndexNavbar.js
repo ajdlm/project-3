@@ -59,7 +59,7 @@ function IndexNavbar() {
               id="navbar-brand"
               style={{ color: "black" }}
             >
-              Suyoa Tian
+              Suyao Tian
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
               Designed by Project 3
