@@ -27,14 +27,20 @@ router.get("/api/work/:series", function(req, res) {
 
 
 router.post("/api/user", function (req, res){
+  //console.log("WOO", req.session);
+  //req.session.views = req.session.views ? req.session.views++ : 1;
   if (req.session.newPaint){
-    req.session.myPaint.push(req.body);
-  }
-  else {
-    req.session.newPaint = req.body;
-    console.log("empty");
+    req.session.newPaint.push(req.body);
     console.log(req.session.newPaint);
   }
+  else {
+    req.session.newPaint = [];
+    req.session.newPaint.push(req.body);
+    console.log("Empty");
+    console.log(req.session.newPaint);
+    //console.log(req.session.newPaint);
+  }
+  res.json();
 });
 
 router.get("/api/cart", function(req, res) {
