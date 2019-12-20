@@ -11,11 +11,20 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 import AboutSection from "components/AboutSection";
 
 const About = () => {
+  React.useEffect(() => {
+    document.body.classList.add("sidebar-collapse");
+    document.documentElement.classList.remove("nav-open");
+    
+    return function cleanup() {
+      document.body.classList.remove("sidebar-collapse");
+    };
+  });
+
   return (
     <PageContainer>
-      <Wrapper>
-        <IndexNavbar />
+      <IndexNavbar />
 
+      <Wrapper>
         <Main>
           <AboutSection />
         </Main>

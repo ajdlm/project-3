@@ -12,7 +12,7 @@ const ContactForm = props => {
         <form
           id="contactForm"
         >
-          <div className="form-inline d-flex">
+          <div className="d-flex">
             <div className="form-group flex-grow-1">
               <input
                 id="name"
