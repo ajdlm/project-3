@@ -27,7 +27,12 @@ const CartItem = props => {
 
             <p>{props.itemInfo.description}</p>
 
-            <button className="btn mt-0">REMOVE</button>
+            <button
+              className="btn mt-0"
+              onClick={() => props.deleteItem(props.itemInfo)}
+            >
+              REMOVE
+            </button>
           </div>
         </div>
 

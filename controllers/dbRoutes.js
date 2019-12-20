@@ -46,4 +46,20 @@ router.get("/api/cart", function(req, res) {
   res.json(req.session.newPaint);
 });
 
+router.put("/api/cart", (req, res) => {
+  console.log(req.body);
+
+  if (req.session.newPaint) {
+    for (let i = 0; i < req.session.newPaint.length; i++) {
+      if (req.body._id === req.session.newPaint[i]._id) {
+        req.session.newPaint.splice(i, 1);
+
+        break;
+      }
+    }
+  }
+
+  res.json(true);
+});
+
 module.exports = router;

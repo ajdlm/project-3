@@ -15,6 +15,7 @@ import CartCheckout from "components/CartCheckout";
 
 class ShoppingCart extends Component {
   state = {
+    wasDeleted: false,
     itemsInCart: []
   };
 
@@ -29,18 +30,31 @@ class ShoppingCart extends Component {
     };
   };
 
+  getCart = () => {
+    axios
+      .get("/api/cart")
+      .then(res => {
+        this.setState({ itemsInCart: res.data });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  };
+
   componentDidMount() {
     this.navResponsive();
 
-  axios.get("/api/cart").then (res=> {
-    this.setState({ itemsInCart: res.data });
-}).catch(error => {
-    console.log(error);
-})
+    this.getCart();
   }
 
   componentDidUpdate() {
     this.navResponsive();
+
+    if (this.state.wasDeleted === true) {
+      this.setState({ wasDeleted: false });
+
+      this.getCart();
+    }
   }
 
   calculateTotalPrice = items => {
@@ -74,6 +88,19 @@ class ShoppingCart extends Component {
     });
   };
 
+  deleteItem = item => {
+    console.log(item);
+
+    axios
+      .put("/api/cart", item)
+      .then(response => {
+        this.setState({ wasDeleted: response.data });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  };
+
   render() {
     return (
       <PageContainer>
@@ -85,7 +112,7 @@ class ShoppingCart extends Component {
               <CartHeader />
 
               {this.state.itemsInCart.map(item => (
-                <CartItem itemInfo={item} />
+                <CartItem itemInfo={item} deleteItem={this.deleteItem} />
               ))}
 
               <CartCheckout
