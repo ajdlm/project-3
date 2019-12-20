@@ -81,7 +81,7 @@ class CurationPage extends Component {
                image={curationImage.imageUrls}
                text={curationImage.description}
                />
-               
+
                </div>
                </Col>
                )}

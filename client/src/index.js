@@ -27,9 +27,9 @@ import "assets/demo/nucleo-icons-page-styles.css";
 // pages for this kit
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
-import LoginPage from "views/examples/LoginPage.js";
-import PaintPage from "views/examples/PaintPage.js";
-import CurationPage from "views/examples/CurationPage";
+//import LoginPage from "views/Pages/LoginPage.js";
+import PaintPage from "views/Pages/PaintPage.js";
+import CurationPage from "views/Pages/CurationPage";
 import About from "views/About.js";
 import Contact from "views/Contact.js";
 import ShoppingCart from "views/ShoppingCart.js";
@@ -39,22 +39,13 @@ ReactDOM.render(
     <Switch>
       <Switch>
         <Route path="/index" render={props => <Index {...props} />} />
-        <Route
-          path="/nucleo-icons"
-          render={props => <NucleoIcons {...props} />}
-        />
-        <Route
-          path="/PaintPage"
-          render={props => <PaintPage {...props} />}
-        />
-        <Route
-          path="/curationpage"
-          render={props => <CurationPage {...props} />}
-        />
+        <Route path="/nucleo-icons" render={props => <NucleoIcons {...props} />} />
+        <Route path="/PaintPage" render={props => <PaintPage {...props} />} />
+        <Route path="/curationpage" render={props => <CurationPage {...props} />} />
         <Route path="/about" render={props => <About {...props} />} />
         <Route path="/contact" component={Contact} />
         <Route path="/shopping-cart" component={ShoppingCart} />
-        <Route path="/login-page" render={props => <LoginPage {...props} />} />
+        <Route path="/user"/>
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
       </Switch>
