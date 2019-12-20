@@ -5,7 +5,6 @@ const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const transactionRoutes = require("./controllers/transactionRoutes.js");
-const cookieParser = require('cookie-parser');
 const session = require("express-session");
 const MongoStore = require('connect-mongo')(session);
 
@@ -27,15 +26,10 @@ mongoose.connect(MONGODB_URI);
 // Require and use the database routes
 const dbRoutes = require("./controllers/dbRoutes.js");
 
-app.use(cookieParser())
 app.use(session({
   secret: 'anystringoftext',
-  HttpOnly: true,
-  SameSite: true,
-  resave: true,
-  cookie: {secure: true},
-  store: new MongoStore({ mongooseConnection: mongoose.connection }),
-  autoRemove: 'native'
+  cookie: {},
+  store: new MongoStore({ mongooseConnection: mongoose.connection })
 }));
 app.use(dbRoutes);
 
