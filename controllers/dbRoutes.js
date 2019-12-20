@@ -41,7 +41,7 @@ router.post("/api/user", function(req, res) {
 });
 
 router.get("/api/cart", function(req, res) {
-  console.log(req.session);
+  res.json(req.session.newPaint);
 });
 
 module.exports = router;

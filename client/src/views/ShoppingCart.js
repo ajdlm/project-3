@@ -33,18 +33,10 @@ class ShoppingCart extends Component {
     this.navResponsive();
 
   axios.get("/api/cart").then (res=> {
-    console.log(res);
+    this.setState({ itemsInCart: res.data });
 }).catch(error => {
     console.log(error);
 })
-    axios
-      .get("/api/work/spring")
-      .then(response => {
-        this.setState({ itemsInCart: response.data });
-      })
-      .catch(error => {
-        console.log(error);
-      });
   }
 
   componentDidUpdate() {
