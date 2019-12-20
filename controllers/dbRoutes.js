@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const Work = require("../models/Work.js");
 
-
 //Route for Curation Data
 router.get("/api/work", function(req, res) {
   Work.find({ series: "curation" })
@@ -25,15 +24,13 @@ router.get("/api/work/:series", function(req, res) {
     });
 });
 
-
-router.post("/api/user", function (req, res){
+router.post("/api/user", function(req, res) {
   //console.log("WOO", req.session);
   //req.session.views = req.session.views ? req.session.views++ : 1;
-  if (req.session.newPaint){
+  if (req.session.newPaint) {
     req.session.newPaint.push(req.body);
     console.log(req.session.newPaint);
-  }
-  else {
+  } else {
     req.session.newPaint = [];
     req.session.newPaint.push(req.body);
     console.log("Empty");
@@ -46,6 +43,5 @@ router.post("/api/user", function (req, res){
 router.get("/api/cart", function(req, res) {
   console.log(req.session);
 });
-
 
 module.exports = router;
