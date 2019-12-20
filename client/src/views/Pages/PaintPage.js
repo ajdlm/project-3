@@ -31,6 +31,7 @@ class PaintPage extends Component {
     }
 
   state = {
+      cookieText: "empty",
     spring: [],
     summer: [],
     autumn: [],
@@ -38,7 +39,10 @@ class PaintPage extends Component {
   }
 
   componentDidMount() {
-    axios.get("/api/work/spring")
+
+
+
+  axios.get("/api/work/spring")
       .then(res => {
         const NewArray = res.data;
         this.setState({spring: NewArray});
