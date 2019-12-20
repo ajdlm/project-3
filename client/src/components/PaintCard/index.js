@@ -1,5 +1,6 @@
 import React from "react";
 import {Row, Col, Modal, ModalBody, Button, Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Label, Input} from "reactstrap";
+import axios from "axios";
 
 
 function PaintCard(props) {
@@ -13,11 +14,14 @@ function PaintCard(props) {
     e.preventDefault();
     console.log(e.target.value);
   }
-  function handleAddCart(e)
-  {
-    console.log(props.image.name + "\n" + unitPrice + "\n" + quantity);
+  function handleAddCart(e) {
+    axios.post("/api/user", props.image).then(function (response) {
+      console.log(response);
+    })
+      .catch(function (error) {
+        console.log(error);
+      });
   }
-
   return (
     <div className="container">
       <Row>
