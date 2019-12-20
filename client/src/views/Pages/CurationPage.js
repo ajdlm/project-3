@@ -83,7 +83,9 @@ class CurationPage extends Component {
                />
 
                </div>
+               <p>  </p>
                </Col>
+              
                )}
                </CardDeck>
                </Container>
