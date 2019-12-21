@@ -6,7 +6,7 @@ const ContactForm = props => {
     <div className="contactContainer pt-2 px-5 pb-3 mb-0">
       <div className="mx-5 px-5">
         <h2 className="contactHeading text-center my-4 pb-1">
-          CONNECT WITH US
+          CONNECT WITH ME
         </h2>
 
         <form
