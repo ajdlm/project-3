@@ -15,7 +15,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import PaintCard from "components/PaintCard";
 
@@ -82,7 +82,7 @@ class PaintPage extends Component {
   render() {
     return (
       <>
-        <ExamplesNavbar/>
+        <IndexNavbar/>
         <div className="wrapper" style={{margin: "72px 0"}}>
 
             <Container>
@@ -92,6 +92,8 @@ class PaintPage extends Component {
                       <Col md='4'>
                         <div
                           className="image-container">
+                           <p>  </p>
+
                           <PaintCard
                             id={springImage._id}
                             image={springImage}
@@ -108,6 +110,8 @@ class PaintPage extends Component {
                       <Col md='4'>
                         <div
                           className="image-container">
+                         <p>  </p>
+
                           <PaintCard
                             id={summerImage._id}
                             image={summerImage}
@@ -128,6 +132,8 @@ class PaintPage extends Component {
                             id={autumnImage._id}
                             image={autumnImage}
                           />
+                       <p>  </p>
+
                         </div>
                       </Col>
                     )}
@@ -140,6 +146,8 @@ class PaintPage extends Component {
                       <Col md='4'>
                         <div
                           className="image-container">
+                            <p>  </p>
+
                           <PaintCard
                             id={winterImage._id}
                             image={winterImage}
