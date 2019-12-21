@@ -66,7 +66,7 @@ class ShoppingCart extends Component {
       totalPrice += items[i].price;
     }
 
-    return totalPrice;
+    return totalPrice.toFixed(2);
   };
 
   assembleTransaction = itemsToPurchase => {
