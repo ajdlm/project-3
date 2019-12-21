@@ -69,7 +69,7 @@ function PaintCard(props) {
               </div>
             </div>
             <ModalBody>
-              <p>Always have an access to your profile</p>
+              <p>Added to Cart!</p>
             </ModalBody>
             <div className="modal-footer">
               <Button className="btn-neutral" color="link" type="button" onClick={() => {setModal2(false); setModal1(false)}}>
