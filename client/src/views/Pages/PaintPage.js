@@ -15,7 +15,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import PaintCard from "components/PaintCard";
 
@@ -82,7 +82,7 @@ class PaintPage extends Component {
   render() {
     return (
       <>
-        <ExamplesNavbar/>
+        <IndexNavbar/>
         <div className="wrapper" style={{margin: "72px 0"}}>
 
             <Container>
