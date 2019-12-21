@@ -16,7 +16,8 @@ import CartCheckout from "components/CartCheckout";
 class ShoppingCart extends Component {
   state = {
     wasDeleted: false,
-    itemsInCart: []
+    itemsInCart: [],
+    priceTotal: ""
   };
 
   navResponsive = () => {
@@ -57,7 +58,18 @@ class ShoppingCart extends Component {
 
       this.getCart();
     }
-  }
+
+      axios
+        .get("/api/total")
+        .then(res => {
+        if (res.data) {
+        this.setState({ priceTotal: res.data });
+      }
+    })
+    .catch(error => {
+        console.log(error);
+    });
+      }
 
   calculateTotalPrice = items => {
     let totalPrice = 0;
@@ -66,9 +78,20 @@ class ShoppingCart extends Component {
       totalPrice += items[i].price;
     }
 
+    this.updateTotal(totalPrice);
     return totalPrice.toFixed(2);
   };
 
+  updateTotal = total => {
+  axios
+    .put("/api/total", {total})
+    .then(response => {
+    console.log(response);
+})
+.catch(error => {
+    console.log(error);
+});
+}
   assembleTransaction = itemsToPurchase => {
     const itemArray = [];
 
@@ -106,7 +129,7 @@ class ShoppingCart extends Component {
   render() {
     return (
       <PageContainer>
-        <IndexNavbar />
+        <IndexNavbar total = {this.state.priceTotal}/>
 
         <Wrapper>
           <Main>

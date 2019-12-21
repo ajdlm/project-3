@@ -5,7 +5,7 @@ const transporter = require("../models/nodemailerTransporter.js");
 router.post("/send-message", (req, res, next) => {
   const outgoingMail = {
     from: req.body.name,
-    to: "a.j.delasmorenas@gmail.com",
+    to: "whocanbethemvp@gmail.com",
     subject: req.body.subject,
     text: `FROM: ${req.body.email}\n\nMESSAGE: ${req.body.message}`
   };
@@ -16,7 +16,7 @@ router.post("/send-message", (req, res, next) => {
         message: "failure"
       });
     }
-    
+
     else {
       res.json({
         message: "success"

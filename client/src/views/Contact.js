@@ -23,12 +23,36 @@ class Contact extends Component {
     };
   };
 
+  state = {
+    priceTotal: ""
+  };
   componentDidMount() {
     this.navResponsive();
+
+      axios
+        .get("/api/total")
+        .then(res => {
+        if (res.data) {
+        this.setState({ priceTotal: res.data });
+      }
+    })
+    .catch(error => {
+        console.log(error);
+    });
   }
 
   componentDidUpdate() {
     this.navResponsive();
+      axios
+        .get("/api/total")
+        .then(res => {
+        if (res.data) {
+        this.setState({ priceTotal: res.data });
+      }
+    })
+    .catch(error => {
+        console.log(error);
+    });
   }
 
   resetForm = () => {
@@ -63,7 +87,7 @@ class Contact extends Component {
   render() {
     return (
       <PageContainer>
-        <IndexNavbar />
+        <IndexNavbar total = {this.state.priceTotal}/>
 
         <Wrapper>
           <Main>

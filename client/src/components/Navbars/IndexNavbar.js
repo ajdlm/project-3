@@ -17,9 +17,10 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 
-function IndexNavbar() {
+function IndexNavbar(props) {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
+  let NavTotal = props.total;
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
@@ -167,6 +168,9 @@ function IndexNavbar() {
                   View Shopping Cart
                 </UncontrolledTooltip>
               </NavItem>
+  <NavItem>
+  <p style={{color:"black"}}>{NavTotal}</p>
+  </NavItem>
             </Nav>
           </Collapse>
         </Container>

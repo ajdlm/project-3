@@ -25,13 +25,10 @@ router.get("/api/work/:series", function(req, res) {
 });
 
 router.post("/api/user", function(req, res) {
-  //console.log("WOO", req.session);
-  //req.session.views = req.session.views ? req.session.views++ : 1;
-  if (req.session.newPaint) {
+   if (req.session.newPaint) {
     req.session.newPaint.push(req.body);
     console.log(req.session.newPaint);
   }
-  
   else {
     req.session.newPaint = [];
     req.session.newPaint.push(req.body);
@@ -62,4 +59,13 @@ router.put("/api/cart", (req, res) => {
   res.json(true);
 });
 
+router.put("/api/total", (req, res) => {
+  req.session.total = req.body.total;
+  console.log(req.session.total);
+  res.json(req.session.total);
+});
+
+router.get("/api/total", (req, res) => {
+  res.json(req.session.total);
+})
 module.exports = router;
