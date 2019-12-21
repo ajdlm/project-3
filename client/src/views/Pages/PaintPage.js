@@ -92,6 +92,8 @@ class PaintPage extends Component {
                       <Col md='4'>
                         <div
                           className="image-container">
+                           <p>  </p>
+
                           <PaintCard
                             id={springImage._id}
                             image={springImage}
@@ -108,6 +110,8 @@ class PaintPage extends Component {
                       <Col md='4'>
                         <div
                           className="image-container">
+                         <p>  </p>
+
                           <PaintCard
                             id={summerImage._id}
                             image={summerImage}
@@ -128,6 +132,8 @@ class PaintPage extends Component {
                             id={autumnImage._id}
                             image={autumnImage}
                           />
+                       <p>  </p>
+
                         </div>
                       </Col>
                     )}
@@ -140,6 +146,8 @@ class PaintPage extends Component {
                       <Col md='4'>
                         <div
                           className="image-container">
+                            <p>  </p>
+
                           <PaintCard
                             id={winterImage._id}
                             image={winterImage}

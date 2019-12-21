@@ -52,6 +52,8 @@ function PaintCard(props) {
                       <option>5</option>
                     </Input>
                     <Button onClick = {handleAddCart}>Add to Cart</Button>
+                    <Button href="/Shopping-Cart" style={{backgroundColor: "black"}}>View Cart</Button>
+
                   </CardBody>
                 </Card>
               </div>
