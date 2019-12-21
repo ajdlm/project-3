@@ -31,7 +31,7 @@ class PaintPage extends Component {
     }
 
   state = {
-      cookieText: "empty",
+    priceTotal: "",
     spring: [],
     summer: [],
     autumn: [],
@@ -77,12 +77,23 @@ class PaintPage extends Component {
 
   componentDidUpdate() {
     this.PaintTest();
+
+      axios
+        .get("/api/total")
+        .then(res => {
+        if (res.data) {
+          this.setState({ priceTotal: res.data });
+      }
+    })
+    .catch(error => {
+        console.log(error);
+    });
   }
 
   render() {
     return (
       <>
-        <IndexNavbar/>
+        <IndexNavbar total = {this.state.priceTotal}/>
         <div className="wrapper" style={{margin: "72px 0"}}>
 
             <Container>

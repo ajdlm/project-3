@@ -19,7 +19,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/IndexNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import CurationCards from "components/CurationCards";
@@ -43,7 +43,8 @@ class CurationPage extends Component {
 
   //Curation Images
   state = {
-    curationArray: []
+    curationArray: [],
+    priceTotal: ""
   }
   componentDidMount() {
     axios
@@ -61,12 +62,23 @@ class CurationPage extends Component {
 
   componentDidUpdate() {
     this.CurationTest();
+
+      axios
+        .get("/api/total")
+        .then(res => {
+        if (res.data) {
+        this.setState({ priceTotal: res.data });
+      }
+    })
+    .catch(error => {
+        console.log(error);
+    });
   }
 
   render() {
     return (
       <>
-        <ExamplesNavbar />
+        <IndexNavbar total = {this.state.priceTotal}/>
         <div className="wrapper">
           <div className="section section-about-us">
             <Container>
@@ -85,7 +97,7 @@ class CurationPage extends Component {
                </div>
                <p>  </p>
                </Col>
-              
+
                )}
                </CardDeck>
                </Container>
