@@ -62,7 +62,7 @@ function IndexNavbar() {
               Suyao Tian
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Designed by Project 3
+              Homepage
             </UncontrolledTooltip>
             {/******************************start toggle (small screen)*/}
             <button
@@ -148,6 +148,24 @@ function IndexNavbar() {
                 <NavLink href="/contact">
                   <p style={{ color: "black" }}>Contact</p>
                 </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="/Shopping-Cart"
+                  id="cart-tooltip"
+
+                >
+                  <i
+                    className="fas fa-shopping-cart"
+                    style={{ color: "black" }}
+                  ></i>
+                  <p className="d-lg-none d-xl-none" style={{ color: "black" }}>
+                    Shopping Cart
+                  </p>
+                </NavLink>
+                <UncontrolledTooltip target="#cart-tooltip">
+                  View Shopping Cart
+                </UncontrolledTooltip>
               </NavItem>
             </Nav>
           </Collapse>
